@@ -1,0 +1,65 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.0.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+jar {
+    baseName = 'gs-rest-service'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    jerseyVersion = "2.22"
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    
+    compile("org.glassfish.jersey.ext:jersey-proxy-client:$jerseyVersion") 
+    compile("org.glassfish.jersey.media:jersey-media-json-jackson:$jerseyVersion") 
+    compile("org.glassfish.jersey.media:jersey-media-multipart:$jerseyVersion")
+	compile("org.glassfish.jersey.core:jersey-server:$jerseyVersion")
+	compile("org.glassfish.jersey.ext:jersey-bean-validation:$jerseyVersion")
+	compile("org.glassfish.jersey.ext:jersey-spring3:$jerseyVersion")
+	
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    
+    compile("com.google.guava:guava:r05")
+    compile("joda-time:joda-time:2.3")
+    compile("org.jadira.usertype:usertype.core:3.2.0.GA")
+    compile("org.apache.commons:commons-lang3:3.3.2")
+    compile("javax.ws.rs:javax.ws.rs-api:2.0.1")
+    
+    testCompile("org.springframework:spring-test:4.0.3.RELEASE")
+    testCompile("org.assertj:assertj-core:1.7.1")
+    testCompile("org.mockito:mockito-all:1.8.4")
+	testCompile("junit:junit:4.12")
+	testCompile("mysql:mysql-connector-java:5.1.6")
+	
+	
+	compile("org.apache.tomcat:tomcat-dbcp:9.0.0.M1")
+	
+    
+    testCompile("junit:junit")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
