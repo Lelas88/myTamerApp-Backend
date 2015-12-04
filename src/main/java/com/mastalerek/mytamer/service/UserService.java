@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 
 import com.google.common.collect.Lists;
 import com.mastalerek.mytamer.entity.User;
-import com.mastalerek.mytamer.functions.UserEntityToClientWebModelFunction;
+import com.mastalerek.mytamer.functions.UserEntityToUserWebModelFunction;
 import com.mastalerek.mytamer.repository.UserRepository;
-import com.mastalerek.mytamer.webmodel.UserWebClientModel;
+import com.mastalerek.mytamer.webmodel.UserWebModel;
 
 @Component
 public class UserService {
@@ -18,19 +18,38 @@ public class UserService {
 	@Inject
 	private UserRepository userRepository;
 	@Inject
-	private UserEntityToClientWebModelFunction userEntityToClientWebModelFunction;
-	
-	public UserWebClientModel getUserByUsername(String username) {
+	private PasswordEncoderGenerator passwordEncoder;
+	@Inject
+	private UserEntityToUserWebModelFunction userEntityToUserWebModelFunction;
+
+	public UserWebModel getUserByUsername(String username) {
 		User user = userRepository.findByUsername(username);
-		return userEntityToClientWebModelFunction.apply(user);
+		return userEntityToUserWebModelFunction.apply(user);
 	}
 
-	public List<UserWebClientModel> getAllUsers() {
-		List<UserWebClientModel> allUsersWebModel = Lists.newArrayList();
-		Iterable<User> allUsers = userRepository.findAll(); 
+	public List<UserWebModel> getAllUsers() {
+		List<UserWebModel> allUsersWebModel = Lists.newArrayList();
+		Iterable<User> allUsers = userRepository.findAll();
 		for (User user : allUsers) {
-			allUsersWebModel.add(userEntityToClientWebModelFunction.apply(user));
+			allUsersWebModel.add(userEntityToUserWebModelFunction.apply(user));
 		}
 		return allUsersWebModel;
+	}
+
+	public UserWebModel getByUserId(Integer userId) {
+		User user = userRepository.findOne(userId);
+		return userEntityToUserWebModelFunction.apply(user);
+	}
+
+	public boolean verifyData(String username, String password) {
+		return userRepository.findByUsernameAndPassword(username, password) != null ? true : false;
+	}
+
+	public void createUser(UserWebModel userModel) {
+		User user = new User();
+		user.setEmail(userModel.getEmail());
+		user.setUsername(userModel.getUsername());
+		user.setPassword(passwordEncoder.encodePassword(userModel.getPassword()));
+		userRepository.save(user);
 	}
 }

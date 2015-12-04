@@ -1,6 +1,6 @@
 package com.mastalerek.mytamer.webmodel;
 
-public class UserWebClientModel {
+public class UserWebModel {
 	private Integer id;
 	private String username;
 	private String email;

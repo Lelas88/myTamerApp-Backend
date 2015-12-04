@@ -5,14 +5,14 @@ import org.springframework.stereotype.Service;
 
 import com.google.common.base.Function;
 import com.mastalerek.mytamer.entity.User;
-import com.mastalerek.mytamer.webmodel.UserWebClientModel;
+import com.mastalerek.mytamer.webmodel.UserWebModel;
 
 @Service
-public class UserEntityToClientWebModelFunction implements Function<User, UserWebClientModel> {
+public class UserEntityToUserWebModelFunction implements Function<User, UserWebModel> {
 
 	@Override
-	public UserWebClientModel apply(User input) {
-		UserWebClientModel output = new UserWebClientModel();
+	public UserWebModel apply(User input) {
+		UserWebModel output = new UserWebModel();
 
 		output.setId(input.getId());
 		output.setEmail(input.getEmail());

@@ -30,7 +30,8 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
-    
+    compile("org.springframework.security:spring-security-core:4.0.3.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.glassfish.jersey.ext:jersey-proxy-client:$jerseyVersion") 
     compile("org.glassfish.jersey.media:jersey-media-json-jackson:$jerseyVersion") 
     compile("org.glassfish.jersey.media:jersey-media-multipart:$jerseyVersion")
