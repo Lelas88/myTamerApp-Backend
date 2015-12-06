@@ -1,11 +1,14 @@
 package com.mastalerek.mytamer.entity;
 
 import java.io.Serializable;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.sun.istack.internal.NotNull;
@@ -21,6 +24,7 @@ public class User implements Serializable {
 	private String username;
 	private String email;
 	private String password;
+	private List<Group> groups;
 
 	@Id
 	@GeneratedValue
@@ -62,4 +66,14 @@ public class User implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+	public List<Group> getGroups() {
+		return groups;
+	}
+
+	public void setGroups(List<Group> groups) {
+		this.groups = groups;
+	}
+
 }

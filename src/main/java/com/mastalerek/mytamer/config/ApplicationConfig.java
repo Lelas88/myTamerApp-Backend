@@ -73,9 +73,6 @@ public class ApplicationConfig {
 				setProperty("hibernate.hbm2ddl.auto", environment.getProperty("hibernate.ddl.auto"));
 				setProperty("hibernate.dialect", environment.getProperty("hibernate.dialect"));
 				setProperty("hibernate.show_sql", environment.getProperty("hibernate.show_sql"));
-				// setProperty("hibernate.envers.revision_on_collection_change",env.getProperty("hibernate.envers.revision_on_collection_change"));
-				// setProperty("hibernate.globally_quoted_identifiers", "true");
-				// setProperty("hibernate.format_sql", "true");
 			}
 		};
 	}

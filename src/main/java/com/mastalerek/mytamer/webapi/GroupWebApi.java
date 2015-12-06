@@ -17,6 +17,8 @@ import com.mastalerek.mytamer.webmodel.GroupWebModel;
 @Path(GroupWebApi.BASE_PATH)
 public interface GroupWebApi {
 
+	public static final String CREATE = "/createGroup";
+	public static final String UPDATE = "/updateGroup";
 	public static final String BASE_PATH = "/group";
 
 	@GET
@@ -24,12 +26,12 @@ public interface GroupWebApi {
 	public List<GroupWebModel> getGroupsByUserId(@NotNull @QueryParam("userId") Integer userId);
 	
 	@PUT
-	@Path("/updateGroup")
+	@Path(UPDATE)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response updateGroup(@NotNull GroupWebModel group);
 	
 	@PUT
-	@Path("/createGroup")
+	@Path(CREATE)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response createGroup(@NotNull GroupWebModel group);
 }
