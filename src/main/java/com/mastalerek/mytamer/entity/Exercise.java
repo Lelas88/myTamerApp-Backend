@@ -103,4 +103,5 @@ public class Exercise {
 	public void setStudentExercises(List<StudentExercise> studentExercises) {
 		this.studentExercises = studentExercises;
 	}
+	
 }

@@ -1,22 +1,17 @@
 package com.mastalerek.mytamer.entity;
 
-import java.util.List;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "exercise_sets")
-public class ExerciseSet {
+@Table(name = "nutritionals")
+public class Nutritional {
 	private Integer id;
 	private String name;
-	private List<Exercise> exercises;
-	private Integer time;
+	private String unit;
 
 	@Id
 	@GeneratedValue
@@ -38,22 +33,13 @@ public class ExerciseSet {
 		this.name = name;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "id")
-	public List<Exercise> getExercises() {
-		return exercises;
+	@Column(name = "unit", nullable = false)
+	public String getUnit() {
+		return unit;
 	}
 
-	public void setExercises(List<Exercise> exercises) {
-		this.exercises = exercises;
-	}
-
-	@Column(name = "time", nullable = false)
-	public Integer getTime() {
-		return time;
-	}
-
-	public void setTime(Integer time) {
-		this.time = time;
+	public void setUnit(String unit) {
+		this.unit = unit;
 	}
 
 }

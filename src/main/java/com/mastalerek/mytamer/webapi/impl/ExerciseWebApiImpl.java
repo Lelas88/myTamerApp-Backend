@@ -6,10 +6,10 @@ import javax.inject.Inject;
 
 import org.springframework.stereotype.Component;
 
-import com.mastalerek.mytamer.entity.StudentExercise;
 import com.mastalerek.mytamer.service.ExerciseService;
 import com.mastalerek.mytamer.webapi.ExerciseWebApi;
 import com.mastalerek.mytamer.webmodel.ExerciseWebModel;
+import com.mastalerek.mytamer.webmodel.StudentExerciseWebModel;
 
 @Component
 public class ExerciseWebApiImpl implements ExerciseWebApi {
@@ -23,7 +23,7 @@ public class ExerciseWebApiImpl implements ExerciseWebApi {
 	}
 
 	@Override
-	public List<StudentExercise> getStudentExercises(Integer studentId) {
+	public List<StudentExerciseWebModel> getStudentExercises(Integer studentId) {
 		return exerciseService.getStudentExercises(studentId);
 	}
 }

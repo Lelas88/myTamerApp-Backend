@@ -9,12 +9,13 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-import com.mastalerek.mytamer.entity.StudentExercise;
 import com.mastalerek.mytamer.webmodel.ExerciseWebModel;
+import com.mastalerek.mytamer.webmodel.StudentExerciseWebModel;
 
 @Path(ExerciseWebApi.BASE_PATH)
 public interface ExerciseWebApi {
 
+	public static final String BY_STUDENT = "/byStudent";
 	public static final String BASE_PATH = "/exercise";
 	
 	@GET
@@ -22,7 +23,7 @@ public interface ExerciseWebApi {
 	public List<ExerciseWebModel> getByDisciplineId(@NotNull @QueryParam("disciplineId") Integer disciplineId);
 	
 	@GET
-	@Path("/byStudent")
+	@Path(BY_STUDENT)
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<StudentExercise> getStudentExercises(@NotNull @QueryParam("studentId") Integer studentId);
+	public List<StudentExerciseWebModel> getStudentExercises(@NotNull @QueryParam("studentId") Integer studentId);
 }

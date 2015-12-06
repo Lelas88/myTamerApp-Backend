@@ -6,6 +6,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -25,6 +26,7 @@ public class User implements Serializable {
 	private String email;
 	private String password;
 	private List<Group> groups;
+	private List<UserSetting> userSettings;
 
 	@Id
 	@GeneratedValue
@@ -74,6 +76,15 @@ public class User implements Serializable {
 
 	public void setGroups(List<Group> groups) {
 		this.groups = groups;
+	}
+
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "user", cascade = CascadeType.ALL)
+	public List<UserSetting> getUserSettings() {
+		return userSettings;
+	}
+
+	public void setUserSettings(List<UserSetting> userSettings) {
+		this.userSettings = userSettings;
 	}
 
 }

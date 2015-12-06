@@ -29,6 +29,10 @@ public class Student {
 	private List<StudentMeasurement> studentMeasurements;
 	private List<StudentExercise> studentExercises;
 	private StudentPhoto studentPhoto;
+	private List<StudentGoal> studentGoals;
+	private List<StudentScore> studentScores;
+	private List<StudentGoalInitialState> studentGoalInitialStates;
+	private List<Progress> studentProgresses;
 
 	@Id
 	@GeneratedValue
@@ -116,6 +120,42 @@ public class Student {
 
 	public void setStudentExercises(List<StudentExercise> studentExercises) {
 		this.studentExercises = studentExercises;
+	}
+
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "student", cascade = CascadeType.ALL)
+	public List<StudentGoal> getStudentGoals() {
+		return studentGoals;
+	}
+
+	public void setStudentGoals(List<StudentGoal> studentGoals) {
+		this.studentGoals = studentGoals;
+	}
+
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "student", cascade = CascadeType.ALL)
+	public List<StudentScore> getStudentScores() {
+		return studentScores;
+	}
+
+	public void setStudentScores(List<StudentScore> studentScores) {
+		this.studentScores = studentScores;
+	}
+
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "student", cascade = CascadeType.ALL)
+	public List<StudentGoalInitialState> getStudentGoalInitialStates() {
+		return studentGoalInitialStates;
+	}
+
+	public void setStudentGoalInitialStates(List<StudentGoalInitialState> studentGoalInitialStates) {
+		this.studentGoalInitialStates = studentGoalInitialStates;
+	}
+
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "student", cascade = CascadeType.ALL)
+	public List<Progress> getStudentProgresses() {
+		return studentProgresses;
+	}
+
+	public void setStudentProgresses(List<Progress> studentProgresses) {
+		this.studentProgresses = studentProgresses;
 	}
 
 }
