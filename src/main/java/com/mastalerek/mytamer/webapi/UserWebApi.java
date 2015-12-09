@@ -18,6 +18,7 @@ import com.mastalerek.mytamer.webmodel.UserWebModel;
 @Path(UserWebApi.BASE_PATH)
 public interface UserWebApi {
 
+	public static final String GET_ID = "/getId";
 	public static final String REGISTER = "/register";
 	public static final String VERIFY = "/verify";
 	public static final String GET_BY_ID = "/getById/{userId}";
@@ -32,6 +33,11 @@ public interface UserWebApi {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public UserWebModel getUserByUsername(@NotNull @QueryParam("username") String username);
+	
+	@GET
+	@Path(GET_ID)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Integer getUserIdByUsername(@NotNull @QueryParam("username") String username);
 
 	@GET
 	@Path(GET_BY_ID)

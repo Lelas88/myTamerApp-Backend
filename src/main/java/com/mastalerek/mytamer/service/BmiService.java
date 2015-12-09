@@ -8,7 +8,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class BmiService {
 	
+	private static final double INITIAL_VALUE = 0.0;
+
 	public Double calculateBmi(Double weight, Double height) {
+		if(weight <= 0 || height <= 0) {
+			return INITIAL_VALUE;
+		}
 		return round(weight/(height * height), 2);
 	}
 	

@@ -1,5 +1,8 @@
 package com.mastalerek.mytamer.entity;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -7,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -15,6 +19,7 @@ public class Group {
 	private Integer id;
 	private User user;
 	private String name;
+	private List<Student> students;
 
 	@Id
 	@GeneratedValue
@@ -44,6 +49,15 @@ public class Group {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "group", cascade = CascadeType.ALL)
+	public List<Student> getStudents() {
+		return students;
+	}
+
+	public void setStudents(List<Student> students) {
+		this.students = students;
 	}
 
 }

@@ -23,6 +23,7 @@ import jersey.repackaged.com.google.common.collect.Lists;
 @Component
 public class MeasurementService {
 
+	private static final double INITIAL_VALUE = 0.0;
 	private static final String HEIGHT = "height";
 	private static final String WEIGHT = "weight";
 	@Inject
@@ -44,7 +45,11 @@ public class MeasurementService {
 	public Double getLastStudentMeasurementByStudentIdAndType(Integer studentId, Integer measurementType) {
 		StudentMeasurement studentMeasurement = studentMeasurementRepository
 				.findTop1ByStudentIdAndMeasurementIdOrderByDateDesc(studentId, measurementType);
-		return studentMeasurement.getValue();
+		if(studentMeasurement != null) {
+			return studentMeasurement.getValue();
+		} else {
+			return INITIAL_VALUE;
+		}
 	}
 
 	public AllMeasurementsWebModel getMeasurementsHistory(Integer studentId) {

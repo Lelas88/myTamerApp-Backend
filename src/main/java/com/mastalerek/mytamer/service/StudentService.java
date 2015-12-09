@@ -1,14 +1,19 @@
 package com.mastalerek.mytamer.service;
 
+import java.sql.Date;
 import java.text.ParseException;
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.List;
 
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Component;
 
+import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Lists;
 import com.mastalerek.mytamer.builder.RankBuilder;
+import com.mastalerek.mytamer.entity.Group;
 import com.mastalerek.mytamer.entity.Student;
 import com.mastalerek.mytamer.functions.StudentEntityToStudentWebModelFunction;
 import com.mastalerek.mytamer.repository.GroupRepository;
@@ -17,7 +22,7 @@ import com.mastalerek.mytamer.webmodel.StudentWebModel;
 
 @Component
 public class StudentService {
-	
+
 	private static final int INITIAL_RANK = 1;
 	@Inject
 	private StudentRepository studentRepository;
@@ -38,6 +43,12 @@ public class StudentService {
 		return studentsWebModelList;
 	}
 
+	public Integer calculateStudentAge(Date birthdate) {
+		LocalDate today = LocalDate.now();
+		LocalDate birthday = birthdate.toLocalDate();
+		return Period.between(birthday, today).getYears();
+	}
+
 	public void createStudent(StudentWebModel studentModel) throws ParseException {
 		Student student = new Student();
 		student.setBirthdate(dateService.parseStringToSqlDate(studentModel.getBirthdate()));
@@ -46,5 +57,14 @@ public class StudentService {
 		student.setRank(new RankBuilder().withId(INITIAL_RANK).build());
 		student.setGroup(groupRepository.findOne(studentModel.getGroupId()));
 		studentRepository.save(student);
+	}
+
+	public List<StudentWebModel> getStudentsByUserId(Integer userId) {
+		List<Group> groups = groupRepository.findByUserId(userId);
+		List<StudentWebModel> output = Lists.newArrayList();
+		for (Group group : groups) {
+			output.addAll(Lists.transform(group.getStudents(), studentEntityToStudentWebModelFunction));
+		}
+		return ImmutableSet.copyOf(output).asList();
 	}
 }

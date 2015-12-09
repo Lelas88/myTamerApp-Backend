@@ -9,6 +9,7 @@ import com.mastalerek.mytamer.entity.Student;
 import com.mastalerek.mytamer.enums.MeasurementType;
 import com.mastalerek.mytamer.service.BmiService;
 import com.mastalerek.mytamer.service.MeasurementService;
+import com.mastalerek.mytamer.service.StudentService;
 import com.mastalerek.mytamer.webmodel.StudentWebModel;
 
 @Service
@@ -18,6 +19,8 @@ public class StudentEntityToStudentWebModelFunction implements Function<Student,
 	private BmiService bmiService;	
 	@Inject
 	private MeasurementService measurementService;	
+	@Inject
+	private StudentService studentService;
 	
 	@Override
 	public StudentWebModel apply(Student input) {
@@ -32,6 +35,7 @@ public class StudentEntityToStudentWebModelFunction implements Function<Student,
 		output.setHeight(measurementService.getLastStudentMeasurementByStudentIdAndType(input.getId(), MeasurementType.HEIGHT.getValue()));
 		output.setBmi(bmiService.calculateBmi(output.getWeight(), output.getHeight()));
 		output.setPhotoName(input.getStudentPhoto().getPhotoName());
+		output.setAge(studentService.calculateStudentAge(input.getBirthdate()));
 		return output;
 	}
 

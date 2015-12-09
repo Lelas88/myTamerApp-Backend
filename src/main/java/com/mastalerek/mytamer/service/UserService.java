@@ -52,4 +52,9 @@ public class UserService {
 		user.setPassword(passwordEncoder.encodePassword(userModel.getPassword()));
 		userRepository.save(user);
 	}
+
+	public Integer getUserIdByUsername(String username) {
+		User user = userRepository.findByUsername(username);
+		return user.getId();
+	}
 }

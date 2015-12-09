@@ -43,4 +43,9 @@ public class StudentWebApiImpl implements StudentWebApi {
 		return studentPhotoService.getStudentPhoto(studentId);
 	}
 
+	@Override
+	public List<StudentWebModel> getUserStudents(Integer userId) {
+		return studentService.getStudentsByUserId(userId);
+	}
+
 }

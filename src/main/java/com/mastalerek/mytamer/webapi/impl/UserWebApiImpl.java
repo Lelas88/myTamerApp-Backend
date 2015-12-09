@@ -61,4 +61,9 @@ public class UserWebApiImpl implements UserWebApi {
 		return Response.ok().build();
 	}
 
+	@Override
+	public Integer getUserIdByUsername(String username) {
+		return userService.getUserIdByUsername(username);
+	}
+
 }
