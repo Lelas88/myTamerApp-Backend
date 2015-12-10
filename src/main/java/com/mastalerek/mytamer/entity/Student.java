@@ -45,7 +45,7 @@ public class Student {
 		this.id = id;
 	}
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "group_id", nullable = false)
 	public Group getGroup() {
 		return group;

@@ -67,4 +67,8 @@ public class StudentService {
 		}
 		return ImmutableSet.copyOf(output).asList();
 	}
+
+	public StudentWebModel getStudent(Integer studentId) {
+		return studentEntityToStudentWebModelFunction.apply(studentRepository.findOne(studentId));
+	}
 }

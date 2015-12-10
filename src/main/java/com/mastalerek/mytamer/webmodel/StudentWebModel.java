@@ -4,6 +4,7 @@ public class StudentWebModel {
 
 	private Integer id;
 	private Integer groupId;
+	private String groupName;
 	private Integer rankId;
 	private String firstName;
 	private String lastName;
@@ -28,6 +29,14 @@ public class StudentWebModel {
 
 	public void setGroupId(Integer groupId) {
 		this.groupId = groupId;
+	}
+
+	public String getGroupName() {
+		return groupName;
+	}
+
+	public void setGroupName(String groupName) {
+		this.groupName = groupName;
 	}
 
 	public Integer getRankId() {

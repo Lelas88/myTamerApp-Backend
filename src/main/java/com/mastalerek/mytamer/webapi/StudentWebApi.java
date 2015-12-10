@@ -18,15 +18,21 @@ import com.mastalerek.mytamer.webmodel.StudentWebModel;
 @Path(StudentWebApi.BASE_PATH)
 public interface StudentWebApi {
 	
+	public static final String STUDENT_ID = "/{studentId}";
 	public static final String IMAGE = "/image";
 	public static final String UPDATE = "/update";
 	public static final String CREATE = "/create";
-	public static final String BY_USER = "/{userId}";
+	public static final String BY_USER = "/user/{userId}";
 	public static final String BASE_PATH = "/student";
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<StudentWebModel> getStudentsByGroupId(@NotNull @QueryParam("groupId") Integer groupId);
+
+	@GET
+	@Path(STUDENT_ID)
+	@Produces(MediaType.APPLICATION_JSON)
+	public StudentWebModel getStudent(@NotNull @PathParam("studentId") Integer studentId);
 
 	@GET
 	@Path(BY_USER)

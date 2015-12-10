@@ -48,4 +48,9 @@ public class StudentWebApiImpl implements StudentWebApi {
 		return studentService.getStudentsByUserId(userId);
 	}
 
+	@Override
+	public StudentWebModel getStudent(Integer studentId) {
+		return studentService.getStudent(studentId);
+	}
+
 }
