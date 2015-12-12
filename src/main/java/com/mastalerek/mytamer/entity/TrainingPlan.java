@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -51,7 +52,7 @@ public class TrainingPlan {
 		this.description = description;
 	}
 
-	@ManyToMany
+	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "training_plan_exercise_sets", joinColumns = @JoinColumn(name = "training_plan_id") , inverseJoinColumns = @JoinColumn(name = "exercise_set_id") )
 	public List<ExerciseSet> getExerciseSet() {
 		return exerciseSets;
@@ -61,7 +62,7 @@ public class TrainingPlan {
 		this.exerciseSets = exerciseSets;
 	}
 
-	@ManyToMany
+	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "training_plan_diets", joinColumns = @JoinColumn(name = "training_plan_id") , inverseJoinColumns = @JoinColumn(name = "diet_id") )
 	public List<Diet> getDiets() {
 		return diets;

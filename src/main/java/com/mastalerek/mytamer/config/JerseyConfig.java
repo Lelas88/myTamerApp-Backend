@@ -6,13 +6,13 @@ import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.stereotype.Component;
 
 import com.mastalerek.mytamer.webapi.impl.DisciplineWebApiImpl;
-import com.mastalerek.mytamer.webapi.impl.ExerciseSetWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.ExerciseUnitWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.ExerciseWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.GroupWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.MeasurementWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.RankWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.StudentWebApiImpl;
+import com.mastalerek.mytamer.webapi.impl.TrainingPlanWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.UserWebApiImpl;
 
 @Component
@@ -29,6 +29,6 @@ public class JerseyConfig extends ResourceConfig {
 		register(DisciplineWebApiImpl.class);
 		register(ExerciseUnitWebApiImpl.class);
 		register(ExerciseWebApiImpl.class);
-		register(ExerciseSetWebApiImpl.class);
+		register(TrainingPlanWebApiImpl.class);
 	}
 }

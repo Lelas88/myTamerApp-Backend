@@ -43,7 +43,7 @@ public class Meal {
 		this.name = name;
 	}
 
-	@Lob	
+	@Lob
 	@Column(name = "description", nullable = false)
 	public String getDescription() {
 		return description;
@@ -53,7 +53,7 @@ public class Meal {
 		this.description = description;
 	}
 
-	@Lob	
+	@Lob
 	@Column(name = "ingridients", nullable = false)
 	public String getIngridients() {
 		return ingridients;
@@ -63,7 +63,7 @@ public class Meal {
 		this.ingridients = ingridients;
 	}
 
-	@Lob	
+	@Lob
 	@Column(name = "preparing", nullable = false)
 	public String getPreparing() {
 		return preparing;
@@ -72,7 +72,7 @@ public class Meal {
 	public void setPreparing(String preparing) {
 		this.preparing = preparing;
 	}
-	
+
 	@Column(name = "icon_name", nullable = false)
 	public String getIconName() {
 		return iconName;

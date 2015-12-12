@@ -38,7 +38,7 @@ public class ExerciseSet {
 		this.name = name;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "id")
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "id")
 	public List<Exercise> getExercises() {
 		return exercises;
 	}

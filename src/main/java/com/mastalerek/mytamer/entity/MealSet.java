@@ -10,8 +10,7 @@ import javax.persistence.Table;
 @Table(name = "meal_sets")
 public class MealSet {
 	private Integer id;
-	private Integer dietId;
-	private Integer mealId;
+	private String name;
 
 	@Id
 	@GeneratedValue
@@ -24,22 +23,13 @@ public class MealSet {
 		this.id = id;
 	}
 
-	@Column(name = "diet_id", nullable = false)
-	public Integer getDietId() {
-		return dietId;
+	@Column(name = "name", nullable = false)
+	public String getName() {
+		return name;
 	}
 
-	public void setDietId(Integer dietId) {
-		this.dietId = dietId;
-	}
-
-	@Column(name = "meal_id", nullable = false)
-	public Integer getMealId() {
-		return mealId;
-	}
-
-	public void setMealId(Integer mealId) {
-		this.mealId = mealId;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }
