@@ -7,11 +7,11 @@ import javax.inject.Inject;
 import org.springframework.stereotype.Component;
 
 import com.google.common.collect.Lists;
-import com.mastalerek.mytamer.entity.ExerciseSet;
 import com.mastalerek.mytamer.entity.StudentTrainingPlan;
 import com.mastalerek.mytamer.entity.TrainingPlan;
-import com.mastalerek.mytamer.functions.ExerciseSetToExerciseSetBasicWebModel;
+import com.mastalerek.mytamer.entity.TrainingPlanExerciseSet;
 import com.mastalerek.mytamer.functions.StudentTrainingPlansToTrainingPlanBasicWebModelFunction;
+import com.mastalerek.mytamer.functions.TrainingPlanExerciseSetToExerciseSetBasicWebModelFunction;
 import com.mastalerek.mytamer.functions.TrainingPlanToTrainingPlanWebModelFunction;
 import com.mastalerek.mytamer.repository.StudentTrainingPlanRepository;
 import com.mastalerek.mytamer.repository.TrainingPlanRepository;
@@ -31,21 +31,38 @@ public class TrainingPlanService {
 	@Inject
 	private TrainingPlanToTrainingPlanWebModelFunction trainingPlanToTrainingPlanWebModelFunction;
 	@Inject
-	private ExerciseSetToExerciseSetBasicWebModel exerciseSetToExerciseSetBasicWebModel;
+	private TrainingPlanExerciseSetToExerciseSetBasicWebModelFunction trainingPlanExerciseSetToExerciseSetBasicWebModelFunction;
 
 	public List<TrainingPlanBasicWebModel> getTrainingPlanNames(Integer studentId) {
-		List<StudentTrainingPlan> studentTrainingPlans = studentTrainingPlanRepository.findByStudentId(studentId);
+		List<StudentTrainingPlan> studentTrainingPlans = getStudentTrainingPlans(studentId);
 		return Lists.transform(studentTrainingPlans, studentTrainingPlansToTrainingPlanBasicWebModelFunction);
 	}
 
+	private List<StudentTrainingPlan> getStudentTrainingPlans(Integer studentId) {
+		return studentTrainingPlanRepository.findByStudentId(studentId);
+	}
+	
+	private List<Integer> getStudentTrainingPlanIds(Integer studentId) {
+		List<Integer> output = Lists.newArrayList();
+		List<StudentTrainingPlan> studentTrainingPlans = getStudentTrainingPlans(studentId);
+		for (StudentTrainingPlan studentTrainingPlan : studentTrainingPlans) {
+			output.add(studentTrainingPlan.getId());
+		}
+		return output;
+	}
+
+	public List<TrainingPlan> getTrainingPlansByStudentId(Integer studentId) {
+		return trainingPlanRepository.findByIdIn(getStudentTrainingPlanIds(studentId));
+	}
+	
 	public TrainingPlanWebModel getTrainingPlanDetails(Integer trainingPlanId) {
 		return trainingPlanToTrainingPlanWebModelFunction.apply(trainingPlanRepository.findOne(trainingPlanId));
 	}
 
 	public List<ExerciseSetBasicWebModel> getTrainingPlanExerciseSets(Integer trainingPlanId) {
 		TrainingPlan trainingPlan = trainingPlanRepository.findOne(trainingPlanId);
-		List<ExerciseSet> exerciseSets = trainingPlan.getExerciseSet();
-		return Lists.transform(exerciseSets, exerciseSetToExerciseSetBasicWebModel);
+		List<TrainingPlanExerciseSet> exerciseSets = trainingPlan.getExerciseSets();
+		return Lists.transform(exerciseSets, trainingPlanExerciseSetToExerciseSetBasicWebModelFunction);
 	}
 
 }

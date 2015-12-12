@@ -15,9 +15,13 @@ import com.google.common.collect.Lists;
 import com.mastalerek.mytamer.builder.RankBuilder;
 import com.mastalerek.mytamer.entity.Group;
 import com.mastalerek.mytamer.entity.Student;
+import com.mastalerek.mytamer.entity.TrainingPlan;
+import com.mastalerek.mytamer.entity.TrainingPlanDiet;
+import com.mastalerek.mytamer.functions.DietToDietBasicWebModelFunction;
 import com.mastalerek.mytamer.functions.StudentEntityToStudentWebModelFunction;
 import com.mastalerek.mytamer.repository.GroupRepository;
 import com.mastalerek.mytamer.repository.StudentRepository;
+import com.mastalerek.mytamer.webmodel.DietBasicWebModel;
 import com.mastalerek.mytamer.webmodel.StudentWebModel;
 
 @Component
@@ -31,7 +35,11 @@ public class StudentService {
 	@Inject
 	private DateService dateService;
 	@Inject
+	private TrainingPlanService trainingPlanService;
+	@Inject
 	private StudentEntityToStudentWebModelFunction studentEntityToStudentWebModelFunction;
+	@Inject
+	private DietToDietBasicWebModelFunction dietToDietBasicWebModelFunction;
 
 	public List<StudentWebModel> getStudentsByGroupId(Integer groupId) {
 		List<Student> studentsList = studentRepository.findByGroupId(groupId);
@@ -70,5 +78,14 @@ public class StudentService {
 
 	public StudentWebModel getStudent(Integer studentId) {
 		return studentEntityToStudentWebModelFunction.apply(studentRepository.findOne(studentId));
+	}
+
+	public List<DietBasicWebModel> getStudentDiets(Integer studentId) {
+		List<TrainingPlanDiet> diets = Lists.newArrayList();
+		List<TrainingPlan> studentTrainingPlans = trainingPlanService.getTrainingPlansByStudentId(studentId);
+		for (TrainingPlan trainingPlan : studentTrainingPlans) {
+			diets.addAll(trainingPlan.getTrainingPlanDiets());
+		}
+		return Lists.transform(ImmutableSet.copyOf(diets).asList(), dietToDietBasicWebModelFunction);
 	}
 }

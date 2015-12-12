@@ -15,7 +15,7 @@ public class TrainingPlanToTrainingPlanWebModelFunction implements Function<Trai
 	@Inject
 	private DietToDietBasicWebModelFunction dietToDietBasicWebModelFunction;
 	@Inject
-	private ExerciseSetToExerciseSetBasicWebModelFunction exerciseSetToExerciseSetBasicWebModelFunction;
+	private TrainingPlanExerciseSetToExerciseSetBasicWebModelFunction exerciseSetToExerciseSetBasicWebModelFunction;
 
 	@Override
 	public TrainingPlanWebModel apply(TrainingPlan input) {
@@ -23,8 +23,8 @@ public class TrainingPlanToTrainingPlanWebModelFunction implements Function<Trai
 		output.setId(input.getId());
 		output.setName(input.getName());
 		output.setDescription(input.getDescription());
-		output.setDiets(Lists.transform(input.getDiets(), dietToDietBasicWebModelFunction));
-		output.setExerciseSets(Lists.transform(input.getExerciseSet(), exerciseSetToExerciseSetBasicWebModelFunction));
+		output.setDiets(Lists.transform(input.getTrainingPlanDiets(), dietToDietBasicWebModelFunction));
+		output.setExerciseSets(Lists.transform(input.getExerciseSets(), exerciseSetToExerciseSetBasicWebModelFunction));
 		return output;
 	}
 

@@ -4,16 +4,18 @@ import org.springframework.stereotype.Service;
 
 import com.google.common.base.Function;
 import com.mastalerek.mytamer.entity.Diet;
+import com.mastalerek.mytamer.entity.TrainingPlanDiet;
 import com.mastalerek.mytamer.webmodel.DietBasicWebModel;
 
 @Service
-public class DietToDietBasicWebModelFunction implements Function<Diet, DietBasicWebModel>{
+public class DietToDietBasicWebModelFunction implements Function<TrainingPlanDiet, DietBasicWebModel> {
 
 	@Override
-	public DietBasicWebModel apply(Diet input) {
+	public DietBasicWebModel apply(TrainingPlanDiet input) {
 		DietBasicWebModel output = new DietBasicWebModel();
-		output.setId(input.getId());
-		output.setName(input.getName());
+		Diet diet = input.getDiet();
+		output.setId(diet.getId());
+		output.setName(diet.getName());
 		return output;
 	}
 

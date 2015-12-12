@@ -33,6 +33,7 @@ public class Student {
 	private List<StudentScore> studentScores;
 	private List<StudentGoalInitialState> studentGoalInitialStates;
 	private List<Progress> studentProgresses;
+	private List<Contraindication> studentContraindications;
 
 	@Id
 	@GeneratedValue
@@ -156,6 +157,15 @@ public class Student {
 
 	public void setStudentProgresses(List<Progress> studentProgresses) {
 		this.studentProgresses = studentProgresses;
+	}
+
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "student", cascade = CascadeType.ALL)
+	public List<Contraindication> getStudentContraindications() {
+		return studentContraindications;
+	}
+
+	public void setStudentContraindications(List<Contraindication> studentContraindications) {
+		this.studentContraindications = studentContraindications;
 	}
 
 }

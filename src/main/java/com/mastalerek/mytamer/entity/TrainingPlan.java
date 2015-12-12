@@ -7,10 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.Lob;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -19,8 +17,8 @@ public class TrainingPlan {
 	private Integer id;
 	private String name;
 	private String description;
-	private List<ExerciseSet> exerciseSets;
-	private List<Diet> diets;
+	private List<TrainingPlanExerciseSet> exerciseSets;
+	private List<TrainingPlanDiet> trainingPlanDiets;
 
 	@Id
 	@GeneratedValue
@@ -52,24 +50,22 @@ public class TrainingPlan {
 		this.description = description;
 	}
 
-	@ManyToMany(fetch = FetchType.EAGER)
-	@JoinTable(name = "training_plan_exercise_sets", joinColumns = @JoinColumn(name = "training_plan_id") , inverseJoinColumns = @JoinColumn(name = "exercise_set_id") )
-	public List<ExerciseSet> getExerciseSet() {
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "exerciseSet")
+	public List<TrainingPlanExerciseSet> getExerciseSets() {
 		return exerciseSets;
 	}
 
-	public void setExerciseSet(List<ExerciseSet> exerciseSets) {
+	public void setExerciseSets(List<TrainingPlanExerciseSet> exerciseSets) {
 		this.exerciseSets = exerciseSets;
 	}
 
-	@ManyToMany(fetch = FetchType.EAGER)
-	@JoinTable(name = "training_plan_diets", joinColumns = @JoinColumn(name = "training_plan_id") , inverseJoinColumns = @JoinColumn(name = "diet_id") )
-	public List<Diet> getDiets() {
-		return diets;
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "diet")
+	public List<TrainingPlanDiet> getTrainingPlanDiets() {
+		return trainingPlanDiets;
 	}
 
-	public void setDiets(List<Diet> diets) {
-		this.diets = diets;
+	public void setTrainingPlanDiets(List<TrainingPlanDiet> trainingPlanDiets) {
+		this.trainingPlanDiets = trainingPlanDiets;
 	}
 
 }

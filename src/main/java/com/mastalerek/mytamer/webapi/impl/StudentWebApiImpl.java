@@ -8,9 +8,11 @@ import javax.ws.rs.core.Response;
 
 import org.springframework.stereotype.Component;
 
+import com.mastalerek.mytamer.service.ContraindicationService;
 import com.mastalerek.mytamer.service.StudentPhotoService;
 import com.mastalerek.mytamer.service.StudentService;
 import com.mastalerek.mytamer.webapi.StudentWebApi;
+import com.mastalerek.mytamer.webmodel.DietBasicWebModel;
 import com.mastalerek.mytamer.webmodel.StudentWebModel;
 
 @Component
@@ -18,9 +20,10 @@ public class StudentWebApiImpl implements StudentWebApi {
 
 	@Inject
 	private StudentService studentService;
-
 	@Inject
 	private StudentPhotoService studentPhotoService;
+	@Inject
+	private ContraindicationService contraindicationService;
 
 	@Override
 	public List<StudentWebModel> getStudentsByGroupId(Integer groupId) {
@@ -51,6 +54,16 @@ public class StudentWebApiImpl implements StudentWebApi {
 	@Override
 	public StudentWebModel getStudent(Integer studentId) {
 		return studentService.getStudent(studentId);
+	}
+
+	@Override
+	public List<String> getStudentContraindications(Integer studentId) {
+		return contraindicationService.getStudentContraindications(studentId);
+	}
+
+	@Override
+	public List<DietBasicWebModel> getStudentDiets(Integer studentId) {
+		return studentService.getStudentDiets(studentId);
 	}
 
 }

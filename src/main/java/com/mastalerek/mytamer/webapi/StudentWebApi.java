@@ -13,11 +13,14 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import com.mastalerek.mytamer.webmodel.DietBasicWebModel;
 import com.mastalerek.mytamer.webmodel.StudentWebModel;
 
 @Path(StudentWebApi.BASE_PATH)
 public interface StudentWebApi {
 	
+	public static final String DIETS = "/diet/{studentId}";
+	public static final String CONTRAINDICATIONS = "/contraindications/{studentId}";
 	public static final String STUDENT_ID = "/{studentId}";
 	public static final String IMAGE = "/image";
 	public static final String UPDATE = "/update";
@@ -49,5 +52,15 @@ public interface StudentWebApi {
 	@Path(IMAGE)
 	@Produces(MediaType.APPLICATION_JSON)
 	public String getStudentPhoto(@NotNull @QueryParam("studentId") Integer studentId);
+	
+	@GET
+	@Path(CONTRAINDICATIONS)
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<String> getStudentContraindications(@NotNull @PathParam("studentId") Integer studentId);
+	
+	@GET
+	@Path(DIETS)
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<DietBasicWebModel> getStudentDiets(@NotNull @PathParam("studentId") Integer studentId);
 	
 }
