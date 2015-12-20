@@ -14,14 +14,14 @@ import com.mastalerek.mytamer.webmodel.StudentWebModel;
 
 @Service
 public class StudentEntityToStudentWebModelFunction implements Function<Student, StudentWebModel> {
-	
+
 	@Inject
-	private BmiService bmiService;	
+	private BmiService bmiService;
 	@Inject
-	private MeasurementService measurementService;	
+	private MeasurementService measurementService;
 	@Inject
 	private StudentService studentService;
-	
+
 	@Override
 	public StudentWebModel apply(Student input) {
 		StudentWebModel output = new StudentWebModel();
@@ -32,10 +32,12 @@ public class StudentEntityToStudentWebModelFunction implements Function<Student,
 		output.setGroupName(input.getGroup().getName());
 		output.setRankId(input.getRank().getId());
 		output.setBirthdate(input.getBirthdate().toString());
-		output.setWeight(measurementService.getLastStudentMeasurementByStudentIdAndType(input.getId(), MeasurementType.WEIGHT.getValue()));
-		output.setHeight(measurementService.getLastStudentMeasurementByStudentIdAndType(input.getId(), MeasurementType.HEIGHT.getValue()));
+		output.setWeight(measurementService.getLastStudentMeasurementByStudentIdAndType(input.getId(),
+				MeasurementType.WEIGHT.getValue()));
+		output.setHeight(measurementService.getLastStudentMeasurementByStudentIdAndType(input.getId(),
+				MeasurementType.HEIGHT.getValue()));
 		output.setBmi(bmiService.calculateBmi(output.getWeight(), output.getHeight()));
-		output.setPhotoName(input.getStudentPhoto().getPhotoName());
+		output.setPhotoName(input.getPhoto());
 		output.setAge(studentService.calculateStudentAge(input.getBirthdate()));
 		return output;
 	}

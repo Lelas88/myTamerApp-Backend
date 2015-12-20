@@ -49,4 +49,8 @@ public class GroupService {
 		groupRepository.save(group);
 	}
 
+	public void deleteGroup(Integer groupId) {
+		groupRepository.delete(groupRepository.findOne(groupId));
+	}
+
 }

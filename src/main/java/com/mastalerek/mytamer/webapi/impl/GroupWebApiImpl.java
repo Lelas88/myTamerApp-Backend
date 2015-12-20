@@ -42,4 +42,14 @@ public class GroupWebApiImpl implements GroupWebApi {
 		}
 	}
 
+	@Override
+	public Response deleteGroup(Integer groupId) {
+		try {
+			groupService.deleteGroup(groupId);
+			return Response.ok().build();
+		} catch (Exception e) {
+			return Response.notModified().build();
+		}
+	}
+
 }

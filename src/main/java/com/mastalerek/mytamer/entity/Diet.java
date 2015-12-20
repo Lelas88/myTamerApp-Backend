@@ -2,9 +2,12 @@ package com.mastalerek.mytamer.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -14,6 +17,7 @@ public class Diet {
 	private String name;
 	private String description;
 	private Integer active;
+	private User user;
 
 	@Id
 	@GeneratedValue
@@ -44,7 +48,6 @@ public class Diet {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
 
 	@Column(name = "active", nullable = false)
 	public Integer getActive() {
@@ -54,5 +57,15 @@ public class Diet {
 	public void setActive(Integer active) {
 		this.active = active;
 	}
-	
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "user_id", nullable = false)
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
 }

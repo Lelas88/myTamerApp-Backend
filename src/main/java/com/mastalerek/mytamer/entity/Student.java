@@ -26,14 +26,15 @@ public class Student {
 	private String firstName;
 	private String lastName;
 	private Date birthdate;
+	private String photo;
 	private List<StudentMeasurement> studentMeasurements;
 	private List<StudentExercise> studentExercises;
-	private StudentPhoto studentPhoto;
 	private List<StudentGoal> studentGoals;
 	private List<StudentScore> studentScores;
 	private List<StudentGoalInitialState> studentGoalInitialStates;
 	private List<Progress> studentProgresses;
 	private List<Contraindication> studentContraindications;
+	private User user;
 
 	@Id
 	@GeneratedValue
@@ -96,6 +97,16 @@ public class Student {
 		this.birthdate = birthdate;
 	}
 
+	@NotNull
+	@Column(name = "photo", nullable = true)
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "student", cascade = CascadeType.ALL)
 	public List<StudentMeasurement> getStudentMeasurements() {
 		return studentMeasurements;
@@ -103,15 +114,6 @@ public class Student {
 
 	public void setStudentMeasurements(List<StudentMeasurement> studentMeasurements) {
 		this.studentMeasurements = studentMeasurements;
-	}
-
-	@OneToOne(fetch = FetchType.LAZY, mappedBy = "student", cascade = CascadeType.ALL)
-	public StudentPhoto getStudentPhoto() {
-		return studentPhoto;
-	}
-
-	public void setStudentPhoto(StudentPhoto studentPhoto) {
-		this.studentPhoto = studentPhoto;
 	}
 
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "student", cascade = CascadeType.ALL)
@@ -166,6 +168,15 @@ public class Student {
 
 	public void setStudentContraindications(List<Contraindication> studentContraindications) {
 		this.studentContraindications = studentContraindications;
+	}
+
+	@OneToOne(fetch = FetchType.LAZY, mappedBy = "student")
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 }

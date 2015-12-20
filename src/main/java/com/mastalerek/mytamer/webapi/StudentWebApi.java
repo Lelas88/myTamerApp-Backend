@@ -18,7 +18,7 @@ import com.mastalerek.mytamer.webmodel.StudentWebModel;
 
 @Path(StudentWebApi.BASE_PATH)
 public interface StudentWebApi {
-	
+
 	public static final String DIETS = "/diet/{studentId}";
 	public static final String CONTRAINDICATIONS = "/contraindications/{studentId}";
 	public static final String STUDENT_ID = "/{studentId}";
@@ -41,26 +41,21 @@ public interface StudentWebApi {
 	@Path(BY_USER)
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<StudentWebModel> getUserStudents(@NotNull @PathParam("userId") Integer userId);
-	
+
 	@PUT
 	@Path(CREATE)
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response createStudent(@NotNull StudentWebModel student);
-	
-	@GET
-	@Path(IMAGE)
-	@Produces(MediaType.APPLICATION_JSON)
-	public String getStudentPhoto(@NotNull @QueryParam("studentId") Integer studentId);
-	
+
 	@GET
 	@Path(CONTRAINDICATIONS)
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<String> getStudentContraindications(@NotNull @PathParam("studentId") Integer studentId);
-	
+
 	@GET
 	@Path(DIETS)
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<DietBasicWebModel> getStudentDiets(@NotNull @PathParam("studentId") Integer studentId);
-	
+
 }

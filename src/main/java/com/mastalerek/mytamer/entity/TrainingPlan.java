@@ -7,7 +7,9 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -19,6 +21,7 @@ public class TrainingPlan {
 	private String description;
 	private List<TrainingPlanExerciseSet> exerciseSets;
 	private List<TrainingPlanDiet> trainingPlanDiets;
+	private User user;
 
 	@Id
 	@GeneratedValue
@@ -68,4 +71,13 @@ public class TrainingPlan {
 		this.trainingPlanDiets = trainingPlanDiets;
 	}
 
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "user_id", nullable = false)
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
 }

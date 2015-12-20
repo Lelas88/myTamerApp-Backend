@@ -25,6 +25,7 @@ public class Exercise {
 	private String description;
 	private String iconName;
 	private List<StudentExercise> studentExercises;
+	private User user;
 
 	@Id
 	@GeneratedValue
@@ -103,5 +104,14 @@ public class Exercise {
 	public void setStudentExercises(List<StudentExercise> studentExercises) {
 		this.studentExercises = studentExercises;
 	}
-	
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "user_id", nullable = false)
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
 }

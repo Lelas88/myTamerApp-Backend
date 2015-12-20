@@ -10,6 +10,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 import com.sun.istack.internal.NotNull;
@@ -27,6 +29,13 @@ public class User implements Serializable {
 	private String password;
 	private List<Group> groups;
 	private List<UserSetting> userSettings;
+	private List<Diet> diets;
+	private List<Meal> meals;
+	private List<MealSet> mealSets;
+	private List<Exercise> exercises;
+	private List<ExerciseSet> exerciseSets;
+	private List<TrainingPlan> trainingPlans;
+	private Student student;
 
 	@Id
 	@GeneratedValue
@@ -85,6 +94,70 @@ public class User implements Serializable {
 
 	public void setUserSettings(List<UserSetting> userSettings) {
 		this.userSettings = userSettings;
+	}
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
+	public List<Diet> getDiets() {
+		return diets;
+	}
+
+	public void setDiets(List<Diet> diets) {
+		this.diets = diets;
+	}
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
+	public List<Meal> getMeals() {
+		return meals;
+	}
+
+	public void setMeals(List<Meal> meals) {
+		this.meals = meals;
+	}
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
+	public List<MealSet> getMealSets() {
+		return mealSets;
+	}
+
+	public void setMealSets(List<MealSet> mealSets) {
+		this.mealSets = mealSets;
+	}
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
+	public List<Exercise> getExercises() {
+		return exercises;
+	}
+
+	public void setExercises(List<Exercise> exercises) {
+		this.exercises = exercises;
+	}
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
+	public List<ExerciseSet> getExerciseSets() {
+		return exerciseSets;
+	}
+
+	public void setExerciseSets(List<ExerciseSet> exerciseSets) {
+		this.exerciseSets = exerciseSets;
+	}
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
+	public List<TrainingPlan> getTrainingPlans() {
+		return trainingPlans;
+	}
+
+	public void setTrainingPlans(List<TrainingPlan> trainingPlans) {
+		this.trainingPlans = trainingPlans;
+	}
+
+	@OneToOne(fetch = FetchType.LAZY)
+	@PrimaryKeyJoinColumn
+	public Student getStudent() {
+		return student;
+	}
+
+	public void setStudent(Student student) {
+		this.student = student;
 	}
 
 }
