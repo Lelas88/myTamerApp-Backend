@@ -4,6 +4,7 @@
 	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="src" path="src/integration/java"/>
+	<classpathentry kind="src" path="src/uml/java"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/rober/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.3.0.RELEASE/ce3b560a6e9f3112ce3c5ccbc94a46a01574fad4/spring-boot-starter-web-1.3.0.RELEASE.jar" sourcepath="C:/Users/rober/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.3.0.RELEASE/2841f48395562a3e83f4052ba221375f2a2b8f67/spring-boot-starter-web-1.3.0.RELEASE-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/rober/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.0.3.RELEASE/9f420c5742ad063970c5d33f60680a1cee777aa5/spring-security-core-4.0.3.RELEASE.jar" sourcepath="C:/Users/rober/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.0.3.RELEASE/fe41f2a695aecf48d566a71d0cf16bad4da08e22/spring-security-core-4.0.3.RELEASE-sources.jar"/>

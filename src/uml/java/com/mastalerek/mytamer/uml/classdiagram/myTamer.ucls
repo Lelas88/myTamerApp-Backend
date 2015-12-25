@@ -1,0 +1,2728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" automaticImage="JPEG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.mastalerek.mytamer.entity.MealSetMeals" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/MealSetMeals.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="147" x="3719" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.mastalerek.mytamer.webmodel.TrainingPlanWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/TrainingPlanWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="315" width="300" x="3176" y="1947"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.mastalerek.mytamer.entity.Discipline" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Discipline.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="154" x="6976" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.mastalerek.mytamer.entity.StudentScore" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/StudentScore.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="156" x="2788" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.mastalerek.mytamer.webmodel.GroupWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/GroupWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="162" x="1324" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.mastalerek.mytamer.service.MeasurementService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/MeasurementService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="225" width="400" x="884" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" 
+    name="com.mastalerek.mytamer.functions.StudentMeasurementToStudentMeasurementWebModelFunction" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/StudentMeasurementToStudentMeasurementWebModelFunction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="391" x="2336" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="8" language="java" name="com.mastalerek.mytamer.repository.StudentMeasurementRepository" 
+    project="myTamer" file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/StudentMeasurementRepository.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="487" x="1555" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="9" language="java" name="com.mastalerek.mytamer.webapi.StudentWebApi" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/StudentWebApi.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="325" x="1555" y="823"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="10" language="java" name="com.mastalerek.mytamer.webapi.ExerciseWebApi" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/ExerciseWebApi.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="328" x="6283" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="11" language="java" name="com.mastalerek.mytamer.webapi.impl.GroupWebApiImpl" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/impl/GroupWebApiImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="274" x="1404" y="1947"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.mastalerek.mytamer.service.TrainingPlanService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/TrainingPlanService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="371" x="3893" y="823"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="13" language="java" name="com.mastalerek.mytamer.webapi.RankWebApi" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/RankWebApi.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="163" x="3378" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="14" language="java" name="com.mastalerek.mytamer.webmodel.MeasurementWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/MeasurementWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="163" x="595" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.mastalerek.mytamer.service.BmiService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/BmiService.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="199" x="2067" y="1178"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.mastalerek.mytamer.webmodel.StudentMeasurementWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/StudentMeasurementWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="405" width="207" x="635" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="17" language="java" name="com.mastalerek.mytamer.repository.StudentRepository" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/StudentRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="81" width="205" x="4351" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="18" language="java" name="com.mastalerek.mytamer.service.DateService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/DateService.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="191" x="2103" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.mastalerek.mytamer.entity.Contraindication" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Contraindication.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="225" width="146" x="6674" y="5332"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.mastalerek.mytamer.webapi.impl.MeasurementWebApiImpl" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/impl/MeasurementWebApiImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="340" x="614" y="2621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="21" language="java" name="com.mastalerek.mytamer.webapi.ExerciseUnitWebApi" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/ExerciseUnitWebApi.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="219" x="5681" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="22" language="java" name="com.mastalerek.mytamer.entity.Group" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Group.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="181" x="3504" y="5332"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="com.mastalerek.mytamer.service.StudentService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/StudentService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="295" x="2820" y="540"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="24" language="java" name="com.mastalerek.mytamer.webapi.DisciplineWebApi" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/DisciplineWebApi.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="261" width="259" x="7285" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="25" language="java" name="com.mastalerek.mytamer.webmodel.ExerciseWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/ExerciseWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="495" width="285" x="6129" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="com.mastalerek.mytamer.entity.Student" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Student.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="711" width="321" x="3990" y="4581"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="com.mastalerek.mytamer.service.GroupService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/GroupService.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="274" x="1467" y="2302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="com.mastalerek.mytamer.webmodel.TrainingPlanBasicWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/TrainingPlanBasicWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="186" x="4298" y="1947"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="com.mastalerek.mytamer.webmodel.ExerciseSetBasicWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/ExerciseSetBasicWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="185" x="4756" y="2302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="com.mastalerek.mytamer.entity.MealSet" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/MealSet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="145" x="3417" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="com.mastalerek.mytamer.entity.StudentGoalInitialState" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/StudentGoalInitialState.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="315" width="167" x="3906" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="32" language="java" name="com.mastalerek.mytamer.repository.DisciplineRepository" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/DisciplineRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="63" width="163" x="6792" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="33" language="java" name="com.mastalerek.mytamer.service.ExerciseUnitService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/ExerciseUnitService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="219" x="5940" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="com.mastalerek.mytamer.functions.DisciplineToDisciplineWebModelFunction" 
+    project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/DisciplineToDisciplineWebModelFunction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="261" x="7016" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="35" language="java" name="com.mastalerek.mytamer.repository.GroupRepository" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/GroupRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="81" width="191" x="2046" y="2621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="36" language="java" name="com.mastalerek.mytamer.entity.Rank" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Rank.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="145" x="2294" y="5332"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="37" language="java" name="com.mastalerek.mytamer.webapi.UserWebApi" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/UserWebApi.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="238" x="2086" y="2302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="38" language="java" name="com.mastalerek.mytamer.entity.Measurement" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Measurement.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="145" x="1328" y="4581"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="com.mastalerek.mytamer.webapi.impl.UserWebApiImpl" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/impl/UserWebApiImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="238" x="2247" y="1947"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="com.mastalerek.mytamer.entity.Goal" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Goal.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="154" x="3611" y="4581"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="com.mastalerek.mytamer.functions.TrainingPlanToTrainingPlanWebModelFunction" 
+    project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/TrainingPlanToTrainingPlanWebModelFunction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="285" x="3165" y="1178"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="com.mastalerek.mytamer.webapi.impl.StudentWebApiImpl" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/impl/StudentWebApiImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="295" x="1922" y="311"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="com.mastalerek.mytamer.functions.DietToDietBasicWebModelFunction" 
+    project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/DietToDietBasicWebModelFunction.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="234" x="2860" y="1947"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" name="com.mastalerek.mytamer.entity.ExerciseUnit" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/ExerciseUnit.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="145" x="5716" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="45" language="java" name="com.mastalerek.mytamer.repository.StudentExerciseRepository" 
+    project="myTamer" file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/StudentExerciseRepository.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="63" width="179" x="4617" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="46" language="java" name="com.mastalerek.mytamer.entity.StudentTrainingPlan" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/StudentTrainingPlan.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="171" x="4524" y="1947"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="47" language="java" name="com.mastalerek.mytamer.entity.StudentGoal" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/StudentGoal.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="162" x="3176" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="48" language="java" name="com.mastalerek.mytamer.entity.DietMealSets" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/DietMealSets.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="148" x="3229" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="49" language="java" name="com.mastalerek.mytamer.entity.UserSetting" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/UserSetting.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="145" x="3644" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="50" language="java" name="com.mastalerek.mytamer.repository.UserRepository" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/UserRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="269" x="2652" y="2621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="51" language="java" name="com.mastalerek.mytamer.webapi.MeasurementWebApi" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/MeasurementWebApi.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="340" x="253" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="52" language="java" name="com.mastalerek.mytamer.entity.StudentMeasurement" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/StudentMeasurement.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="315" width="202" x="2587" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="53" language="java" name="com.mastalerek.mytamer.functions.GroupEntityToGroupWebModelFunction" 
+    project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/GroupEntityToGroupWebModelFunction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="244" x="1720" y="2621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="54" language="java" name="com.mastalerek.mytamer.repository.MeasurementRepository" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/MeasurementRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="63" width="164" x="1267" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="55" language="java" name="com.mastalerek.mytamer.repository.DietRepository" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/DietRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="63" width="163" x="2984" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="56" language="java" name="com.mastalerek.mytamer.webapi.impl.ExerciseUnitWebApiImpl" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/impl/ExerciseUnitWebApiImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="219" x="5996" y="2621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="57" language="java" 
+    name="com.mastalerek.mytamer.functions.TrainingPlanExerciseSetToExerciseSetBasicWebModelFunction" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/TrainingPlanExerciseSetToExerciseSetBasicWebModelFunction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="385" x="3579" y="1947"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="58" language="java" name="com.mastalerek.mytamer.service.ExerciseService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/ExerciseService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="328" x="5222" y="2621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="59" language="java" name="com.mastalerek.mytamer.functions.MeasurementToMeasurementWebModelFunction" 
+    project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/MeasurementToMeasurementWebModelFunction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="303" x="924" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="60" language="java" name="com.mastalerek.mytamer.webmodel.MeasurementEntryWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/MeasurementEntryWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="192" x="363" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="61" language="java" name="com.mastalerek.mytamer.repository.StudentTrainingPlanRepository" 
+    project="myTamer" file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/StudentTrainingPlanRepository.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="270" x="4383" y="1178"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="62" language="java" name="com.mastalerek.mytamer.entity.StudentExercise" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/StudentExercise.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="156" x="4699" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="63" language="java" name="com.mastalerek.mytamer.webapi.TrainingPlanWebApi" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/TrainingPlanWebApi.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="340" x="3490" y="1178"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="64" language="java" name="com.mastalerek.mytamer.entity.TrainingPlanExerciseSet" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/TrainingPlanExerciseSet.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="188" x="3558" y="2302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="65" language="java" name="com.mastalerek.mytamer.functions.ExerciseSetToExerciseSetBasicWebModel" 
+    project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/ExerciseSetToExerciseSetBasicWebModel.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="267" x="4756" y="1947"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="66" language="java" name="com.mastalerek.mytamer.service.PasswordEncoderGenerator" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/PasswordEncoderGenerator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="186" x="2961" y="2621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="67" language="java" name="com.mastalerek.mytamer.entity.Diet" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Diet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="154" x="3155" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="68" language="java" name="com.mastalerek.mytamer.repository.ExerciseRepository" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/ExerciseRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="81" width="225" x="4456" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="69" language="java" name="com.mastalerek.mytamer.webmodel.ExerciseSetWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/ExerciseSetWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="171" x="3279" y="540"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="70" language="java" name="com.mastalerek.mytamer.webapi.GroupWebApi" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/GroupWebApi.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="274" x="1109" y="2302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="71" language="java" name="com.mastalerek.mytamer.functions.StudentEntityToStudentWebModelFunction" 
+    project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/StudentEntityToStudentWebModelFunction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="264" x="2535" y="823"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="72" language="java" name="com.mastalerek.mytamer.service.DietService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/DietService.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="152" x="669" y="311"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="73" language="java" name="com.mastalerek.mytamer.webapi.impl.RankWebApiImpl" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/impl/RankWebApiImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="169" x="2376" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="74" language="java" name="com.mastalerek.mytamer.repository.TrainingPlanRepository" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/TrainingPlanRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="233" x="4004" y="1947"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <enumeration id="75" language="java" name="com.mastalerek.mytamer.enums.ExerciseUnit" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/enums/ExerciseUnit.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="149" x="1297" y="311"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="76" language="java" name="com.mastalerek.mytamer.entity.ExerciseSet" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/ExerciseSet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="191" x="3839" y="2621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="77" language="java" name="com.mastalerek.mytamer.service.UserService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/UserService.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="238" x="2653" y="2302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="78" language="java" 
+    name="com.mastalerek.mytamer.functions.StudentTrainingPlansToTrainingPlanBasicWebModelFunction" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/StudentTrainingPlansToTrainingPlanBasicWebModelFunction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="368" x="3954" y="1178"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="79" language="java" name="com.mastalerek.mytamer.webapi.ExerciseSetWebApi" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/ExerciseSetWebApi.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="385" x="3279" y="311"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="80" language="java" name="com.mastalerek.mytamer.entity.Setting" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Setting.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="154" x="3644" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="81" language="java" name="com.mastalerek.mytamer.repository.ExerciseUnitRepository" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/ExerciseUnitRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="63" width="163" x="5756" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="82" language="java" name="com.mastalerek.mytamer.service.RankService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/RankService.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="158" x="2136" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="83" language="java" name="com.mastalerek.mytamer.entity.MealNutritional" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/MealNutritional.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="279" width="166" x="3929" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="84" language="java" name="com.mastalerek.mytamer.service.ContraindicationService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/ContraindicationService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="262" x="6674" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="85" language="java" 
+    name="com.mastalerek.mytamer.functions.StudentExercisesToStudentExercisesWebModelFunction" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/StudentExercisesToStudentExercisesWebModelFunction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="347" x="4946" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="86" language="java" name="com.mastalerek.mytamer.webapi.impl.DisciplineWebApiImpl" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/impl/DisciplineWebApiImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="259" x="7348" y="2621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="87" language="java" name="com.mastalerek.mytamer.entity.TrainingPlanDiet" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/TrainingPlanDiet.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="188" x="3288" y="2302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="88" language="java" name="com.mastalerek.mytamer.webmodel.UserWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/UserWebModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="162" x="2134" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="89" language="java" name="com.mastalerek.mytamer.entity.Exercise" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Exercise.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="477" width="265" x="4836" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="90" language="java" name="com.mastalerek.mytamer.entity.Meal" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Meal.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="477" width="245" x="3829" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="91" language="java" name="com.mastalerek.mytamer.entity.Progress" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Progress.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="351" width="156" x="4113" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="92" language="java" name="com.mastalerek.mytamer.entity.User" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/User.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="639" width="262" x="3417" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="93" language="java" name="com.mastalerek.mytamer.webapi.impl.TrainingPlanWebApiImpl" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/impl/TrainingPlanWebApiImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="340" x="3490" y="540"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="94" language="java" 
+    name="com.mastalerek.mytamer.functions.StudentExerciseListToStudentNameWebModelListFunction" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/StudentExerciseListToStudentNameWebModelListFunction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="358" x="5316" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="95" language="java" name="com.mastalerek.mytamer.webmodel.StudentExerciseWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/StudentExerciseWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="178" x="6454" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="96" language="java" name="com.mastalerek.mytamer.repository.ContraindicationRepository" 
+    project="myTamer" file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/ContraindicationRepository.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="252" x="6674" y="4581"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="97" language="java" name="com.mastalerek.mytamer.webmodel.DietBasicWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/DietBasicWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="162" x="1781" y="2302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="98" language="java" name="com.mastalerek.mytamer.webmodel.StudentNameWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/StudentNameWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="162" x="5901" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="99" language="java" name="com.mastalerek.mytamer.entity.TrainingPlan" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/TrainingPlan.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="351" width="281" x="3518" y="2621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="100" language="java" name="com.mastalerek.mytamer.service.DisciplineService" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/service/DisciplineService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="269" x="6976" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="101" language="java" name="com.mastalerek.mytamer.entity.Beacon" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Beacon.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="164" x="4742" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="102" language="java" name="com.mastalerek.mytamer.webmodel.StudentWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/StudentWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="729" width="162" x="1739" y="1178"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="103" language="java" name="com.mastalerek.mytamer.enums.MeasurementType" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/enums/MeasurementType.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="158" x="2306" y="1178"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="104" language="java" name="com.mastalerek.mytamer.webmodel.DisciplineWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/DisciplineWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="297" width="162" x="7319" y="4226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="105" language="java" name="com.mastalerek.mytamer.webmodel.AllMeasurementsWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/AllMeasurementsWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="280" x="279" y="3691"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="106" language="java" name="com.mastalerek.mytamer.repository.RankRepository" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/repository/RankRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="63" width="163" x="2110" y="4581"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="107" language="java" name="com.mastalerek.mytamer.functions.ExerciseListToExerciseWebModelListFunction" 
+    project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/ExerciseListToExerciseWebModelListFunction.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="287" x="5354" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="108" language="java" name="com.mastalerek.mytamer.entity.Nutritional" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/entity/Nutritional.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="145" x="3805" y="4581"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="109" language="java" name="com.mastalerek.mytamer.functions.UserEntityToUserWebModelFunction" 
+    project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/functions/UserEntityToUserWebModelFunction.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="230" x="2382" y="2621"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="110" language="java" name="com.mastalerek.mytamer.webapi.impl.ExerciseWebApiImpl" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webapi/impl/ExerciseWebApiImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="328" x="6283" y="2302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="111">    
+    <bendpoint x="2345" y="3691"/>    
+    <bendpoint x="2105" y="4226"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <association id="112">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="113" name="studentTrainingPlansToTrainingPlanBasicWebModelFunction"/>      
+      <multiplicity id="114" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="78" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="115">    
+    <bendpoint x="5725" y="3691"/>    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="44"/>  
+  </dependency>  
+  <association id="116">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="117" name="dietToDietBasicWebModelFunction"/>      
+      <multiplicity id="118" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="119">    
+    <bendpoint x="3103" y="3691"/>    
+    <bendpoint x="3103" y="4226"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="120" name="student"/>      
+      <multiplicity id="121" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="122">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="123" name="dateService"/>      
+      <multiplicity id="124" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="125">    
+    <bendpoint x="3113" y="823"/>    
+    <bendpoint x="3113" y="1178"/>    
+    <end type="SOURCE" refId="93"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="126">    
+    <bendpoint x="3818" y="2302"/>    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="76"/>  
+  </dependency>  
+  <association id="127">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="128" name="measurementRepository"/>      
+      <multiplicity id="129" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="54" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="130">    
+    <end type="SOURCE" refId="89" navigable="false">      
+      <attribute id="131" name="studentExercises"/>      
+      <multiplicity id="132" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="62" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="133">    
+    <bendpoint x="3860" y="1178"/>    
+    <bendpoint x="3527" y="1947"/>    
+    <bendpoint x="3527" y="2302"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="99"/>  
+  </dependency>  
+  <dependency id="134">    
+    <bendpoint x="3092" y="823"/>    
+    <bendpoint x="3092" y="1178"/>    
+    <bendpoint x="3124" y="1947"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="87"/>  
+  </dependency>  
+  <association id="135">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="136" name="userRepository"/>      
+      <multiplicity id="137" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="50" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="138">    
+    <bendpoint x="3219" y="2621"/>    
+    <bendpoint x="3198" y="3012"/>    
+    <end type="SOURCE" refId="87" navigable="false">      
+      <attribute id="139" name="diet"/>      
+      <multiplicity id="140" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="141">    
+    <bendpoint x="1307" y="4226"/>    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <association id="142">    
+    <bendpoint x="3923" y="1178"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="143" name="trainingPlanRepository"/>      
+      <multiplicity id="144" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="74" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="145">    
+    <end type="SOURCE" refId="107" navigable="false">      
+      <attribute id="146" name="function"/>      
+      <multiplicity id="147" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="94" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="148">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="149" name="meals"/>      
+      <multiplicity id="150" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="90" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="151">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="152" name="studentMeasurements"/>      
+      <multiplicity id="153" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="52" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="154">    
+    <bendpoint x="6985" y="3691"/>    
+    <end type="SOURCE" refId="100"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="155">    
+    <end type="SOURCE" refId="105" navigable="false">      
+      <attribute id="156" name="weights"/>      
+      <multiplicity id="157" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="158">    
+    <bendpoint x="3134" y="1178"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="159">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="104"/>  
+  </dependency>  
+  <association id="160">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="161" name="exercise"/>      
+      <multiplicity id="162" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="89" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="163">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="164" name="student"/>      
+      <multiplicity id="165" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="166">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="167">    
+    <bendpoint x="2354" y="2302"/>    
+    <bendpoint x="2288" y="2621"/>    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="88"/>  
+  </dependency>  
+  <association id="168">    
+    <end type="SOURCE" refId="87" navigable="false">      
+      <attribute id="169" name="trainingPlan"/>      
+      <multiplicity id="170" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="99" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="171">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="105"/>  
+  </dependency>  
+  <association id="172">    
+    <end type="SOURCE" refId="91" navigable="false">      
+      <attribute id="173" name="exercise"/>      
+      <multiplicity id="174" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="89" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="175">    
+    <bendpoint x="1994" y="823"/>    
+    <bendpoint x="1994" y="1178"/>    
+    <bendpoint x="1994" y="1947"/>    
+    <bendpoint x="1994" y="2302"/>    
+    <bendpoint x="1994" y="2621"/>    
+    <bendpoint x="1749" y="3012"/>    
+    <bendpoint x="1503" y="3691"/>    
+    <bendpoint x="1503" y="4226"/>    
+    <bendpoint x="1503" y="4581"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <association id="176">    
+    <bendpoint x="3613" y="4226"/>    
+    <bendpoint x="3613" y="3691"/>    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="177" name="user"/>      
+      <multiplicity id="178" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="179">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="180" name="students"/>      
+      <multiplicity id="181" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="182">    
+    <bendpoint x="893" y="3691"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="183">    
+    <end type="SOURCE" refId="107"/>    
+    <end type="TARGET" refId="89"/>  
+  </dependency>  
+  <dependency id="184">    
+    <bendpoint x="5704" y="3691"/>    
+    <end type="SOURCE" refId="107"/>    
+    <end type="TARGET" refId="44"/>  
+  </dependency>  
+  <dependency id="185">    
+    <end type="SOURCE" refId="94"/>    
+    <end type="TARGET" refId="98"/>  
+  </dependency>  
+  <dependency id="186">    
+    <end type="SOURCE" refId="81"/>    
+    <end type="TARGET" refId="44"/>  
+  </dependency>  
+  <dependency id="187">    
+    <end type="SOURCE" refId="45"/>    
+    <end type="TARGET" refId="62"/>  
+  </dependency>  
+  <dependency id="188">    
+    <bendpoint x="4320" y="4226"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="189">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="190">    
+    <bendpoint x="5323" y="3012"/>    
+    <bendpoint x="5285" y="3691"/>    
+    <bendpoint x="5285" y="4226"/>    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <association id="191">    
+    <end type="SOURCE" refId="100" navigable="false">      
+      <attribute id="192" name="disciplineToDisciplineWebModelFunction"/>      
+      <multiplicity id="193" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="194">    
+    <end type="SOURCE" refId="100" navigable="false">      
+      <attribute id="195" name="disciplineRepository"/>      
+      <multiplicity id="196" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="197">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="198">    
+    <bendpoint x="3071" y="1178"/>    
+    <bendpoint x="3145" y="1947"/>    
+    <bendpoint x="3776" y="2302"/>    
+    <bendpoint x="4060" y="2621"/>    
+    <bendpoint x="4320" y="3012"/>    
+    <bendpoint x="4320" y="3691"/>    
+    <bendpoint x="4341" y="4226"/>    
+    <bendpoint x="4341" y="4581"/>    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="199">    
+    <bendpoint x="2303" y="4581"/>    
+    <end type="SOURCE" refId="82"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <association id="200">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="201" name="groupEntityToGroupWebModelFunction"/>      
+      <multiplicity id="202" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="203">    
+    <bendpoint x="5053" y="1178"/>    
+    <bendpoint x="5053" y="1947"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <dependency id="204">    
+    <bendpoint x="5306" y="4226"/>    
+    <end type="SOURCE" refId="94"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <association id="205">    
+    <end type="SOURCE" refId="64" navigable="false">      
+      <attribute id="206" name="trainingPlan"/>      
+      <multiplicity id="207" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="99" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="208">    
+    <bendpoint x="3881" y="1178"/>    
+    <bendpoint x="3548" y="1947"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="64"/>  
+  </dependency>  
+  <association id="209">    
+    <end type="SOURCE" refId="89" navigable="false">      
+      <attribute id="210" name="discipline"/>      
+      <multiplicity id="211" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="212">    
+    <bendpoint x="7328" y="3691"/>    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="104"/>  
+  </dependency>  
+  <association id="213">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="214" name="diets"/>      
+      <multiplicity id="215" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="97" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="216">    
+    <end type="SOURCE" refId="71" navigable="false">      
+      <attribute id="217" name="bmiService"/>      
+      <multiplicity id="218" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="219">    
+    <end type="SOURCE" refId="64" navigable="false">      
+      <attribute id="220" name="exerciseSet"/>      
+      <multiplicity id="221" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="76" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="222">    
+    <end type="SOURCE" refId="101" navigable="false">      
+      <attribute id="223" name="exerciseId"/>      
+      <multiplicity id="224" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="89" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="225">    
+    <end type="SOURCE" refId="105" navigable="false">      
+      <attribute id="226" name="heights"/>      
+      <multiplicity id="227" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="228">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="229" name="student"/>      
+      <multiplicity id="230" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="231">    
+    <end type="SOURCE" refId="83" navigable="false">      
+      <attribute id="232" name="nutritional"/>      
+      <multiplicity id="233" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="108" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="234">    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="103"/>  
+  </dependency>  
+  <dependency id="235">    
+    <bendpoint x="4704" y="823"/>    
+    <bendpoint x="4704" y="1178"/>    
+    <end type="SOURCE" refId="93"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <association id="236">    
+    <end type="SOURCE" refId="47" navigable="false">      
+      <attribute id="237" name="student"/>      
+      <multiplicity id="238" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="239">    
+    <bendpoint x="1135" y="4226"/>    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <association id="240">    
+    <end type="SOURCE" refId="90" navigable="false">      
+      <attribute id="241" name="user"/>      
+      <multiplicity id="242" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="243">    
+    <bendpoint x="4352" y="1178"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="244">    
+    <bendpoint x="1461" y="3691"/>    
+    <bendpoint x="1461" y="4226"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <association id="245">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="246" name="studentRepository"/>      
+      <multiplicity id="247" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="248">    
+    <end type="SOURCE" refId="109"/>    
+    <end type="TARGET" refId="92"/>  
+  </dependency>  
+  <dependency id="249">    
+    <end type="SOURCE" refId="78"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="250">    
+    <bendpoint x="3339" y="3691"/>    
+    <bendpoint x="3145" y="4226"/>    
+    <bendpoint x="3145" y="4581"/>    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="251" name="groups"/>      
+      <multiplicity id="252" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="253">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="254" name="userSettings"/>      
+      <multiplicity id="255" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="49" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="256">    
+    <bendpoint x="4306" y="2302"/>    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="76"/>  
+  </dependency>  
+  <dependency id="257">    
+    <bendpoint x="3198" y="2621"/>    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="92"/>  
+  </dependency>  
+  <dependency id="258">    
+    <bendpoint x="2808" y="1178"/>    
+    <bendpoint x="2808" y="1947"/>    
+    <bendpoint x="3088" y="2302"/>    
+    <bendpoint x="3487" y="2621"/>    
+    <bendpoint x="4299" y="3012"/>    
+    <bendpoint x="4289" y="3691"/>    
+    <bendpoint x="4278" y="4226"/>    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="259">    
+    <bendpoint x="623" y="3012"/>    
+    <bendpoint x="604" y="3691"/>    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <association id="260">    
+    <end type="SOURCE" refId="89" navigable="false">      
+      <attribute id="261" name="secondUnit"/>      
+      <multiplicity id="262" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="263">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="264" name="trainingPlanToTrainingPlanWebModelFunction"/>      
+      <multiplicity id="265" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="41" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="266">    
+    <end type="SOURCE" refId="106"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <association id="267">    
+    <end type="SOURCE" refId="48" navigable="false">      
+      <attribute id="268" name="diet"/>      
+      <multiplicity id="269" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="270">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="102"/>  
+  </dependency>  
+  <dependency id="271">    
+    <bendpoint x="3506" y="1947"/>    
+    <bendpoint x="3506" y="2302"/>    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="99"/>  
+  </dependency>  
+  <association id="272">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="273" name="trainingPlans"/>      
+      <multiplicity id="274" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="99" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="275">    
+    <end type="SOURCE" refId="94"/>    
+    <end type="TARGET" refId="62"/>  
+  </dependency>  
+  <dependency id="276">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="64"/>  
+  </dependency>  
+  <dependency id="277">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="92"/>  
+  </dependency>  
+  <association id="278">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="279" name="studentContraindications"/>      
+      <multiplicity id="280" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="281">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="37"/>  
+  </realization>  
+  <dependency id="282">    
+    <bendpoint x="6641" y="2621"/>    
+    <bendpoint x="6641" y="3012"/>    
+    <end type="SOURCE" refId="110"/>    
+    <end type="TARGET" refId="95"/>  
+  </dependency>  
+  <association id="283">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="284" name="mealset"/>      
+      <multiplicity id="285" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="286">    
+    <bendpoint x="5074" y="823"/>    
+    <bendpoint x="5074" y="1178"/>    
+    <bendpoint x="5074" y="1947"/>    
+    <bendpoint x="4971" y="2302"/>    
+    <bendpoint x="4677" y="2621"/>    
+    <bendpoint x="4383" y="3012"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="287" name="studentRepository"/>      
+      <multiplicity id="288" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="289">    
+    <bendpoint x="3571" y="4581"/>    
+    <bendpoint x="3571" y="4226"/>    
+    <bendpoint x="3386" y="3691"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="290" name="user"/>      
+      <multiplicity id="291" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="292">    
+    <end type="SOURCE" refId="47" navigable="false">      
+      <attribute id="293" name="goal"/>      
+      <multiplicity id="294" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="40" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="295">    
+    <bendpoint x="6683" y="540"/>    
+    <bendpoint x="6683" y="823"/>    
+    <bendpoint x="6683" y="1178"/>    
+    <bendpoint x="6683" y="1947"/>    
+    <bendpoint x="6683" y="2302"/>    
+    <bendpoint x="6683" y="2621"/>    
+    <bendpoint x="6683" y="3012"/>    
+    <bendpoint x="6683" y="3691"/>    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="296" name="contraindicationService"/>      
+      <multiplicity id="297" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="84" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="298">    
+    <end type="SOURCE" refId="71" navigable="false">      
+      <attribute id="299" name="studentService"/>      
+      <multiplicity id="300" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="301">    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="302">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="89"/>  
+  </dependency>  
+  <dependency id="303">    
+    <bendpoint x="7307" y="3691"/>    
+    <end type="SOURCE" refId="100"/>    
+    <end type="TARGET" refId="104"/>  
+  </dependency>  
+  <association id="304">    
+    <end type="SOURCE" refId="48" navigable="false">      
+      <attribute id="305" name="mealSet"/>      
+      <multiplicity id="306" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="307">    
+    <end type="SOURCE" refId="77" navigable="false">      
+      <attribute id="308" name="passwordEncoder"/>      
+      <multiplicity id="309" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="310">    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="67"/>  
+  </dependency>  
+  <dependency id="311">    
+    <bendpoint x="6231" y="3012"/>    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="95"/>  
+  </dependency>  
+  <association id="312">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="313" name="exerciseSetToExerciseSetBasicWebModelFunction"/>      
+      <multiplicity id="314" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="57" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="315">    
+    <bendpoint x="3902" y="1178"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="316" name="trainingPlanExerciseSetToExerciseSetBasicWebModelFunction"/>      
+      <multiplicity id="317" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="57" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="318">    
+    <end type="SOURCE" refId="78" navigable="false">      
+      <attribute id="319" name="trainingPlanRepository"/>      
+      <multiplicity id="320" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="74" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="321">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="322" name="student"/>      
+      <multiplicity id="323" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="324">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="325" name="exercise"/>      
+      <multiplicity id="326" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="89" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="327">    
+    <bendpoint x="4125" y="3691"/>    
+    <bendpoint x="4125" y="4226"/>    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="328" name="student"/>      
+      <multiplicity id="329" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="330">    
+    <bendpoint x="4425" y="3012"/>    
+    <bendpoint x="4586" y="3691"/>    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="62"/>  
+  </dependency>  
+  <association id="331">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="332" name="studentGoals"/>      
+      <multiplicity id="333" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="47" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="334">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <dependency id="335">    
+    <bendpoint x="222" y="3012"/>    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="105"/>  
+  </dependency>  
+  <association id="336">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="337" name="exercises"/>      
+      <multiplicity id="338" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="89" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="339">    
+    <bendpoint x="6210" y="3012"/>    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <association id="340">    
+    <end type="SOURCE" refId="99" navigable="false">      
+      <attribute id="341" name="trainingPlanDiets"/>      
+      <multiplicity id="342" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="87" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="343">    
+    <bendpoint x="2072" y="3691"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <dependency id="344">    
+    <bendpoint x="589" y="3691"/>    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="345">    
+    <end type="SOURCE" refId="96"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="346">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="105"/>  
+  </dependency>  
+  <association id="347">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="348" name="mealSets"/>      
+      <multiplicity id="349" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="350">    
+    <bendpoint x="872" y="3691"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="60"/>  
+  </dependency>  
+  <association id="351">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="352" name="trainingPlanService"/>      
+      <multiplicity id="353" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="354">    
+    <bendpoint x="644" y="3012"/>    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="355">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <association id="356">    
+    <bendpoint x="4404" y="3012"/>    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="357" name="studentRepository"/>      
+      <multiplicity id="358" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="359">    
+    <bendpoint x="3067" y="2302"/>    
+    <bendpoint x="3177" y="2621"/>    
+    <bendpoint x="3177" y="3012"/>    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="67"/>  
+  </dependency>  
+  <dependency id="360">    
+    <end type="SOURCE" refId="79"/>    
+    <end type="TARGET" refId="69"/>  
+  </dependency>  
+  <realization id="361">    
+    <bendpoint x="3499" y="823"/>    
+    <end type="SOURCE" refId="93"/>    
+    <end type="TARGET" refId="63"/>  
+  </realization>  
+  <association id="362">    
+    <end type="SOURCE" refId="89" navigable="false">      
+      <attribute id="363" name="user"/>      
+      <multiplicity id="364" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="365">    
+    <bendpoint x="3124" y="4226"/>    
+    <bendpoint x="3124" y="3691"/>    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="366" name="studentScores"/>      
+      <multiplicity id="367" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="368">    
+    <bendpoint x="4267" y="1947"/>    
+    <bendpoint x="4267" y="2302"/>    
+    <end type="SOURCE" refId="78"/>    
+    <end type="TARGET" refId="99"/>  
+  </dependency>  
+  <dependency id="369">    
+    <end type="SOURCE" refId="78"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="370">    
+    <bendpoint x="2596" y="3691"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <association id="371">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="372" name="groupService"/>      
+      <multiplicity id="373" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="374">    
+    <end type="SOURCE" refId="93" navigable="false">      
+      <attribute id="375" name="trainingPlanService"/>      
+      <multiplicity id="376" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="377">    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="97"/>  
+  </dependency>  
+  <dependency id="378">    
+    <bendpoint x="4711" y="3012"/>    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="89"/>  
+  </dependency>  
+  <association id="379">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="380" name="diets"/>      
+      <multiplicity id="381" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="382">    
+    <end type="SOURCE" refId="50"/>    
+    <end type="TARGET" refId="92"/>  
+  </dependency>  
+  <dependency id="383">    
+    <bendpoint x="6662" y="823"/>    
+    <bendpoint x="6662" y="1178"/>    
+    <bendpoint x="6662" y="1947"/>    
+    <bendpoint x="6662" y="2302"/>    
+    <bendpoint x="6662" y="2621"/>    
+    <bendpoint x="6662" y="3012"/>    
+    <bendpoint x="6662" y="3691"/>    
+    <bendpoint x="6643" y="4226"/>    
+    <bendpoint x="6643" y="4581"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <association id="384">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="385" name="studentEntityToStudentWebModelFunction"/>      
+      <multiplicity id="386" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="71" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="387">    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="388" name="rankService"/>      
+      <multiplicity id="389" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="82" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="390">    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="391" name="user"/>      
+      <multiplicity id="392" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="393">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="394" name="measurement"/>      
+      <multiplicity id="395" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="396">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="13"/>  
+  </realization>  
+  <dependency id="397">    
+    <bendpoint x="1931" y="540"/>    
+    <bendpoint x="1931" y="823"/>    
+    <bendpoint x="1931" y="1178"/>    
+    <bendpoint x="1931" y="1947"/>    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="97"/>  
+  </dependency>  
+  <association id="398">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="399" name="exerciseSets"/>      
+      <multiplicity id="400" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="401">    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <association id="402">    
+    <end type="SOURCE" refId="99" navigable="false">      
+      <attribute id="403" name="user"/>      
+      <multiplicity id="404" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="405">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="406">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="407" name="measurementService"/>      
+      <multiplicity id="408" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="409">    
+    <bendpoint x="4683" y="823"/>    
+    <bendpoint x="4725" y="1178"/>    
+    <bendpoint x="4725" y="1947"/>    
+    <bendpoint x="4596" y="2302"/>    
+    <bendpoint x="4468" y="2621"/>    
+    <bendpoint x="4341" y="3012"/>    
+    <bendpoint x="4299" y="3691"/>    
+    <bendpoint x="4299" y="4226"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <association id="410">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="411" name="groupRepository"/>      
+      <multiplicity id="412" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="413">    
+    <bendpoint x="2015" y="823"/>    
+    <bendpoint x="2015" y="1178"/>    
+    <bendpoint x="2015" y="1947"/>    
+    <bendpoint x="2015" y="2302"/>    
+    <bendpoint x="2015" y="2621"/>    
+    <bendpoint x="2112" y="3012"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="414" name="dateService"/>      
+      <multiplicity id="415" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="416">    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="87"/>  
+  </dependency>  
+  <association id="417">    
+    <bendpoint x="4167" y="3691"/>    
+    <bendpoint x="4167" y="4226"/>    
+    <end type="SOURCE" refId="91" navigable="false">      
+      <attribute id="418" name="student"/>      
+      <multiplicity id="419" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="420">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="421">    
+    <end type="SOURCE" refId="82" navigable="false">      
+      <attribute id="422" name="rankRepository"/>      
+      <multiplicity id="423" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="106" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="424">    
+    <end type="SOURCE" refId="90" navigable="false">      
+      <attribute id="425" name="mealNutritionals"/>      
+      <multiplicity id="426" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="83" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="427">    
+    <bendpoint x="2829" y="823"/>    
+    <bendpoint x="2829" y="1178"/>    
+    <bendpoint x="2829" y="1947"/>    
+    <bendpoint x="3109" y="2302"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="99"/>  
+  </dependency>  
+  <association id="428">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="429" name="rank"/>      
+      <multiplicity id="430" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="36" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="431">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="95"/>  
+  </dependency>  
+  <association id="432">    
+    <bendpoint x="4188" y="4226"/>    
+    <bendpoint x="4188" y="3691"/>    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="433" name="studentProgresses"/>      
+      <multiplicity id="434" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="91" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="435">    
+    <end type="SOURCE" refId="99" navigable="false">      
+      <attribute id="436" name="exerciseSets"/>      
+      <multiplicity id="437" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="64" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="438">    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="439">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="440" name="exerciseRepository"/>      
+      <multiplicity id="441" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="68" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="442">    
+    <end type="SOURCE" refId="56" navigable="false">      
+      <attribute id="443" name="exerciseUnitService"/>      
+      <multiplicity id="444" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="33" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="445">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <association id="446">    
+    <bendpoint x="4104" y="3691"/>    
+    <bendpoint x="3898" y="4226"/>    
+    <end type="SOURCE" refId="91" navigable="false">      
+      <attribute id="447" name="goal"/>      
+      <multiplicity id="448" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="40" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="449">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="450">    
+    <bendpoint x="6189" y="3012"/>    
+    <bendpoint x="6077" y="3691"/>    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="44"/>  
+  </dependency>  
+  <dependency id="451">    
+    <bendpoint x="1413" y="2302"/>    
+    <bendpoint x="1413" y="2621"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="452">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="453" name="exercise"/>      
+      <multiplicity id="454" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="89" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="455">    
+    <bendpoint x="2850" y="823"/>    
+    <bendpoint x="2850" y="1178"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="456" name="dietToDietBasicWebModelFunction"/>      
+      <multiplicity id="457" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="458">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <realization id="459">    
+    <bendpoint x="6292" y="2621"/>    
+    <end type="SOURCE" refId="110"/>    
+    <end type="TARGET" refId="10"/>  
+  </realization>  
+  <association id="460">    
+    <end type="SOURCE" refId="110" navigable="false">      
+      <attribute id="461" name="exerciseService"/>      
+      <multiplicity id="462" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="58" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="463">    
+    <bendpoint x="6956" y="4581"/>    
+    <end type="SOURCE" refId="84"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <realization id="464">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="70"/>  
+  </realization>  
+  <association id="465">    
+    <end type="SOURCE" refId="77" navigable="false">      
+      <attribute id="466" name="userEntityToUserWebModelFunction"/>      
+      <multiplicity id="467" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="109" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="468">    
+    <bendpoint x="1524" y="3691"/>    
+    <bendpoint x="2345" y="4226"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="469">    
+    <bendpoint x="7574" y="3012"/>    
+    <bendpoint x="7574" y="3691"/>    
+    <end type="SOURCE" refId="86"/>    
+    <end type="TARGET" refId="104"/>  
+  </dependency>  
+  <association id="470">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="471" name="exerciseSets"/>      
+      <multiplicity id="472" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="76" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="473">    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="474" name="userService"/>      
+      <multiplicity id="475" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="77" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="476">    
+    <end type="SOURCE" refId="77" navigable="false">      
+      <attribute id="477" name="userRepository"/>      
+      <multiplicity id="478" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="50" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="479">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="480" name="studentTrainingPlanRepository"/>      
+      <multiplicity id="481" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="61" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="482">    
+    <bendpoint x="1226" y="2621"/>    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="483">    
+    <bendpoint x="1516" y="2621"/>    
+    <bendpoint x="1516" y="3012"/>    
+    <bendpoint x="1482" y="3691"/>    
+    <bendpoint x="1482" y="4226"/>    
+    <bendpoint x="1524" y="4581"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <association id="484">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="485" name="group"/>      
+      <multiplicity id="486" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="487">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="488" name="studentNames"/>      
+      <multiplicity id="489" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="98" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="490">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="491" name="studentExercisesToStudentExercisesWebModelFunction"/>      
+      <multiplicity id="492" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="85" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="493">    
+    <end type="SOURCE" refId="85"/>    
+    <end type="TARGET" refId="89"/>  
+  </dependency>  
+  <association id="494">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="495" name="measurementToMeasurementWebModelFunction"/>      
+      <multiplicity id="496" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="497">    
+    <bendpoint x="2091" y="3012"/>    
+    <bendpoint x="2324" y="3691"/>    
+    <bendpoint x="2324" y="4226"/>    
+    <bendpoint x="2324" y="4581"/>    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="498">    
+    <bendpoint x="1952" y="823"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="102"/>  
+  </dependency>  
+  <dependency id="499">    
+    <bendpoint x="6098" y="3691"/>    
+    <end type="SOURCE" refId="107"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="500">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="501">    
+    <end type="SOURCE" refId="84" navigable="false">      
+      <attribute id="502" name="contraindicationRepository"/>      
+      <multiplicity id="503" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="96" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="504">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="505" name="exerciseUnitRepository"/>      
+      <multiplicity id="506" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="81" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="507">    
+    <bendpoint x="1748" y="540"/>    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <dependency id="508">    
+    <bendpoint x="2351" y="2621"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="92"/>  
+  </dependency>  
+  <dependency id="509">    
+    <bendpoint x="1708" y="1178"/>    
+    <bendpoint x="1708" y="1947"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="97"/>  
+  </dependency>  
+  <association id="510">    
+    <bendpoint x="2036" y="823"/>    
+    <bendpoint x="2036" y="1178"/>    
+    <bendpoint x="2057" y="1947"/>    
+    <bendpoint x="2055" y="2302"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="511" name="groupRepository"/>      
+      <multiplicity id="512" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="513">    
+    <bendpoint x="2267" y="2621"/>    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="88"/>  
+  </dependency>  
+  <association id="514">    
+    <end type="SOURCE" refId="89" navigable="false">      
+      <attribute id="515" name="unit"/>      
+      <multiplicity id="516" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="517">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="518" name="studentExercises"/>      
+      <multiplicity id="519" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="62" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="520">    
+    <end type="SOURCE" refId="85"/>    
+    <end type="TARGET" refId="95"/>  
+  </dependency>  
+  <dependency id="521">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="522">    
+    <bendpoint x="2798" y="3691"/>    
+    <bendpoint x="2840" y="4226"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <association id="523">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="524" name="exerciseListToExerciseWebModelListFunction"/>      
+      <multiplicity id="525" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="107" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="526">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="527" name="meal"/>      
+      <multiplicity id="528" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="90" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="529">    
+    <bendpoint x="1910" y="540"/>    
+    <bendpoint x="1910" y="823"/>    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="102"/>  
+  </dependency>  
+  <association id="530">    
+    <bendpoint x="4362" y="3012"/>    
+    <end type="SOURCE" refId="76" navigable="false">      
+      <attribute id="531" name="exercises"/>      
+      <multiplicity id="532" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="89" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="533">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="534" name="studentMeasurementRepository"/>      
+      <multiplicity id="535" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="536">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="51"/>  
+  </realization>  
+  <realization id="537">    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <dependency id="538">    
+    <bendpoint x="2103" y="3012"/>    
+    <bendpoint x="2575" y="3691"/>    
+    <bendpoint x="2556" y="4226"/>    
+    <bendpoint x="2556" y="4581"/>    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="539">    
+    <bendpoint x="4683" y="1178"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="540">    
+    <bendpoint x="2515" y="1178"/>    
+    <bendpoint x="2515" y="1947"/>    
+    <bendpoint x="2423" y="2302"/>    
+    <bendpoint x="2330" y="2621"/>    
+    <bendpoint x="2757" y="3012"/>    
+    <bendpoint x="2819" y="3691"/>    
+    <bendpoint x="2819" y="4226"/>    
+    <bendpoint x="2819" y="4581"/>    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <dependency id="541">    
+    <bendpoint x="1434" y="2621"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="542">    
+    <end type="SOURCE" refId="67" navigable="false">      
+      <attribute id="543" name="user"/>      
+      <multiplicity id="544" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="545">    
+    <bendpoint x="5131" y="3691"/>    
+    <end type="SOURCE" refId="85"/>    
+    <end type="TARGET" refId="62"/>  
+  </dependency>  
+  <dependency id="546">    
+    <bendpoint x="3797" y="2302"/>    
+    <end type="SOURCE" refId="74"/>    
+    <end type="TARGET" refId="99"/>  
+  </dependency>  
+  <association id="547">    
+    <end type="SOURCE" refId="76" navigable="false">      
+      <attribute id="548" name="user"/>      
+      <multiplicity id="549" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="550">    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="102"/>  
+  </dependency>  
+  <dependency id="551">    
+    <bendpoint x="6252" y="2621"/>    
+    <bendpoint x="6252" y="3012"/>    
+    <end type="SOURCE" refId="110"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <dependency id="552">    
+    <bendpoint x="5949" y="3691"/>    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="44"/>  
+  </dependency>  
+  <association id="553">    
+    <bendpoint x="3592" y="3691"/>    
+    <bendpoint x="3592" y="4226"/>    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="554" name="student"/>      
+      <multiplicity id="555" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="556">    
+    <bendpoint x="1973" y="823"/>    
+    <bendpoint x="1973" y="1178"/>    
+    <bendpoint x="1973" y="1947"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="97"/>  
+  </dependency>  
+  <dependency id="557">    
+    <end type="SOURCE" refId="107"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <dependency id="558">    
+    <end type="SOURCE" refId="109"/>    
+    <end type="TARGET" refId="88"/>  
+  </dependency>  
+  <association id="559">    
+    <bendpoint x="4146" y="4226"/>    
+    <bendpoint x="4146" y="3691"/>    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="560" name="studentGoalInitialStates"/>      
+      <multiplicity id="561" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="562">    
+    <end type="SOURCE" refId="86"/>    
+    <end type="TARGET" refId="24"/>  
+  </realization>  
+  <association id="563">    
+    <end type="SOURCE" refId="86" navigable="false">      
+      <attribute id="564" name="disciplineService"/>      
+      <multiplicity id="565" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="100" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="566">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="567" name="user"/>      
+      <multiplicity id="568" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="569">    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="570" name="setting"/>      
+      <multiplicity id="571" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="572">    
+    <bendpoint x="2309" y="2621"/>    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="88"/>  
+  </dependency>  
+  <association id="573">    
+    <bendpoint x="2494" y="1178"/>    
+    <bendpoint x="2036" y="1947"/>    
+    <bendpoint x="1973" y="2302"/>    
+    <bendpoint x="1689" y="2621"/>    
+    <end type="SOURCE" refId="71" navigable="false">      
+      <attribute id="574" name="measurementService"/>      
+      <multiplicity id="575" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="576">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="577" name="studentService"/>      
+      <multiplicity id="578" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

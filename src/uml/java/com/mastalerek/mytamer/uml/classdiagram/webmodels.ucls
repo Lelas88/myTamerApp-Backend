@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.mastalerek.mytamer.webmodel.StudentMeasurementWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/StudentMeasurementWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="405" width="207" x="412" y="182"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.mastalerek.mytamer.webmodel.TrainingPlanBasicWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/TrainingPlanBasicWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="186" x="659" y="182"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.mastalerek.mytamer.webmodel.TrainingPlanWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/TrainingPlanWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="315" width="300" x="1491" y="182"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.mastalerek.mytamer.webmodel.UserWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/UserWebModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="162" x="885" y="182"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.mastalerek.mytamer.webmodel.ExerciseSetBasicWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/ExerciseSetBasicWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="185" x="1379" y="951"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.mastalerek.mytamer.webmodel.GroupWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/GroupWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="162" x="1087" y="182"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.mastalerek.mytamer.webmodel.StudentWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/StudentWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="729" width="162" x="1289" y="182"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.mastalerek.mytamer.webmodel.MeasurementEntryWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/MeasurementEntryWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="192" x="2665" y="951"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.mastalerek.mytamer.webmodel.StudentExerciseWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/StudentExerciseWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="178" x="1831" y="182"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.mastalerek.mytamer.webmodel.DisciplineWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/DisciplineWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="297" width="162" x="2049" y="182"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.mastalerek.mytamer.webmodel.AllMeasurementsWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/AllMeasurementsWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="280" x="2665" y="182"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.mastalerek.mytamer.webmodel.ExerciseSetWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/ExerciseSetWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="171" x="2251" y="182"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.mastalerek.mytamer.webmodel.MeasurementWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/MeasurementWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="163" x="2462" y="182"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.mastalerek.mytamer.webmodel.ExerciseWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/ExerciseWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="495" width="285" x="2985" y="182"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.mastalerek.mytamer.webmodel.DietBasicWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/DietBasicWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="162" x="1604" y="951"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.mastalerek.mytamer.webmodel.StudentNameWebModel" project="myTamer" 
+    file="/myTamer/src/main/java/com/mastalerek/mytamer/webmodel/StudentNameWebModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="162" x="2985" y="951"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="17">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="18" name="weights"/>      
+      <multiplicity id="19" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="20">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="21" name="exerciseSets"/>      
+      <multiplicity id="22" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="23">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="24" name="heights"/>      
+      <multiplicity id="25" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="26">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="27" name="diets"/>      
+      <multiplicity id="28" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="29">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="30" name="studentNames"/>      
+      <multiplicity id="31" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

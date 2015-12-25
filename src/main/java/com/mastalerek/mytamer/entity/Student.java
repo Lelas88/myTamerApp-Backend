@@ -35,6 +35,7 @@ public class Student {
 	private List<Progress> studentProgresses;
 	private List<Contraindication> studentContraindications;
 	private User user;
+	private List<Timesheet> timesheets;
 
 	@Id
 	@GeneratedValue
@@ -177,6 +178,15 @@ public class Student {
 
 	public void setUser(User user) {
 		this.user = user;
+	}
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "student")
+	public List<Timesheet> getTimesheets() {
+		return timesheets;
+	}
+
+	public void setTimesheets(List<Timesheet> timesheets) {
+		this.timesheets = timesheets;
 	}
 
 }
