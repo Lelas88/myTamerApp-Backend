@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.google.common.base.Function;
 import com.mastalerek.mytamer.entity.StudentTrainingPlan;
+import com.mastalerek.mytamer.entity.TrainingPlan;
 import com.mastalerek.mytamer.repository.TrainingPlanRepository;
 import com.mastalerek.mytamer.webmodel.TrainingPlanBasicWebModel;
 
@@ -18,8 +19,9 @@ public class StudentTrainingPlansToTrainingPlanBasicWebModelFunction implements 
 	@Override
 	public TrainingPlanBasicWebModel apply(StudentTrainingPlan input) {
 		TrainingPlanBasicWebModel output = new TrainingPlanBasicWebModel();
-		output.setId(input.getTrainingPlan().getId());
-		output.setName(trainingPlanRepository.findOne(input.getTrainingPlan().getId()).getName());
+		TrainingPlan trainingPlan = trainingPlanRepository.findOne(input.getTrainingPlanId());
+		output.setId(trainingPlan.getId());
+		output.setName(trainingPlan.getName());
 		return output;
 	}
 
