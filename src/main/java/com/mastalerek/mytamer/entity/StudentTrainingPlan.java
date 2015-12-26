@@ -38,7 +38,7 @@ public class StudentTrainingPlan {
 		return trainingPlanId;
 	}
 
-	public void setTrainingPlan(Integer trainingPlanId) {
+	public void setTrainingPlanId(Integer trainingPlanId) {
 		this.trainingPlanId = trainingPlanId;
 	}
 
