@@ -1,9 +1,12 @@
 package com.mastalerek.mytamer.functions;
 
+import org.springframework.stereotype.Service;
+
 import com.google.common.base.Function;
 import com.mastalerek.mytamer.entity.Nutritional;
 import com.mastalerek.mytamer.webmodel.NutritionalWebModel;
 
+@Service
 public class NutritionalToNutritionalWebModelFunction implements Function<Nutritional, NutritionalWebModel> {
 
 	@Override
