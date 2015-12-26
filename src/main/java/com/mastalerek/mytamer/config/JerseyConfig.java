@@ -10,6 +10,7 @@ import com.mastalerek.mytamer.webapi.impl.ExerciseSetWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.ExerciseUnitWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.ExerciseWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.GroupWebApiImpl;
+import com.mastalerek.mytamer.webapi.impl.MealWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.MeasurementWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.RankWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.StudentWebApiImpl;
@@ -34,5 +35,6 @@ public class JerseyConfig extends ResourceConfig {
 		register(TrainingPlanWebApiImpl.class);
 		register(TimesheetWebApiImpl.class);
 		register(ExerciseSetWebApiImpl.class);
+		register(MealWebApiImpl.class);
 	}
 }
