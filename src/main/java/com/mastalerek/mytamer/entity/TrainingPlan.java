@@ -53,7 +53,7 @@ public class TrainingPlan {
 		this.description = description;
 	}
 
-	@OneToMany(fetch = FetchType.EAGER, mappedBy = "exerciseSet")
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "trainingPlan")
 	public List<TrainingPlanExerciseSet> getExerciseSets() {
 		return exerciseSets;
 	}
@@ -62,7 +62,7 @@ public class TrainingPlan {
 		this.exerciseSets = exerciseSets;
 	}
 
-	@OneToMany(fetch = FetchType.EAGER, mappedBy = "diet")
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "trainingPlan")
 	public List<TrainingPlanDiet> getTrainingPlanDiets() {
 		return trainingPlanDiets;
 	}
