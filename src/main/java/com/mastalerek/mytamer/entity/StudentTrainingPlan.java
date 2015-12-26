@@ -10,8 +10,8 @@ import javax.persistence.Table;
 @Table(name = "student_training_plans")
 public class StudentTrainingPlan {
 	private Integer id;
-	private Integer studentId;
-	private Integer trainingPlanId;
+	private Student student;
+	private TrainingPlan trainingPlan;
 
 	@Id
 	@GeneratedValue
@@ -25,21 +25,21 @@ public class StudentTrainingPlan {
 	}
 
 	@Column(name = "student_id", nullable = false)
-	public Integer getStudentId() {
-		return studentId;
+	public Student getStudent() {
+		return student;
 	}
 
-	public void setStudentId(Integer studentId) {
-		this.studentId = studentId;
+	public void setStudent(Student student) {
+		this.student = student;
 	}
 
 	@Column(name = "training_plan_id", nullable = false)
-	public Integer getTrainingPlanId() {
-		return trainingPlanId;
+	public TrainingPlan getTrainingPlan() {
+		return trainingPlan;
 	}
 
-	public void setTrainingPlanId(Integer trainingPlanId) {
-		this.trainingPlanId = trainingPlanId;
+	public void setTrainingPlan(TrainingPlan trainingPlan) {
+		this.trainingPlan = trainingPlan;
 	}
 
 }

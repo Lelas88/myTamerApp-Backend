@@ -8,6 +8,7 @@ public class TrainingPlanWebModel {
 	private String description;
 	private List<ExerciseSetBasicWebModel> exerciseSets;
 	private List<DietBasicWebModel> diets;
+	private List<StudentNameWebModel> students;
 
 	public Integer getId() {
 		return id;
@@ -47,6 +48,14 @@ public class TrainingPlanWebModel {
 
 	public void setDiets(List<DietBasicWebModel> diets) {
 		this.diets = diets;
+	}
+
+	public List<StudentNameWebModel> getStudents() {
+		return students;
+	}
+
+	public void setStudents(List<StudentNameWebModel> students) {
+		this.students = students;
 	}
 
 }

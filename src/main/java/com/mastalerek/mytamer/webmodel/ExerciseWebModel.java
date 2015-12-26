@@ -4,11 +4,11 @@ import java.util.List;
 
 public class ExerciseWebModel {
 	private Integer id;
-	private Integer disciplineId;
-	private Integer unitId;
-	private Integer secondUnitId;
+	private String disciplineName;
+	private String unitName;
+	private String secondUnitName;
 	private String name;
-	private String descritpion;
+	private String description;
 	private String iconName;
 	private List<StudentNameWebModel> studentNames;
 
@@ -20,28 +20,28 @@ public class ExerciseWebModel {
 		this.id = id;
 	}
 
-	public Integer getDisciplineId() {
-		return disciplineId;
+	public String getDisciplineName() {
+		return disciplineName;
 	}
 
-	public void setDisciplineId(Integer disciplineId) {
-		this.disciplineId = disciplineId;
+	public void setDisciplineName(String disciplineName) {
+		this.disciplineName = disciplineName;
 	}
 
-	public Integer getUnitId() {
-		return unitId;
+	public String getUnitName() {
+		return unitName;
 	}
 
-	public void setUnitId(Integer unitId) {
-		this.unitId = unitId;
+	public void setUnitName(String unitName) {
+		this.unitName = unitName;
 	}
 
-	public Integer getSecondUnitId() {
-		return secondUnitId;
+	public String getSecondUnitName() {
+		return secondUnitName;
 	}
 
-	public void setSecondUnitId(Integer secondUnitId) {
-		this.secondUnitId = secondUnitId;
+	public void setSecondUnitName(String secondUnitName) {
+		this.secondUnitName = secondUnitName;
 	}
 
 	public String getName() {
@@ -52,12 +52,12 @@ public class ExerciseWebModel {
 		this.name = name;
 	}
 
-	public String getDescritpion() {
-		return descritpion;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setDescritpion(String descritpion) {
-		this.descritpion = descritpion;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public String getIconName() {

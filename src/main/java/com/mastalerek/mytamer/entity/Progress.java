@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Table(name = "progresses")
 public class Progress {
 	private Integer id;
-	private Student student;
+	private Integer student;
 	private Exercise exercise;
 	private Goal goal;
 	private Date date;
@@ -33,11 +33,11 @@ public class Progress {
 
 	@ManyToOne
 	@JoinColumn(name = "student_id", nullable = false)
-	public Student getStudent() {
+	public Integer getStudent() {
 		return student;
 	}
 
-	public void setStudent(Student student) {
+	public void setStudent(Integer student) {
 		this.student = student;
 	}
 

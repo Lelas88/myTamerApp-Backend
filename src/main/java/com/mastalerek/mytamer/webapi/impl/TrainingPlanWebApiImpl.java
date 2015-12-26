@@ -27,4 +27,9 @@ public class TrainingPlanWebApiImpl implements TrainingPlanWebApi{
 		return trainingPlanService.getTrainingPlanDetails(trainingPlanId);
 	}
 
+	@Override
+	public List<TrainingPlanWebModel> getUserTrainingPlans(Integer userId) {
+		return trainingPlanService.getUserTrainingPlans(userId);
+	}
+
 }

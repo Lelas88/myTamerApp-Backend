@@ -1079,949 +1079,574 @@
     </display>  
   </class>  
   <dependency id="111">    
-    <bendpoint x="2345" y="3691"/>    
-    <bendpoint x="2105" y="4226"/>    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="38"/>  
-  </dependency>  
-  <association id="112">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="113" name="studentTrainingPlansToTrainingPlanBasicWebModelFunction"/>      
-      <multiplicity id="114" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="78" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="115">    
-    <bendpoint x="5725" y="3691"/>    
-    <end type="SOURCE" refId="21"/>    
-    <end type="TARGET" refId="44"/>  
-  </dependency>  
-  <association id="116">    
-    <end type="SOURCE" refId="41" navigable="false">      
-      <attribute id="117" name="dietToDietBasicWebModelFunction"/>      
-      <multiplicity id="118" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="43" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="119">    
-    <bendpoint x="3103" y="3691"/>    
-    <bendpoint x="3103" y="4226"/>    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="120" name="student"/>      
-      <multiplicity id="121" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="26" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="122">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="123" name="dateService"/>      
-      <multiplicity id="124" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="18" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="125">    
-    <bendpoint x="3113" y="823"/>    
-    <bendpoint x="3113" y="1178"/>    
-    <end type="SOURCE" refId="93"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <dependency id="126">    
-    <bendpoint x="3818" y="2302"/>    
-    <end type="SOURCE" refId="57"/>    
-    <end type="TARGET" refId="76"/>  
-  </dependency>  
-  <association id="127">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="128" name="measurementRepository"/>      
-      <multiplicity id="129" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="54" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="130">    
-    <end type="SOURCE" refId="89" navigable="false">      
-      <attribute id="131" name="studentExercises"/>      
-      <multiplicity id="132" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="62" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="133">    
-    <bendpoint x="3860" y="1178"/>    
-    <bendpoint x="3527" y="1947"/>    
-    <bendpoint x="3527" y="2302"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="99"/>  
-  </dependency>  
-  <dependency id="134">    
-    <bendpoint x="3092" y="823"/>    
-    <bendpoint x="3092" y="1178"/>    
-    <bendpoint x="3124" y="1947"/>    
-    <end type="SOURCE" refId="23"/>    
-    <end type="TARGET" refId="87"/>  
-  </dependency>  
-  <association id="135">    
-    <end type="SOURCE" refId="27" navigable="false">      
-      <attribute id="136" name="userRepository"/>      
-      <multiplicity id="137" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="50" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="138">    
-    <bendpoint x="3219" y="2621"/>    
-    <bendpoint x="3198" y="3012"/>    
-    <end type="SOURCE" refId="87" navigable="false">      
-      <attribute id="139" name="diet"/>      
-      <multiplicity id="140" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="67" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="141">    
-    <bendpoint x="1307" y="4226"/>    
-    <end type="SOURCE" refId="54"/>    
-    <end type="TARGET" refId="38"/>  
-  </dependency>  
-  <association id="142">    
-    <bendpoint x="3923" y="1178"/>    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="143" name="trainingPlanRepository"/>      
-      <multiplicity id="144" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="74" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="145">    
-    <end type="SOURCE" refId="107" navigable="false">      
-      <attribute id="146" name="function"/>      
-      <multiplicity id="147" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="94" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="148">    
-    <end type="SOURCE" refId="92" navigable="false">      
-      <attribute id="149" name="meals"/>      
-      <multiplicity id="150" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="90" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="151">    
-    <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="152" name="studentMeasurements"/>      
-      <multiplicity id="153" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="52" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="154">    
-    <bendpoint x="6985" y="3691"/>    
-    <end type="SOURCE" refId="100"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <association id="155">    
-    <end type="SOURCE" refId="105" navigable="false">      
-      <attribute id="156" name="weights"/>      
-      <multiplicity id="157" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="60" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="158">    
-    <bendpoint x="3134" y="1178"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <dependency id="159">    
-    <end type="SOURCE" refId="34"/>    
-    <end type="TARGET" refId="104"/>  
-  </dependency>  
-  <association id="160">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="161" name="exercise"/>      
-      <multiplicity id="162" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="89" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="163">    
-    <end type="SOURCE" refId="62" navigable="false">      
-      <attribute id="164" name="student"/>      
-      <multiplicity id="165" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="26" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="166">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="16"/>  
-  </dependency>  
-  <dependency id="167">    
-    <bendpoint x="2354" y="2302"/>    
-    <bendpoint x="2288" y="2621"/>    
-    <end type="SOURCE" refId="39"/>    
-    <end type="TARGET" refId="88"/>  
-  </dependency>  
-  <association id="168">    
-    <end type="SOURCE" refId="87" navigable="false">      
-      <attribute id="169" name="trainingPlan"/>      
-      <multiplicity id="170" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="99" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="171">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="105"/>  
-  </dependency>  
-  <association id="172">    
-    <end type="SOURCE" refId="91" navigable="false">      
-      <attribute id="173" name="exercise"/>      
-      <multiplicity id="174" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="89" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="175">    
-    <bendpoint x="1994" y="823"/>    
-    <bendpoint x="1994" y="1178"/>    
-    <bendpoint x="1994" y="1947"/>    
-    <bendpoint x="1994" y="2302"/>    
-    <bendpoint x="1994" y="2621"/>    
-    <bendpoint x="1749" y="3012"/>    
-    <bendpoint x="1503" y="3691"/>    
-    <bendpoint x="1503" y="4226"/>    
-    <bendpoint x="1503" y="4581"/>    
-    <end type="SOURCE" refId="23"/>    
-    <end type="TARGET" refId="36"/>  
-  </dependency>  
-  <association id="176">    
-    <bendpoint x="3613" y="4226"/>    
-    <bendpoint x="3613" y="3691"/>    
-    <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="177" name="user"/>      
-      <multiplicity id="178" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="92" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="179">    
-    <end type="SOURCE" refId="22" navigable="false">      
-      <attribute id="180" name="students"/>      
-      <multiplicity id="181" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="26" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="182">    
-    <bendpoint x="893" y="3691"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="14"/>  
-  </dependency>  
-  <dependency id="183">    
-    <end type="SOURCE" refId="107"/>    
-    <end type="TARGET" refId="89"/>  
-  </dependency>  
-  <dependency id="184">    
-    <bendpoint x="5704" y="3691"/>    
-    <end type="SOURCE" refId="107"/>    
-    <end type="TARGET" refId="44"/>  
-  </dependency>  
-  <dependency id="185">    
-    <end type="SOURCE" refId="94"/>    
-    <end type="TARGET" refId="98"/>  
-  </dependency>  
-  <dependency id="186">    
-    <end type="SOURCE" refId="81"/>    
-    <end type="TARGET" refId="44"/>  
-  </dependency>  
-  <dependency id="187">    
-    <end type="SOURCE" refId="45"/>    
-    <end type="TARGET" refId="62"/>  
-  </dependency>  
-  <dependency id="188">    
-    <bendpoint x="4320" y="4226"/>    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="26"/>  
-  </dependency>  
-  <dependency id="189">    
-    <end type="SOURCE" refId="34"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="190">    
-    <bendpoint x="5323" y="3012"/>    
-    <bendpoint x="5285" y="3691"/>    
-    <bendpoint x="5285" y="4226"/>    
-    <end type="SOURCE" refId="58"/>    
-    <end type="TARGET" refId="26"/>  
-  </dependency>  
-  <association id="191">    
-    <end type="SOURCE" refId="100" navigable="false">      
-      <attribute id="192" name="disciplineToDisciplineWebModelFunction"/>      
-      <multiplicity id="193" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="34" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="194">    
-    <end type="SOURCE" refId="100" navigable="false">      
-      <attribute id="195" name="disciplineRepository"/>      
-      <multiplicity id="196" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="32" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="197">    
-    <end type="SOURCE" refId="63"/>    
-    <end type="TARGET" refId="28"/>  
-  </dependency>  
-  <dependency id="198">    
-    <bendpoint x="3071" y="1178"/>    
-    <bendpoint x="3145" y="1947"/>    
-    <bendpoint x="3776" y="2302"/>    
-    <bendpoint x="4060" y="2621"/>    
-    <bendpoint x="4320" y="3012"/>    
-    <bendpoint x="4320" y="3691"/>    
-    <bendpoint x="4341" y="4226"/>    
-    <bendpoint x="4341" y="4581"/>    
-    <end type="SOURCE" refId="71"/>    
-    <end type="TARGET" refId="22"/>  
-  </dependency>  
-  <dependency id="199">    
-    <bendpoint x="2303" y="4581"/>    
-    <end type="SOURCE" refId="82"/>    
-    <end type="TARGET" refId="36"/>  
-  </dependency>  
-  <association id="200">    
-    <end type="SOURCE" refId="27" navigable="false">      
-      <attribute id="201" name="groupEntityToGroupWebModelFunction"/>      
-      <multiplicity id="202" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="53" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="203">    
-    <bendpoint x="5053" y="1178"/>    
-    <bendpoint x="5053" y="1947"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="29"/>  
-  </dependency>  
-  <dependency id="204">    
-    <bendpoint x="5306" y="4226"/>    
-    <end type="SOURCE" refId="94"/>    
-    <end type="TARGET" refId="26"/>  
-  </dependency>  
-  <association id="205">    
-    <end type="SOURCE" refId="64" navigable="false">      
-      <attribute id="206" name="trainingPlan"/>      
-      <multiplicity id="207" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="99" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="208">    
-    <bendpoint x="3881" y="1178"/>    
-    <bendpoint x="3548" y="1947"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="64"/>  
-  </dependency>  
-  <association id="209">    
-    <end type="SOURCE" refId="89" navigable="false">      
-      <attribute id="210" name="discipline"/>      
-      <multiplicity id="211" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="212">    
-    <bendpoint x="7328" y="3691"/>    
-    <end type="SOURCE" refId="24"/>    
-    <end type="TARGET" refId="104"/>  
-  </dependency>  
-  <association id="213">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="214" name="diets"/>      
-      <multiplicity id="215" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="97" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="216">    
-    <end type="SOURCE" refId="71" navigable="false">      
-      <attribute id="217" name="bmiService"/>      
-      <multiplicity id="218" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="219">    
-    <end type="SOURCE" refId="64" navigable="false">      
-      <attribute id="220" name="exerciseSet"/>      
-      <multiplicity id="221" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="76" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="222">    
-    <end type="SOURCE" refId="101" navigable="false">      
-      <attribute id="223" name="exerciseId"/>      
-      <multiplicity id="224" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="89" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="225">    
-    <end type="SOURCE" refId="105" navigable="false">      
-      <attribute id="226" name="heights"/>      
-      <multiplicity id="227" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="60" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="228">    
-    <end type="SOURCE" refId="52" navigable="false">      
-      <attribute id="229" name="student"/>      
-      <multiplicity id="230" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="26" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="231">    
-    <end type="SOURCE" refId="83" navigable="false">      
-      <attribute id="232" name="nutritional"/>      
-      <multiplicity id="233" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="108" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="234">    
-    <end type="SOURCE" refId="71"/>    
-    <end type="TARGET" refId="103"/>  
-  </dependency>  
-  <dependency id="235">    
-    <bendpoint x="4704" y="823"/>    
-    <bendpoint x="4704" y="1178"/>    
-    <end type="SOURCE" refId="93"/>    
-    <end type="TARGET" refId="28"/>  
-  </dependency>  
-  <association id="236">    
-    <end type="SOURCE" refId="47" navigable="false">      
-      <attribute id="237" name="student"/>      
-      <multiplicity id="238" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="26" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="239">    
-    <bendpoint x="1135" y="4226"/>    
-    <end type="SOURCE" refId="59"/>    
-    <end type="TARGET" refId="38"/>  
-  </dependency>  
-  <association id="240">    
-    <end type="SOURCE" refId="90" navigable="false">      
-      <attribute id="241" name="user"/>      
-      <multiplicity id="242" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="92" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="243">    
-    <bendpoint x="4352" y="1178"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="28"/>  
-  </dependency>  
-  <dependency id="244">    
-    <bendpoint x="1461" y="3691"/>    
-    <bendpoint x="1461" y="4226"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="38"/>  
-  </dependency>  
-  <association id="245">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="246" name="studentRepository"/>      
-      <multiplicity id="247" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="17" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="248">    
-    <end type="SOURCE" refId="109"/>    
-    <end type="TARGET" refId="92"/>  
-  </dependency>  
-  <dependency id="249">    
-    <end type="SOURCE" refId="78"/>    
-    <end type="TARGET" refId="46"/>  
-  </dependency>  
-  <association id="250">    
-    <bendpoint x="3339" y="3691"/>    
-    <bendpoint x="3145" y="4226"/>    
-    <bendpoint x="3145" y="4581"/>    
-    <end type="SOURCE" refId="92" navigable="false">      
-      <attribute id="251" name="groups"/>      
-      <multiplicity id="252" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="22" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="253">    
-    <end type="SOURCE" refId="92" navigable="false">      
-      <attribute id="254" name="userSettings"/>      
-      <multiplicity id="255" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="49" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="256">    
-    <bendpoint x="4306" y="2302"/>    
-    <end type="SOURCE" refId="65"/>    
-    <end type="TARGET" refId="76"/>  
-  </dependency>  
-  <dependency id="257">    
-    <bendpoint x="3198" y="2621"/>    
-    <end type="SOURCE" refId="77"/>    
-    <end type="TARGET" refId="92"/>  
-  </dependency>  
-  <dependency id="258">    
-    <bendpoint x="2808" y="1178"/>    
-    <bendpoint x="2808" y="1947"/>    
-    <bendpoint x="3088" y="2302"/>    
-    <bendpoint x="3487" y="2621"/>    
-    <bendpoint x="4299" y="3012"/>    
-    <bendpoint x="4289" y="3691"/>    
-    <bendpoint x="4278" y="4226"/>    
-    <end type="SOURCE" refId="71"/>    
-    <end type="TARGET" refId="26"/>  
-  </dependency>  
-  <dependency id="259">    
-    <bendpoint x="623" y="3012"/>    
-    <bendpoint x="604" y="3691"/>    
-    <end type="SOURCE" refId="20"/>    
-    <end type="TARGET" refId="14"/>  
-  </dependency>  
-  <association id="260">    
-    <end type="SOURCE" refId="89" navigable="false">      
-      <attribute id="261" name="secondUnit"/>      
-      <multiplicity id="262" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="44" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="263">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="264" name="trainingPlanToTrainingPlanWebModelFunction"/>      
-      <multiplicity id="265" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="41" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="266">    
-    <end type="SOURCE" refId="106"/>    
-    <end type="TARGET" refId="36"/>  
-  </dependency>  
-  <association id="267">    
-    <end type="SOURCE" refId="48" navigable="false">      
-      <attribute id="268" name="diet"/>      
-      <multiplicity id="269" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="67" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="270">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="102"/>  
-  </dependency>  
-  <dependency id="271">    
     <bendpoint x="3506" y="1947"/>    
     <bendpoint x="3506" y="2302"/>    
     <end type="SOURCE" refId="41"/>    
     <end type="TARGET" refId="99"/>  
   </dependency>  
-  <association id="272">    
-    <end type="SOURCE" refId="92" navigable="false">      
-      <attribute id="273" name="trainingPlans"/>      
-      <multiplicity id="274" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="99" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="275">    
-    <end type="SOURCE" refId="94"/>    
-    <end type="TARGET" refId="62"/>  
-  </dependency>  
-  <dependency id="276">    
+  <dependency id="112">    
+    <bendpoint x="3818" y="2302"/>    
     <end type="SOURCE" refId="57"/>    
-    <end type="TARGET" refId="64"/>  
+    <end type="TARGET" refId="76"/>  
   </dependency>  
-  <dependency id="277">    
-    <end type="SOURCE" refId="53"/>    
-    <end type="TARGET" refId="92"/>  
+  <dependency id="113">    
+    <end type="SOURCE" refId="99"/>    
+    <end type="TARGET" refId="26"/>  
   </dependency>  
-  <association id="278">    
+  <association id="114">    
+    <bendpoint x="3124" y="4226"/>    
+    <bendpoint x="3124" y="3691"/>    
     <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="279" name="studentContraindications"/>      
-      <multiplicity id="280" minimum="0" maximum="2147483647"/>    
+      <attribute id="115" name="studentScores">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="116" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="19" navigable="true"/>    
+    <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="281">    
-    <end type="SOURCE" refId="39"/>    
-    <end type="TARGET" refId="37"/>  
-  </realization>  
-  <dependency id="282">    
-    <bendpoint x="6641" y="2621"/>    
-    <bendpoint x="6641" y="3012"/>    
-    <end type="SOURCE" refId="110"/>    
-    <end type="TARGET" refId="95"/>  
+  <dependency id="117">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="104"/>  
   </dependency>  
-  <association id="283">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="284" name="mealset"/>      
-      <multiplicity id="285" minimum="0" maximum="1"/>    
+  <dependency id="118">    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="102"/>  
+  </dependency>  
+  <association id="119">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="120" name="measurementRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="121" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="30" navigable="true"/>    
+    <end type="TARGET" refId="54" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="286">    
-    <bendpoint x="5074" y="823"/>    
-    <bendpoint x="5074" y="1178"/>    
-    <bendpoint x="5074" y="1947"/>    
-    <bendpoint x="4971" y="2302"/>    
-    <bendpoint x="4677" y="2621"/>    
-    <bendpoint x="4383" y="3012"/>    
-    <end type="SOURCE" refId="23" navigable="false">      
-      <attribute id="287" name="studentRepository"/>      
-      <multiplicity id="288" minimum="0" maximum="1"/>    
+  <dependency id="122">    
+    <bendpoint x="4683" y="1178"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="123">    
+    <end type="SOURCE" refId="106"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <dependency id="124">    
+    <bendpoint x="3134" y="1178"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="125">    
+    <end type="SOURCE" refId="96"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <realization id="126">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="51"/>  
+  </realization>  
+  <realization id="127">    
+    <end type="SOURCE" refId="86"/>    
+    <end type="TARGET" refId="24"/>  
+  </realization>  
+  <association id="128">    
+    <bendpoint x="4125" y="3691"/>    
+    <bendpoint x="4125" y="4226"/>    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="129" name="student">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="130" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="131">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="132" name="rank">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="133" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="36" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="134">    
+    <bendpoint x="1434" y="2621"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="135">    
+    <bendpoint x="4404" y="3012"/>    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="136" name="studentRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="137" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="17" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="289">    
-    <bendpoint x="3571" y="4581"/>    
-    <bendpoint x="3571" y="4226"/>    
-    <bendpoint x="3386" y="3691"/>    
-    <end type="SOURCE" refId="22" navigable="false">      
-      <attribute id="290" name="user"/>      
-      <multiplicity id="291" minimum="0" maximum="1"/>    
+  <association id="138">    
+    <end type="SOURCE" refId="82" navigable="false">      
+      <attribute id="139" name="rankRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="140" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="92" navigable="true"/>    
+    <end type="TARGET" refId="106" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="292">    
-    <end type="SOURCE" refId="47" navigable="false">      
-      <attribute id="293" name="goal"/>      
-      <multiplicity id="294" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="40" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="295">    
-    <bendpoint x="6683" y="540"/>    
-    <bendpoint x="6683" y="823"/>    
-    <bendpoint x="6683" y="1178"/>    
-    <bendpoint x="6683" y="1947"/>    
-    <bendpoint x="6683" y="2302"/>    
-    <bendpoint x="6683" y="2621"/>    
-    <bendpoint x="6683" y="3012"/>    
-    <bendpoint x="6683" y="3691"/>    
-    <end type="SOURCE" refId="42" navigable="false">      
-      <attribute id="296" name="contraindicationService"/>      
-      <multiplicity id="297" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="84" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="298">    
-    <end type="SOURCE" refId="71" navigable="false">      
-      <attribute id="299" name="studentService"/>      
-      <multiplicity id="300" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="23" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="301">    
-    <end type="SOURCE" refId="59"/>    
-    <end type="TARGET" refId="14"/>  
+  <dependency id="141">    
+    <end type="SOURCE" refId="78"/>    
+    <end type="TARGET" refId="46"/>  
   </dependency>  
-  <dependency id="302">    
-    <end type="SOURCE" refId="68"/>    
-    <end type="TARGET" refId="89"/>  
-  </dependency>  
-  <dependency id="303">    
-    <bendpoint x="7307" y="3691"/>    
-    <end type="SOURCE" refId="100"/>    
-    <end type="TARGET" refId="104"/>  
-  </dependency>  
-  <association id="304">    
-    <end type="SOURCE" refId="48" navigable="false">      
-      <attribute id="305" name="mealSet"/>      
-      <multiplicity id="306" minimum="0" maximum="1"/>    
+  <association id="142">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="143" name="measurementToMeasurementWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="144" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="30" navigable="true"/>    
+    <end type="TARGET" refId="59" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="307">    
-    <end type="SOURCE" refId="77" navigable="false">      
-      <attribute id="308" name="passwordEncoder"/>      
-      <multiplicity id="309" minimum="0" maximum="1"/>    
+  <dependency id="145">    
+    <bendpoint x="2091" y="3012"/>    
+    <bendpoint x="2324" y="3691"/>    
+    <bendpoint x="2324" y="4226"/>    
+    <bendpoint x="2324" y="4581"/>    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="146">    
+    <bendpoint x="3797" y="2302"/>    
+    <end type="SOURCE" refId="74"/>    
+    <end type="TARGET" refId="99"/>  
+  </dependency>  
+  <dependency id="147">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <association id="148">    
+    <end type="SOURCE" refId="90" navigable="false">      
+      <attribute id="149" name="mealNutritionals">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="150" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="66" navigable="true"/>    
+    <end type="TARGET" refId="83" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="310">    
-    <end type="SOURCE" refId="55"/>    
-    <end type="TARGET" refId="67"/>  
-  </dependency>  
-  <dependency id="311">    
-    <bendpoint x="6231" y="3012"/>    
-    <end type="SOURCE" refId="58"/>    
-    <end type="TARGET" refId="95"/>  
-  </dependency>  
-  <association id="312">    
-    <end type="SOURCE" refId="41" navigable="false">      
-      <attribute id="313" name="exerciseSetToExerciseSetBasicWebModelFunction"/>      
-      <multiplicity id="314" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="57" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="315">    
-    <bendpoint x="3902" y="1178"/>    
+  <association id="151">    
+    <bendpoint x="3923" y="1178"/>    
     <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="316" name="trainingPlanExerciseSetToExerciseSetBasicWebModelFunction"/>      
-      <multiplicity id="317" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="57" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="318">    
-    <end type="SOURCE" refId="78" navigable="false">      
-      <attribute id="319" name="trainingPlanRepository"/>      
-      <multiplicity id="320" minimum="0" maximum="1"/>    
+      <attribute id="152" name="trainingPlanRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="153" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="74" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="321">    
-    <end type="SOURCE" refId="19" navigable="false">      
-      <attribute id="322" name="student"/>      
-      <multiplicity id="323" minimum="0" maximum="1"/>    
+  <association id="154">    
+    <end type="SOURCE" refId="107" navigable="false">      
+      <attribute id="155" name="function">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="156" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="26" navigable="true"/>    
+    <end type="TARGET" refId="94" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="324">    
-    <end type="SOURCE" refId="62" navigable="false">      
-      <attribute id="325" name="exercise"/>      
-      <multiplicity id="326" minimum="0" maximum="1"/>    
+  <association id="157">    
+    <bendpoint x="2494" y="1178"/>    
+    <bendpoint x="2036" y="1947"/>    
+    <bendpoint x="1973" y="2302"/>    
+    <bendpoint x="1689" y="2621"/>    
+    <end type="SOURCE" refId="71" navigable="false">      
+      <attribute id="158" name="measurementService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="159" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="89" navigable="true"/>    
+    <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="327">    
-    <bendpoint x="4125" y="3691"/>    
-    <bendpoint x="4125" y="4226"/>    
-    <end type="SOURCE" refId="31" navigable="false">      
-      <attribute id="328" name="student"/>      
-      <multiplicity id="329" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="26" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="330">    
+  <dependency id="160">    
     <bendpoint x="4425" y="3012"/>    
     <bendpoint x="4586" y="3691"/>    
     <end type="SOURCE" refId="58"/>    
     <end type="TARGET" refId="62"/>  
   </dependency>  
-  <association id="331">    
+  <dependency id="161">    
+    <bendpoint x="2354" y="2302"/>    
+    <bendpoint x="2288" y="2621"/>    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="88"/>  
+  </dependency>  
+  <dependency id="162">    
+    <bendpoint x="1516" y="2621"/>    
+    <bendpoint x="1516" y="3012"/>    
+    <bendpoint x="1482" y="3691"/>    
+    <bendpoint x="1482" y="4226"/>    
+    <bendpoint x="1524" y="4581"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <association id="163">    
     <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="332" name="studentGoals"/>      
-      <multiplicity id="333" minimum="0" maximum="2147483647"/>    
+      <attribute id="164" name="studentGoals">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="165" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="47" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="334">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="25"/>  
+  <dependency id="166">    
+    <bendpoint x="1708" y="1178"/>    
+    <bendpoint x="1708" y="1947"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="97"/>  
   </dependency>  
-  <dependency id="335">    
-    <bendpoint x="222" y="3012"/>    
-    <end type="SOURCE" refId="20"/>    
-    <end type="TARGET" refId="105"/>  
-  </dependency>  
-  <association id="336">    
+  <association id="167">    
     <end type="SOURCE" refId="92" navigable="false">      
-      <attribute id="337" name="exercises"/>      
-      <multiplicity id="338" minimum="0" maximum="2147483647"/>    
+      <attribute id="168" name="exerciseSets">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="169" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="89" navigable="true"/>    
+    <end type="TARGET" refId="76" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="339">    
-    <bendpoint x="6210" y="3012"/>    
-    <end type="SOURCE" refId="58"/>    
-    <end type="TARGET" refId="25"/>  
-  </dependency>  
-  <association id="340">    
-    <end type="SOURCE" refId="99" navigable="false">      
-      <attribute id="341" name="trainingPlanDiets"/>      
-      <multiplicity id="342" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="87" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="343">    
-    <bendpoint x="2072" y="3691"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="52"/>  
-  </dependency>  
-  <dependency id="344">    
-    <bendpoint x="589" y="3691"/>    
-    <end type="SOURCE" refId="51"/>    
-    <end type="TARGET" refId="14"/>  
-  </dependency>  
-  <dependency id="345">    
-    <end type="SOURCE" refId="96"/>    
-    <end type="TARGET" refId="19"/>  
-  </dependency>  
-  <dependency id="346">    
+  <dependency id="170">    
     <end type="SOURCE" refId="51"/>    
     <end type="TARGET" refId="105"/>  
   </dependency>  
-  <association id="347">    
-    <end type="SOURCE" refId="92" navigable="false">      
-      <attribute id="348" name="mealSets"/>      
-      <multiplicity id="349" minimum="0" maximum="2147483647"/>    
+  <association id="171">    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="172" name="student"/>      
+      <multiplicity id="173" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="30" navigable="true"/>    
+    <end type="TARGET" refId="26" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="350">    
-    <bendpoint x="872" y="3691"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="60"/>  
-  </dependency>  
-  <association id="351">    
-    <end type="SOURCE" refId="23" navigable="false">      
-      <attribute id="352" name="trainingPlanService"/>      
-      <multiplicity id="353" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="354">    
-    <bendpoint x="644" y="3012"/>    
-    <end type="SOURCE" refId="20"/>    
-    <end type="TARGET" refId="16"/>  
-  </dependency>  
-  <dependency id="355">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="52"/>  
-  </dependency>  
-  <association id="356">    
-    <bendpoint x="4404" y="3012"/>    
-    <end type="SOURCE" refId="58" navigable="false">      
-      <attribute id="357" name="studentRepository"/>      
-      <multiplicity id="358" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="17" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="359">    
-    <bendpoint x="3067" y="2302"/>    
-    <bendpoint x="3177" y="2621"/>    
-    <bendpoint x="3177" y="3012"/>    
-    <end type="SOURCE" refId="43"/>    
-    <end type="TARGET" refId="67"/>  
-  </dependency>  
-  <dependency id="360">    
-    <end type="SOURCE" refId="79"/>    
-    <end type="TARGET" refId="69"/>  
-  </dependency>  
-  <realization id="361">    
-    <bendpoint x="3499" y="823"/>    
-    <end type="SOURCE" refId="93"/>    
-    <end type="TARGET" refId="63"/>  
-  </realization>  
-  <association id="362">    
+  <association id="174">    
     <end type="SOURCE" refId="89" navigable="false">      
-      <attribute id="363" name="user"/>      
-      <multiplicity id="364" minimum="0" maximum="1"/>    
+      <attribute id="175" name="unit">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="176" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="177">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="178" name="dateService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="179" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="180">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="181" name="exerciseToExerciseWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="182" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="107" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="183">    
+    <bendpoint x="7574" y="3012"/>    
+    <bendpoint x="7574" y="3691"/>    
+    <end type="SOURCE" refId="86"/>    
+    <end type="TARGET" refId="104"/>  
+  </dependency>  
+  <association id="184">    
+    <bendpoint x="3613" y="4226"/>    
+    <bendpoint x="3613" y="3691"/>    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="185" name="user">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="186" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="92" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="365">    
-    <bendpoint x="3124" y="4226"/>    
-    <bendpoint x="3124" y="3691"/>    
-    <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="366" name="studentScores"/>      
-      <multiplicity id="367" minimum="0" maximum="2147483647"/>    
+  <association id="187">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="188" name="student">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="189" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="26" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="368">    
-    <bendpoint x="4267" y="1947"/>    
-    <bendpoint x="4267" y="2302"/>    
-    <end type="SOURCE" refId="78"/>    
-    <end type="TARGET" refId="99"/>  
-  </dependency>  
-  <dependency id="369">    
-    <end type="SOURCE" refId="78"/>    
-    <end type="TARGET" refId="28"/>  
-  </dependency>  
-  <dependency id="370">    
-    <bendpoint x="2596" y="3691"/>    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="52"/>  
-  </dependency>  
-  <association id="371">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="372" name="groupService"/>      
-      <multiplicity id="373" minimum="0" maximum="1"/>    
+  <association id="190">    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="191" name="user">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="192" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="27" navigable="true"/>    
+    <end type="TARGET" refId="92" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="374">    
-    <end type="SOURCE" refId="93" navigable="false">      
-      <attribute id="375" name="trainingPlanService"/>      
-      <multiplicity id="376" minimum="0" maximum="1"/>    
+  <association id="193">    
+    <end type="SOURCE" refId="91" navigable="false">      
+      <attribute id="194" name="exercise">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="195" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
+    <end type="TARGET" refId="89" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="377">    
-    <end type="SOURCE" refId="43"/>    
-    <end type="TARGET" refId="97"/>  
-  </dependency>  
-  <dependency id="378">    
-    <bendpoint x="4711" y="3012"/>    
-    <end type="SOURCE" refId="58"/>    
-    <end type="TARGET" refId="89"/>  
-  </dependency>  
-  <association id="379">    
-    <end type="SOURCE" refId="92" navigable="false">      
-      <attribute id="380" name="diets"/>      
-      <multiplicity id="381" minimum="0" maximum="2147483647"/>    
+  <association id="196">    
+    <end type="SOURCE" refId="48" navigable="false">      
+      <attribute id="197" name="diet">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="198" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="67" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="382">    
-    <end type="SOURCE" refId="50"/>    
-    <end type="TARGET" refId="92"/>  
+  <association id="199">    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="200" name="rankService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="201" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="82" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="202">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="203" name="studentMeasurementRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="204" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="205">    
+    <bendpoint x="2267" y="2621"/>    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="88"/>  
   </dependency>  
-  <dependency id="383">    
+  <dependency id="206">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="207">    
+    <end type="SOURCE" refId="99" navigable="false">      
+      <attribute id="208" name="user">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="209" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="210">    
+    <bendpoint x="3103" y="3691"/>    
+    <bendpoint x="3103" y="4226"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="211" name="student">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="212" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="213">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="214" name="students"/>      
+      <multiplicity id="215" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="102" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="216">    
+    <bendpoint x="6956" y="4581"/>    
+    <end type="SOURCE" refId="84"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="217">    
+    <bendpoint x="6210" y="3012"/>    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <dependency id="218">    
+    <end type="SOURCE" refId="81"/>    
+    <end type="TARGET" refId="44"/>  
+  </dependency>  
+  <association id="219">    
+    <end type="SOURCE" refId="64" navigable="false">      
+      <attribute id="220" name="trainingPlan">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="221" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="99" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="222">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="223" name="trainingPlanToTrainingPlanWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="224" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="41" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="225">    
+    <end type="SOURCE" refId="89" navigable="false">      
+      <attribute id="226" name="user">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="227" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="228">    
+    <end type="SOURCE" refId="100" navigable="false">      
+      <attribute id="229" name="disciplineToDisciplineWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="230" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="231">    
+    <bendpoint x="1461" y="3691"/>    
+    <bendpoint x="1461" y="4226"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <dependency id="232">    
+    <end type="SOURCE" refId="109"/>    
+    <end type="TARGET" refId="88"/>  
+  </dependency>  
+  <association id="233">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="234" name="group">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="235" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="236">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="237">    
+    <bendpoint x="2515" y="1178"/>    
+    <bendpoint x="2515" y="1947"/>    
+    <bendpoint x="2423" y="2302"/>    
+    <bendpoint x="2330" y="2621"/>    
+    <bendpoint x="2757" y="3012"/>    
+    <bendpoint x="2819" y="3691"/>    
+    <bendpoint x="2819" y="4226"/>    
+    <bendpoint x="2819" y="4581"/>    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <dependency id="238">    
+    <bendpoint x="4352" y="1178"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <association id="239">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="240" name="trainingPlans">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="241" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="99" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="242">    
     <bendpoint x="6662" y="823"/>    
     <bendpoint x="6662" y="1178"/>    
     <bendpoint x="6662" y="1947"/>    
@@ -2034,151 +1659,11 @@
     <end type="SOURCE" refId="23"/>    
     <end type="TARGET" refId="22"/>  
   </dependency>  
-  <association id="384">    
-    <end type="SOURCE" refId="23" navigable="false">      
-      <attribute id="385" name="studentEntityToStudentWebModelFunction"/>      
-      <multiplicity id="386" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="71" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="387">    
-    <end type="SOURCE" refId="73" navigable="false">      
-      <attribute id="388" name="rankService"/>      
-      <multiplicity id="389" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="82" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="390">    
-    <end type="SOURCE" refId="49" navigable="false">      
-      <attribute id="391" name="user"/>      
-      <multiplicity id="392" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="92" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="393">    
-    <end type="SOURCE" refId="52" navigable="false">      
-      <attribute id="394" name="measurement"/>      
-      <multiplicity id="395" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="38" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="396">    
-    <end type="SOURCE" refId="73"/>    
-    <end type="TARGET" refId="13"/>  
-  </realization>  
-  <dependency id="397">    
-    <bendpoint x="1931" y="540"/>    
-    <bendpoint x="1931" y="823"/>    
-    <bendpoint x="1931" y="1178"/>    
-    <bendpoint x="1931" y="1947"/>    
-    <end type="SOURCE" refId="42"/>    
-    <end type="TARGET" refId="97"/>  
+  <dependency id="243">    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="103"/>  
   </dependency>  
-  <association id="398">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="399" name="exerciseSets"/>      
-      <multiplicity id="400" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="29" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="401">    
-    <end type="SOURCE" refId="65"/>    
-    <end type="TARGET" refId="29"/>  
-  </dependency>  
-  <association id="402">    
-    <end type="SOURCE" refId="99" navigable="false">      
-      <attribute id="403" name="user"/>      
-      <multiplicity id="404" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="92" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="405">    
-    <end type="SOURCE" refId="63"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <association id="406">    
-    <end type="SOURCE" refId="20" navigable="false">      
-      <attribute id="407" name="measurementService"/>      
-      <multiplicity id="408" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="409">    
-    <bendpoint x="4683" y="823"/>    
-    <bendpoint x="4725" y="1178"/>    
-    <bendpoint x="4725" y="1947"/>    
-    <bendpoint x="4596" y="2302"/>    
-    <bendpoint x="4468" y="2621"/>    
-    <bendpoint x="4341" y="3012"/>    
-    <bendpoint x="4299" y="3691"/>    
-    <bendpoint x="4299" y="4226"/>    
-    <end type="SOURCE" refId="23"/>    
-    <end type="TARGET" refId="26"/>  
-  </dependency>  
-  <association id="410">    
-    <end type="SOURCE" refId="27" navigable="false">      
-      <attribute id="411" name="groupRepository"/>      
-      <multiplicity id="412" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="35" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="413">    
-    <bendpoint x="2015" y="823"/>    
-    <bendpoint x="2015" y="1178"/>    
-    <bendpoint x="2015" y="1947"/>    
-    <bendpoint x="2015" y="2302"/>    
-    <bendpoint x="2015" y="2621"/>    
-    <bendpoint x="2112" y="3012"/>    
-    <end type="SOURCE" refId="23" navigable="false">      
-      <attribute id="414" name="dateService"/>      
-      <multiplicity id="415" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="18" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="416">    
-    <end type="SOURCE" refId="43"/>    
-    <end type="TARGET" refId="87"/>  
-  </dependency>  
-  <association id="417">    
-    <bendpoint x="4167" y="3691"/>    
-    <bendpoint x="4167" y="4226"/>    
-    <end type="SOURCE" refId="91" navigable="false">      
-      <attribute id="418" name="student"/>      
-      <multiplicity id="419" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="26" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="420">    
-    <end type="SOURCE" refId="32"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <association id="421">    
-    <end type="SOURCE" refId="82" navigable="false">      
-      <attribute id="422" name="rankRepository"/>      
-      <multiplicity id="423" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="106" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="424">    
-    <end type="SOURCE" refId="90" navigable="false">      
-      <attribute id="425" name="mealNutritionals"/>      
-      <multiplicity id="426" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="83" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="427">    
+  <dependency id="244">    
     <bendpoint x="2829" y="823"/>    
     <bendpoint x="2829" y="1178"/>    
     <bendpoint x="2829" y="1947"/>    
@@ -2186,381 +1671,807 @@
     <end type="SOURCE" refId="23"/>    
     <end type="TARGET" refId="99"/>  
   </dependency>  
-  <association id="428">    
-    <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="429" name="rank"/>      
-      <multiplicity id="430" minimum="0" maximum="1"/>    
+  <association id="245">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="246" name="diets">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="247" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="36" navigable="true"/>    
+    <end type="TARGET" refId="67" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="431">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="95"/>  
-  </dependency>  
-  <association id="432">    
-    <bendpoint x="4188" y="4226"/>    
-    <bendpoint x="4188" y="3691"/>    
-    <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="433" name="studentProgresses"/>      
-      <multiplicity id="434" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="91" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="435">    
-    <end type="SOURCE" refId="99" navigable="false">      
-      <attribute id="436" name="exerciseSets"/>      
-      <multiplicity id="437" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="64" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="438">    
-    <end type="SOURCE" refId="61"/>    
-    <end type="TARGET" refId="46"/>  
-  </dependency>  
-  <association id="439">    
-    <end type="SOURCE" refId="58" navigable="false">      
-      <attribute id="440" name="exerciseRepository"/>      
-      <multiplicity id="441" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="68" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="442">    
-    <end type="SOURCE" refId="56" navigable="false">      
-      <attribute id="443" name="exerciseUnitService"/>      
-      <multiplicity id="444" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="33" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="445">    
-    <end type="SOURCE" refId="57"/>    
-    <end type="TARGET" refId="29"/>  
-  </dependency>  
-  <association id="446">    
-    <bendpoint x="4104" y="3691"/>    
-    <bendpoint x="3898" y="4226"/>    
-    <end type="SOURCE" refId="91" navigable="false">      
-      <attribute id="447" name="goal"/>      
-      <multiplicity id="448" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="40" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="449">    
-    <end type="SOURCE" refId="53"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <dependency id="450">    
-    <bendpoint x="6189" y="3012"/>    
-    <bendpoint x="6077" y="3691"/>    
-    <end type="SOURCE" refId="56"/>    
-    <end type="TARGET" refId="44"/>  
-  </dependency>  
-  <dependency id="451">    
-    <bendpoint x="1413" y="2302"/>    
-    <bendpoint x="1413" y="2621"/>    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <association id="452">    
-    <end type="SOURCE" refId="31" navigable="false">      
-      <attribute id="453" name="exercise"/>      
-      <multiplicity id="454" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="89" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="455">    
-    <bendpoint x="2850" y="823"/>    
-    <bendpoint x="2850" y="1178"/>    
-    <end type="SOURCE" refId="23" navigable="false">      
-      <attribute id="456" name="dietToDietBasicWebModelFunction"/>      
-      <multiplicity id="457" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="43" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="458">    
-    <end type="SOURCE" refId="41"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <realization id="459">    
+  <realization id="248">    
     <bendpoint x="6292" y="2621"/>    
     <end type="SOURCE" refId="110"/>    
     <end type="TARGET" refId="10"/>  
   </realization>  
-  <association id="460">    
-    <end type="SOURCE" refId="110" navigable="false">      
-      <attribute id="461" name="exerciseService"/>      
-      <multiplicity id="462" minimum="0" maximum="1"/>    
+  <association id="249">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="250" name="exercise">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="251" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="58" navigable="true"/>    
+    <end type="TARGET" refId="89" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="463">    
-    <bendpoint x="6956" y="4581"/>    
-    <end type="SOURCE" refId="84"/>    
-    <end type="TARGET" refId="19"/>  
-  </dependency>  
-  <realization id="464">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="70"/>  
+  <realization id="252">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="13"/>  
   </realization>  
-  <association id="465">    
-    <end type="SOURCE" refId="77" navigable="false">      
-      <attribute id="466" name="userEntityToUserWebModelFunction"/>      
-      <multiplicity id="467" minimum="0" maximum="1"/>    
+  <association id="253">    
+    <end type="SOURCE" refId="90" navigable="false">      
+      <attribute id="254" name="user">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="255" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="109" navigable="true"/>    
+    <end type="TARGET" refId="92" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="468">    
-    <bendpoint x="1524" y="3691"/>    
-    <bendpoint x="2345" y="4226"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="26"/>  
-  </dependency>  
-  <dependency id="469">    
-    <bendpoint x="7574" y="3012"/>    
-    <bendpoint x="7574" y="3691"/>    
-    <end type="SOURCE" refId="86"/>    
-    <end type="TARGET" refId="104"/>  
-  </dependency>  
-  <association id="470">    
-    <end type="SOURCE" refId="92" navigable="false">      
-      <attribute id="471" name="exerciseSets"/>      
-      <multiplicity id="472" minimum="0" maximum="2147483647"/>    
+  <association id="256">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="257" name="students">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="258" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="76" navigable="true"/>    
+    <end type="TARGET" refId="26" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="473">    
-    <end type="SOURCE" refId="39" navigable="false">      
-      <attribute id="474" name="userService"/>      
-      <multiplicity id="475" minimum="0" maximum="1"/>    
+  <association id="259">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="260" name="groupEntityToGroupWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="261" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="77" navigable="true"/>    
+    <end type="TARGET" refId="53" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="476">    
-    <end type="SOURCE" refId="77" navigable="false">      
-      <attribute id="477" name="userRepository"/>      
-      <multiplicity id="478" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="50" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="479">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="480" name="studentTrainingPlanRepository"/>      
-      <multiplicity id="481" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="61" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="482">    
-    <bendpoint x="1226" y="2621"/>    
-    <end type="SOURCE" refId="70"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <dependency id="483">    
-    <bendpoint x="1516" y="2621"/>    
-    <bendpoint x="1516" y="3012"/>    
-    <bendpoint x="1482" y="3691"/>    
-    <bendpoint x="1482" y="4226"/>    
-    <bendpoint x="1524" y="4581"/>    
-    <end type="SOURCE" refId="27"/>    
-    <end type="TARGET" refId="22"/>  
-  </dependency>  
-  <association id="484">    
-    <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="485" name="group"/>      
-      <multiplicity id="486" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="22" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="487">    
-    <end type="SOURCE" refId="25" navigable="false">      
-      <attribute id="488" name="studentNames"/>      
-      <multiplicity id="489" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="98" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="490">    
-    <end type="SOURCE" refId="58" navigable="false">      
-      <attribute id="491" name="studentExercisesToStudentExercisesWebModelFunction"/>      
-      <multiplicity id="492" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="85" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="493">    
-    <end type="SOURCE" refId="85"/>    
-    <end type="TARGET" refId="89"/>  
-  </dependency>  
-  <association id="494">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="495" name="measurementToMeasurementWebModelFunction"/>      
-      <multiplicity id="496" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="59" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="497">    
-    <bendpoint x="2091" y="3012"/>    
-    <bendpoint x="2324" y="3691"/>    
-    <bendpoint x="2324" y="4226"/>    
-    <bendpoint x="2324" y="4581"/>    
-    <end type="SOURCE" refId="53"/>    
-    <end type="TARGET" refId="22"/>  
-  </dependency>  
-  <dependency id="498">    
-    <bendpoint x="1952" y="823"/>    
-    <end type="SOURCE" refId="23"/>    
-    <end type="TARGET" refId="102"/>  
-  </dependency>  
-  <dependency id="499">    
-    <bendpoint x="6098" y="3691"/>    
-    <end type="SOURCE" refId="107"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="500">    
-    <end type="SOURCE" refId="51"/>    
-    <end type="TARGET" refId="16"/>  
-  </dependency>  
-  <association id="501">    
+  <association id="262">    
     <end type="SOURCE" refId="84" navigable="false">      
-      <attribute id="502" name="contraindicationRepository"/>      
-      <multiplicity id="503" minimum="0" maximum="1"/>    
+      <attribute id="263" name="contraindicationRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="264" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="96" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="504">    
-    <end type="SOURCE" refId="33" navigable="false">      
-      <attribute id="505" name="exerciseUnitRepository"/>      
-      <multiplicity id="506" minimum="0" maximum="1"/>    
+  <association id="265">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="266" name="student">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="267" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="81" navigable="true"/>    
+    <end type="TARGET" refId="26" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="507">    
+  <dependency id="268">    
+    <bendpoint x="2345" y="3691"/>    
+    <bendpoint x="2105" y="4226"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <dependency id="269">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="89"/>  
+  </dependency>  
+  <dependency id="270">    
+    <bendpoint x="6231" y="3012"/>    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="95"/>  
+  </dependency>  
+  <association id="271">    
+    <bendpoint x="3339" y="3691"/>    
+    <bendpoint x="3145" y="4226"/>    
+    <bendpoint x="3145" y="4581"/>    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="272" name="groups">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="273" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="274">    
+    <bendpoint x="1952" y="823"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="102"/>  
+  </dependency>  
+  <association id="275">    
+    <end type="SOURCE" refId="99" navigable="false">      
+      <attribute id="276" name="trainingPlanDiets">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="277" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="87" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="278">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="279" name="userRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="280" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="50" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="281">    
+    <bendpoint x="1307" y="4226"/>    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <dependency id="282">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="283">    
+    <bendpoint x="3881" y="1178"/>    
+    <bendpoint x="3548" y="1947"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="64"/>  
+  </dependency>  
+  <association id="284">    
+    <end type="SOURCE" refId="83" navigable="false">      
+      <attribute id="285" name="nutritional">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="286" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="108" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="287">    
+    <bendpoint x="4267" y="1947"/>    
+    <bendpoint x="4267" y="2302"/>    
+    <end type="SOURCE" refId="78"/>    
+    <end type="TARGET" refId="99"/>  
+  </dependency>  
+  <dependency id="288">    
+    <bendpoint x="2596" y="3691"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <realization id="289">    
     <bendpoint x="1748" y="540"/>    
     <end type="SOURCE" refId="42"/>    
     <end type="TARGET" refId="9"/>  
   </realization>  
-  <dependency id="508">    
-    <bendpoint x="2351" y="2621"/>    
-    <end type="SOURCE" refId="27"/>    
-    <end type="TARGET" refId="92"/>  
+  <dependency id="290">    
+    <bendpoint x="589" y="3691"/>    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="14"/>  
   </dependency>  
-  <dependency id="509">    
-    <bendpoint x="1708" y="1178"/>    
-    <bendpoint x="1708" y="1947"/>    
-    <end type="SOURCE" refId="9"/>    
+  <dependency id="291">    
+    <end type="SOURCE" refId="107"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <dependency id="292">    
+    <bendpoint x="3067" y="2302"/>    
+    <bendpoint x="3177" y="2621"/>    
+    <bendpoint x="3177" y="3012"/>    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="67"/>  
+  </dependency>  
+  <association id="293">    
+    <bendpoint x="5074" y="823"/>    
+    <bendpoint x="5074" y="1178"/>    
+    <bendpoint x="5074" y="1947"/>    
+    <bendpoint x="4971" y="2302"/>    
+    <bendpoint x="4677" y="2621"/>    
+    <bendpoint x="4383" y="3012"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="294" name="studentRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="295" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="296">    
+    <bendpoint x="3113" y="823"/>    
+    <bendpoint x="3113" y="1178"/>    
+    <end type="SOURCE" refId="93"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="297">    
+    <bendpoint x="2072" y="3691"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <association id="298">    
+    <end type="SOURCE" refId="105" navigable="false">      
+      <attribute id="299" name="heights">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="300" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="301">    
+    <bendpoint x="2015" y="823"/>    
+    <bendpoint x="2015" y="1178"/>    
+    <bendpoint x="2015" y="1947"/>    
+    <bendpoint x="2015" y="2302"/>    
+    <bendpoint x="2015" y="2621"/>    
+    <bendpoint x="2112" y="3012"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="302" name="dateService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="303" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="304">    
+    <end type="SOURCE" refId="105" navigable="false">      
+      <attribute id="305" name="weights">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="306" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="307">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="308" name="diets">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="309" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="97" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="310">    
+    <end type="SOURCE" refId="100" navigable="false">      
+      <attribute id="311" name="disciplineRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="312" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="313">    
+    <bendpoint x="4362" y="3012"/>    
+    <end type="SOURCE" refId="76" navigable="false">      
+      <attribute id="314" name="exercises">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="315" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="89" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="316">    
+    <bendpoint x="6641" y="2621"/>    
+    <bendpoint x="6641" y="3012"/>    
+    <end type="SOURCE" refId="110"/>    
+    <end type="TARGET" refId="95"/>  
+  </dependency>  
+  <dependency id="317">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="64"/>  
+  </dependency>  
+  <dependency id="318">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="98"/>  
+  </dependency>  
+  <association id="319">    
+    <end type="SOURCE" refId="99" navigable="false">      
+      <attribute id="320" name="exerciseSets">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="321" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="64" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="322">    
+    <end type="SOURCE" refId="43"/>    
     <end type="TARGET" refId="97"/>  
   </dependency>  
-  <association id="510">    
-    <bendpoint x="2036" y="823"/>    
-    <bendpoint x="2036" y="1178"/>    
-    <bendpoint x="2057" y="1947"/>    
-    <bendpoint x="2055" y="2302"/>    
+  <association id="323">    
+    <bendpoint x="2850" y="823"/>    
+    <bendpoint x="2850" y="1178"/>    
     <end type="SOURCE" refId="23" navigable="false">      
-      <attribute id="511" name="groupRepository"/>      
-      <multiplicity id="512" minimum="0" maximum="1"/>    
+      <attribute id="324" name="dietToDietBasicWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="325" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="35" navigable="true"/>    
+    <end type="TARGET" refId="43" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="513">    
-    <bendpoint x="2267" y="2621"/>    
-    <end type="SOURCE" refId="37"/>    
-    <end type="TARGET" refId="88"/>  
+  <association id="326">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="327" name="mealSets">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="328" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="329">    
+    <bendpoint x="3198" y="2621"/>    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="92"/>  
   </dependency>  
-  <association id="514">    
-    <end type="SOURCE" refId="89" navigable="false">      
-      <attribute id="515" name="unit"/>      
-      <multiplicity id="516" minimum="0" maximum="1"/>    
+  <association id="330">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="331" name="trainingPlanService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="332" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="44" navigable="true"/>    
+    <end type="TARGET" refId="12" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="517">    
+  <association id="333">    
+    <bendpoint x="4146" y="4226"/>    
+    <bendpoint x="4146" y="3691"/>    
     <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="518" name="studentExercises"/>      
-      <multiplicity id="519" minimum="0" maximum="2147483647"/>    
+      <attribute id="334" name="studentGoalInitialStates">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="335" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="336">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="337" name="studentContraindications">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="338" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="339">    
+    <end type="SOURCE" refId="64" navigable="false">      
+      <attribute id="340" name="exerciseSet">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="341" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="76" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="342">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="343" name="mealset">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="344" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="345">    
+    <bendpoint x="5725" y="3691"/>    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="44"/>  
+  </dependency>  
+  <association id="346">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="347" name="studentExercises">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="348" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="62" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="520">    
-    <end type="SOURCE" refId="85"/>    
-    <end type="TARGET" refId="95"/>  
+  <association id="349">    
+    <bendpoint x="3592" y="3691"/>    
+    <bendpoint x="3592" y="4226"/>    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="350" name="student">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="351" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="352">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="353" name="studentNames">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="354" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="98" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="355">    
+    <bendpoint x="6683" y="540"/>    
+    <bendpoint x="6683" y="823"/>    
+    <bendpoint x="6683" y="1178"/>    
+    <bendpoint x="6683" y="1947"/>    
+    <bendpoint x="6683" y="2302"/>    
+    <bendpoint x="6683" y="2621"/>    
+    <bendpoint x="6683" y="3012"/>    
+    <bendpoint x="6683" y="3691"/>    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="356" name="contraindicationService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="357" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="84" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="358">    
+    <bendpoint x="3860" y="1178"/>    
+    <bendpoint x="3527" y="1947"/>    
+    <bendpoint x="3527" y="2302"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="99"/>  
   </dependency>  
-  <dependency id="521">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="16"/>  
+  <association id="359">    
+    <end type="SOURCE" refId="71" navigable="false">      
+      <attribute id="360" name="studentService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="361" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="362">    
+    <bendpoint x="4188" y="4226"/>    
+    <bendpoint x="4188" y="3691"/>    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="363" name="studentProgresses">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="364" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="91" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="365">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="366" name="studentRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="367" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="368">    
+    <bendpoint x="7307" y="3691"/>    
+    <end type="SOURCE" refId="100"/>    
+    <end type="TARGET" refId="104"/>  
   </dependency>  
-  <dependency id="522">    
+  <dependency id="369">    
     <bendpoint x="2798" y="3691"/>    
     <bendpoint x="2840" y="4226"/>    
     <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="26"/>  
   </dependency>  
-  <association id="523">    
-    <end type="SOURCE" refId="58" navigable="false">      
-      <attribute id="524" name="exerciseListToExerciseWebModelListFunction"/>      
-      <multiplicity id="525" minimum="0" maximum="1"/>    
+  <dependency id="370">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <dependency id="371">    
+    <end type="SOURCE" refId="85"/>    
+    <end type="TARGET" refId="95"/>  
+  </dependency>  
+  <association id="372">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="373" name="exerciseUnitRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="374" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="107" navigable="true"/>    
+    <end type="TARGET" refId="81" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="526">    
+  <association id="375">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="527" name="meal"/>      
-      <multiplicity id="528" minimum="0" maximum="1"/>    
+      <attribute id="376" name="meal">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="377" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="90" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="529">    
-    <bendpoint x="1910" y="540"/>    
-    <bendpoint x="1910" y="823"/>    
-    <end type="SOURCE" refId="42"/>    
-    <end type="TARGET" refId="102"/>  
+  <association id="378">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="379" name="userSettings">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="380" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="49" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="381">    
+    <bendpoint x="893" y="3691"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="14"/>  
   </dependency>  
-  <association id="530">    
-    <bendpoint x="4362" y="3012"/>    
+  <association id="382">    
+    <end type="SOURCE" refId="87" navigable="false">      
+      <attribute id="383" name="trainingPlan">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="384" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="99" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="385">    
+    <bendpoint x="623" y="3012"/>    
+    <bendpoint x="604" y="3691"/>    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="386">    
+    <bendpoint x="5704" y="3691"/>    
+    <end type="SOURCE" refId="107"/>    
+    <end type="TARGET" refId="44"/>  
+  </dependency>  
+  <dependency id="387">    
+    <end type="SOURCE" refId="50"/>    
+    <end type="TARGET" refId="92"/>  
+  </dependency>  
+  <association id="388">    
+    <bendpoint x="3219" y="2621"/>    
+    <bendpoint x="3198" y="3012"/>    
+    <end type="SOURCE" refId="87" navigable="false">      
+      <attribute id="389" name="diet">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="390" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="391">    
+    <end type="SOURCE" refId="48" navigable="false">      
+      <attribute id="392" name="mealSet">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="393" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="394">    
+    <bendpoint x="3571" y="4581"/>    
+    <bendpoint x="3571" y="4226"/>    
+    <bendpoint x="3386" y="3691"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="395" name="user">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="396" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="397">    
+    <end type="SOURCE" refId="47" navigable="false">      
+      <attribute id="398" name="student">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="399" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="400">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="401" name="groupRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="402" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="403">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="404" name="studentMeasurements">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="405" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="52" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="406">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="407">    
+    <end type="SOURCE" refId="56" navigable="false">      
+      <attribute id="408" name="exerciseUnitService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="409" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="33" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="410">    
     <end type="SOURCE" refId="76" navigable="false">      
-      <attribute id="531" name="exercises"/>      
-      <multiplicity id="532" minimum="0" maximum="2147483647"/>    
+      <attribute id="411" name="user">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="412" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="413">    
+    <bendpoint x="3499" y="823"/>    
+    <end type="SOURCE" refId="93"/>    
+    <end type="TARGET" refId="63"/>  
+  </realization>  
+  <dependency id="414">    
+    <bendpoint x="1135" y="4226"/>    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <association id="415">    
+    <end type="SOURCE" refId="110" navigable="false">      
+      <attribute id="416" name="exerciseService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="417" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="58" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="418">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="419" name="exerciseRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="420" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="68" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="421">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="422" name="exercise">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="423" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="89" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="533">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="534" name="studentMeasurementRepository"/>      
-      <multiplicity id="535" minimum="0" maximum="1"/>    
+  <association id="424">    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="425" name="userService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="426" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="77" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="536">    
-    <end type="SOURCE" refId="20"/>    
-    <end type="TARGET" refId="51"/>  
-  </realization>  
-  <realization id="537">    
-    <end type="SOURCE" refId="56"/>    
-    <end type="TARGET" refId="21"/>  
-  </realization>  
-  <dependency id="538">    
+  <dependency id="427">    
     <bendpoint x="2103" y="3012"/>    
     <bendpoint x="2575" y="3691"/>    
     <bendpoint x="2556" y="4226"/>    
@@ -2568,157 +2479,700 @@
     <end type="SOURCE" refId="35"/>    
     <end type="TARGET" refId="22"/>  
   </dependency>  
-  <dependency id="539">    
-    <bendpoint x="4683" y="1178"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="46"/>  
+  <dependency id="428">    
+    <end type="SOURCE" refId="78"/>    
+    <end type="TARGET" refId="28"/>  
   </dependency>  
-  <dependency id="540">    
-    <bendpoint x="2515" y="1178"/>    
-    <bendpoint x="2515" y="1947"/>    
-    <bendpoint x="2423" y="2302"/>    
-    <bendpoint x="2330" y="2621"/>    
-    <bendpoint x="2757" y="3012"/>    
-    <bendpoint x="2819" y="3691"/>    
-    <bendpoint x="2819" y="4226"/>    
-    <bendpoint x="2819" y="4581"/>    
-    <end type="SOURCE" refId="71"/>    
-    <end type="TARGET" refId="36"/>  
+  <dependency id="429">    
+    <end type="SOURCE" refId="109"/>    
+    <end type="TARGET" refId="92"/>  
   </dependency>  
-  <dependency id="541">    
-    <bendpoint x="1434" y="2621"/>    
-    <end type="SOURCE" refId="27"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <association id="542">    
-    <end type="SOURCE" refId="67" navigable="false">      
-      <attribute id="543" name="user"/>      
-      <multiplicity id="544" minimum="0" maximum="1"/>    
+  <association id="430">    
+    <end type="SOURCE" refId="89" navigable="false">      
+      <attribute id="431" name="studentExercises">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="432" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="92" navigable="true"/>    
+    <end type="TARGET" refId="62" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="545">    
-    <bendpoint x="5131" y="3691"/>    
-    <end type="SOURCE" refId="85"/>    
-    <end type="TARGET" refId="62"/>  
-  </dependency>  
-  <dependency id="546">    
-    <bendpoint x="3797" y="2302"/>    
-    <end type="SOURCE" refId="74"/>    
-    <end type="TARGET" refId="99"/>  
-  </dependency>  
-  <association id="547">    
-    <end type="SOURCE" refId="76" navigable="false">      
-      <attribute id="548" name="user"/>      
-      <multiplicity id="549" minimum="0" maximum="1"/>    
+  <association id="433">    
+    <end type="SOURCE" refId="78" navigable="false">      
+      <attribute id="434" name="trainingPlanRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="435" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="92" navigable="true"/>    
+    <end type="TARGET" refId="74" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="550">    
-    <end type="SOURCE" refId="71"/>    
-    <end type="TARGET" refId="102"/>  
+  <association id="436">    
+    <bendpoint x="4104" y="3691"/>    
+    <bendpoint x="3898" y="4226"/>    
+    <end type="SOURCE" refId="91" navigable="false">      
+      <attribute id="437" name="goal">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="438" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="40" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="439">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="105"/>  
   </dependency>  
-  <dependency id="551">    
+  <association id="440">    
+    <bendpoint x="4167" y="3691"/>    
+    <bendpoint x="4167" y="4226"/>    
+    <end type="SOURCE" refId="91" navigable="false">      
+      <attribute id="441" name="student">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="442" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="443">    
+    <bendpoint x="6985" y="3691"/>    
+    <end type="SOURCE" refId="100"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="444">    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="87"/>  
+  </dependency>  
+  <dependency id="445">    
     <bendpoint x="6252" y="2621"/>    
     <bendpoint x="6252" y="3012"/>    
     <end type="SOURCE" refId="110"/>    
     <end type="TARGET" refId="25"/>  
   </dependency>  
-  <dependency id="552">    
-    <bendpoint x="5949" y="3691"/>    
-    <end type="SOURCE" refId="33"/>    
-    <end type="TARGET" refId="44"/>  
+  <dependency id="446">    
+    <bendpoint x="5131" y="3691"/>    
+    <end type="SOURCE" refId="85"/>    
+    <end type="TARGET" refId="62"/>  
   </dependency>  
-  <association id="553">    
-    <bendpoint x="3592" y="3691"/>    
-    <bendpoint x="3592" y="4226"/>    
-    <end type="SOURCE" refId="92" navigable="false">      
-      <attribute id="554" name="student"/>      
-      <multiplicity id="555" minimum="0" maximum="1"/>    
+  <dependency id="447">    
+    <end type="SOURCE" refId="79"/>    
+    <end type="TARGET" refId="69"/>  
+  </dependency>  
+  <association id="448">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="449" name="groupService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="450" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="26" navigable="true"/>    
+    <end type="TARGET" refId="27" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="556">    
+  <dependency id="451">    
+    <bendpoint x="872" y="3691"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="60"/>  
+  </dependency>  
+  <association id="452">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="453" name="studentTrainingPlanRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="454" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="61" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="455">    
+    <end type="SOURCE" refId="94"/>    
+    <end type="TARGET" refId="62"/>  
+  </dependency>  
+  <dependency id="456">    
+    <bendpoint x="7328" y="3691"/>    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="104"/>  
+  </dependency>  
+  <association id="457">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="458" name="studentTrainingPlanRepository"/>      
+      <multiplicity id="459" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="61" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="460">    
+    <bendpoint x="6098" y="3691"/>    
+    <end type="SOURCE" refId="107"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="461">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="92"/>  
+  </dependency>  
+  <dependency id="462">    
+    <bendpoint x="3092" y="823"/>    
+    <bendpoint x="3092" y="1178"/>    
+    <bendpoint x="3124" y="1947"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="87"/>  
+  </dependency>  
+  <dependency id="463">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="464">    
+    <end type="SOURCE" refId="101" navigable="false">      
+      <attribute id="465" name="exerciseId">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="466" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="89" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="467">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="468" name="exercises">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="469" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="89" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="470">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <dependency id="471">    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <association id="472">    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="473" name="setting">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="474" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="475">    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="476">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="477">    
     <bendpoint x="1973" y="823"/>    
     <bendpoint x="1973" y="1178"/>    
     <bendpoint x="1973" y="1947"/>    
     <end type="SOURCE" refId="23"/>    
     <end type="TARGET" refId="97"/>  
   </dependency>  
-  <dependency id="557">    
-    <end type="SOURCE" refId="107"/>    
-    <end type="TARGET" refId="25"/>  
-  </dependency>  
-  <dependency id="558">    
-    <end type="SOURCE" refId="109"/>    
-    <end type="TARGET" refId="88"/>  
-  </dependency>  
-  <association id="559">    
-    <bendpoint x="4146" y="4226"/>    
-    <bendpoint x="4146" y="3691"/>    
-    <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="560" name="studentGoalInitialStates"/>      
-      <multiplicity id="561" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="31" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="562">    
-    <end type="SOURCE" refId="86"/>    
-    <end type="TARGET" refId="24"/>  
+  <realization id="478">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="37"/>  
   </realization>  
-  <association id="563">    
-    <end type="SOURCE" refId="86" navigable="false">      
-      <attribute id="564" name="disciplineService"/>      
-      <multiplicity id="565" minimum="0" maximum="1"/>    
+  <association id="479">    
+    <end type="SOURCE" refId="77" navigable="false">      
+      <attribute id="480" name="passwordEncoder">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="481" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="100" navigable="true"/>    
+    <end type="TARGET" refId="66" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="566">    
-    <end type="SOURCE" refId="30" navigable="false">      
-      <attribute id="567" name="user"/>      
-      <multiplicity id="568" minimum="0" maximum="1"/>    
+  <association id="482">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="483" name="exerciseSetToExerciseSetBasicWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="484" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="92" navigable="true"/>    
+    <end type="TARGET" refId="57" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="569">    
-    <end type="SOURCE" refId="49" navigable="false">      
-      <attribute id="570" name="setting"/>      
-      <multiplicity id="571" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="80" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="572">    
-    <bendpoint x="2309" y="2621"/>    
-    <end type="SOURCE" refId="77"/>    
-    <end type="TARGET" refId="88"/>  
-  </dependency>  
-  <association id="573">    
-    <bendpoint x="2494" y="1178"/>    
-    <bendpoint x="2036" y="1947"/>    
-    <bendpoint x="1973" y="2302"/>    
-    <bendpoint x="1689" y="2621"/>    
-    <end type="SOURCE" refId="71" navigable="false">      
-      <attribute id="574" name="measurementService"/>      
-      <multiplicity id="575" minimum="0" maximum="1"/>    
+  <association id="485">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="486" name="measurementService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="487" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="576">    
+  <dependency id="488">    
+    <bendpoint x="644" y="3012"/>    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="489">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="490" name="measurement">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="491" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="492">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="493" name="meals">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="494" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="90" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="495">    
+    <bendpoint x="1226" y="2621"/>    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="496">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="71"/>  
+  </dependency>  
+  <dependency id="497">    
+    <end type="SOURCE" refId="45"/>    
+    <end type="TARGET" refId="62"/>  
+  </dependency>  
+  <association id="498">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="499" name="studentTrainingPlansToTrainingPlanBasicWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="500" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="78" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="501">    
+    <bendpoint x="5949" y="3691"/>    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="44"/>  
+  </dependency>  
+  <dependency id="502">    
+    <bendpoint x="1910" y="540"/>    
+    <bendpoint x="1910" y="823"/>    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="102"/>  
+  </dependency>  
+  <dependency id="503">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="95"/>  
+  </dependency>  
+  <dependency id="504">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="102"/>  
+  </dependency>  
+  <association id="505">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="506" name="studentEntityToStudentWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="507" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="71" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="508">    
+    <end type="SOURCE" refId="89" navigable="false">      
+      <attribute id="509" name="discipline">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="510" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="511">    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="512">    
+    <end type="SOURCE" refId="86" navigable="false">      
+      <attribute id="513" name="disciplineService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="514" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="100" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="515">    
+    <end type="SOURCE" refId="93" navigable="false">      
+      <attribute id="516" name="trainingPlanService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="517" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="518">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="519" name="studentExercisesToStudentExercisesWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="520" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="85" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="521">    
+    <end type="SOURCE" refId="89" navigable="false">      
+      <attribute id="522" name="secondUnit">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="523" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="524">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="525">    
+    <bendpoint x="4306" y="2302"/>    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="76"/>  
+  </dependency>  
+  <dependency id="526">    
+    <end type="SOURCE" refId="107"/>    
+    <end type="TARGET" refId="89"/>  
+  </dependency>  
+  <association id="527">    
+    <end type="SOURCE" refId="77" navigable="false">      
+      <attribute id="528" name="userRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="529" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="50" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="530">    
+    <end type="SOURCE" refId="71" navigable="false">      
+      <attribute id="531" name="bmiService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="532" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="533">    
     <end type="SOURCE" refId="42" navigable="false">      
-      <attribute id="577" name="studentService"/>      
-      <multiplicity id="578" minimum="0" maximum="1"/>    
+      <attribute id="534" name="studentService">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="535" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="23" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="536">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="537" name="dietToDietBasicWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="538" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="539">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="540" name="user">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="541" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="542">    
+    <bendpoint x="3902" y="1178"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="543" name="trainingPlanExerciseSetToExerciseSetBasicWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="544" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="57" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="545">    
+    <bendpoint x="6189" y="3012"/>    
+    <bendpoint x="6077" y="3691"/>    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="44"/>  
+  </dependency>  
+  <dependency id="546">    
+    <end type="SOURCE" refId="94"/>    
+    <end type="TARGET" refId="98"/>  
+  </dependency>  
+  <dependency id="547">    
+    <bendpoint x="222" y="3012"/>    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="105"/>  
+  </dependency>  
+  <association id="548">    
+    <end type="SOURCE" refId="77" navigable="false">      
+      <attribute id="549" name="userEntityToUserWebModelFunction">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="550" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="109" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="551">    
+    <bendpoint x="2309" y="2621"/>    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="88"/>  
+  </dependency>  
+  <dependency id="552">    
+    <bendpoint x="5053" y="1178"/>    
+    <bendpoint x="5053" y="1947"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <association id="553">    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="554" name="trainingPlan"/>      
+      <multiplicity id="555" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="99" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="556">    
+    <bendpoint x="2036" y="823"/>    
+    <bendpoint x="2036" y="1178"/>    
+    <bendpoint x="2057" y="1947"/>    
+    <bendpoint x="2055" y="2302"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="557" name="groupRepository">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="558" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="559">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <realization id="560">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="70"/>  
+  </realization>  
+  <dependency id="561">    
+    <bendpoint x="4711" y="3012"/>    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="89"/>  
+  </dependency>  
+  <dependency id="562">    
+    <bendpoint x="1413" y="2302"/>    
+    <bendpoint x="1413" y="2621"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="563">    
+    <end type="SOURCE" refId="67" navigable="false">      
+      <attribute id="564" name="user">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="565" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="566">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="567" name="exercise">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="568" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="89" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="569">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="570" name="exerciseSets">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="571" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="572">    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <dependency id="573">    
+    <bendpoint x="1994" y="823"/>    
+    <bendpoint x="1994" y="1178"/>    
+    <bendpoint x="1994" y="1947"/>    
+    <bendpoint x="1994" y="2302"/>    
+    <bendpoint x="1994" y="2621"/>    
+    <bendpoint x="1749" y="3012"/>    
+    <bendpoint x="1503" y="3691"/>    
+    <bendpoint x="1503" y="4226"/>    
+    <bendpoint x="1503" y="4581"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <dependency id="574">    
+    <bendpoint x="4704" y="823"/>    
+    <bendpoint x="4704" y="1178"/>    
+    <end type="SOURCE" refId="93"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="575">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="576">    
+    <bendpoint x="3071" y="1178"/>    
+    <bendpoint x="3145" y="1947"/>    
+    <bendpoint x="3776" y="2302"/>    
+    <bendpoint x="4060" y="2621"/>    
+    <bendpoint x="4320" y="3012"/>    
+    <bendpoint x="4320" y="3691"/>    
+    <bendpoint x="4341" y="4226"/>    
+    <bendpoint x="4341" y="4581"/>    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="577">    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="67"/>  
+  </dependency>  
+  <dependency id="578">    
+    <bendpoint x="2351" y="2621"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="92"/>  
+  </dependency>  
+  <association id="579">    
+    <end type="SOURCE" refId="47" navigable="false">      
+      <attribute id="580" name="goal">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="581" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="40" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="582">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="583">    
+    <bendpoint x="2303" y="4581"/>    
+    <end type="SOURCE" refId="82"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <association id="584">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="585" name="student">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="586" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="587">    
+    <bendpoint x="1931" y="540"/>    
+    <bendpoint x="1931" y="823"/>    
+    <bendpoint x="1931" y="1178"/>    
+    <bendpoint x="1931" y="1947"/>    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="97"/>  
+  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

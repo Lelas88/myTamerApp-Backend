@@ -65,4 +65,9 @@ public class TrainingPlanService {
 		return Lists.transform(exerciseSets, trainingPlanExerciseSetToExerciseSetBasicWebModelFunction);
 	}
 
+	public List<TrainingPlanWebModel> getUserTrainingPlans(Integer userId) {
+		List<TrainingPlan> trainingPlans = trainingPlanRepository.findByUserId(userId);
+		return Lists.transform(trainingPlans, trainingPlanToTrainingPlanWebModelFunction);
+	}
+
 }

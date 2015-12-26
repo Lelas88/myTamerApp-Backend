@@ -26,4 +26,14 @@ public class ExerciseWebApiImpl implements ExerciseWebApi {
 	public List<StudentExerciseWebModel> getStudentExercises(Integer studentId) {
 		return exerciseService.getStudentExercises(studentId);
 	}
+
+	@Override
+	public List<ExerciseWebModel> getUserExercises(Integer userId) {
+		return exerciseService.getUserExercises(userId);
+	}
+
+	@Override
+	public ExerciseWebModel getExerciseDetails(Integer exerciseId) {
+		return exerciseService.getExerciseDetails(exerciseId);
+	}
 }

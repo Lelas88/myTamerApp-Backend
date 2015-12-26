@@ -14,12 +14,22 @@ import com.mastalerek.mytamer.webmodel.ExerciseSetWebModel;
 @Path(ExerciseSetWebApi.BASE_PATH)
 public interface ExerciseSetWebApi {
 
+	public static final String BY_USER = "/byUser";
 	public static final String BY_TRAINING_PLAN = "/byTrainingPlan";
-	public static final String BASE_PATH = "/exercisSet";
+	public static final String BASE_PATH = "/exerciseSet";
 
 	@GET
 	@Path(BY_TRAINING_PLAN)
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<ExerciseSetWebModel> getExercisesAssignedToTrainingPlan(
 			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId);
+	
+	@GET
+	@Path(BY_USER)
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<ExerciseSetWebModel> getExerciseSetsByUserId(@NotNull @QueryParam("userId") Integer userId);
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public ExerciseSetWebModel getExerciseSetDetails(@NotNull @QueryParam("exerciseSetId") Integer exerciseSetId);
 }

@@ -12,4 +12,6 @@ public interface TrainingPlanRepository extends CrudRepository<TrainingPlan, Int
 
 	public List<TrainingPlan> findByIdIn(List<Integer> trainingPlanIds);
 
+	public List<TrainingPlan> findByUserId(Integer userId);
+
 }
