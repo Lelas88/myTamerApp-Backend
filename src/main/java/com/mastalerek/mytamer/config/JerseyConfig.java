@@ -5,11 +5,13 @@ import javax.ws.rs.ApplicationPath;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.stereotype.Component;
 
+import com.mastalerek.mytamer.webapi.impl.DietWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.DisciplineWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.ExerciseSetWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.ExerciseUnitWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.ExerciseWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.GroupWebApiImpl;
+import com.mastalerek.mytamer.webapi.impl.MealSetWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.MealWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.MeasurementWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.RankWebApiImpl;
@@ -36,5 +38,7 @@ public class JerseyConfig extends ResourceConfig {
 		register(TimesheetWebApiImpl.class);
 		register(ExerciseSetWebApiImpl.class);
 		register(MealWebApiImpl.class);
+		register(MealSetWebApiImpl.class);
+		register(DietWebApiImpl.class);
 	}
 }

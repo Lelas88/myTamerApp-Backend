@@ -9,11 +9,11 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "meal_set_meals")
-public class MealSetMeals {
+@Table(name = "exercise_set_exercises")
+public class ExerciseSetExercises {
 	private Integer id;
-	private Meal meal;
-	private MealSet mealSet;
+	private Exercise exercise;
+	private ExerciseSet exerciseSet;
 
 	@Id
 	@GeneratedValue
@@ -27,23 +27,23 @@ public class MealSetMeals {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "meal_id", nullable = false)
-	public Meal getMeal() {
-		return meal;
+	@JoinColumn(name = "exercise_id", nullable = false)
+	public Exercise getExercise() {
+		return exercise;
 	}
 
-	public void setMeal(Meal meal) {
-		this.meal = meal;
+	public void setExercise(Exercise exercise) {
+		this.exercise = exercise;
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "meal_set_id", nullable = false)
-	public MealSet getMealSet() {
-		return mealSet;
+	@JoinColumn(name = "exercise_set_id", nullable = false)
+	public ExerciseSet getExerciseSet() {
+		return exerciseSet;
 	}
 
-	public void setMealSet(MealSet mealSet) {
-		this.mealSet = mealSet;
+	public void setExerciseSet(ExerciseSet exerciseSet) {
+		this.exerciseSet = exerciseSet;
 	}
 
 }

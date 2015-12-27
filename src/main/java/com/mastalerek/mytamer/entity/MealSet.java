@@ -1,5 +1,7 @@
 package com.mastalerek.mytamer.entity;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -7,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -15,6 +18,7 @@ public class MealSet {
 	private Integer id;
 	private String name;
 	private User user;
+	private List<MealSetMeals> meals;
 
 	@Id
 	@GeneratedValue
@@ -45,4 +49,14 @@ public class MealSet {
 	public void setUser(User user) {
 		this.user = user;
 	}
+
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "mealSet")
+	public List<MealSetMeals> getMeals() {
+		return meals;
+	}
+
+	public void setMeals(List<MealSetMeals> meals) {
+		this.meals = meals;
+	}
+	
 }
