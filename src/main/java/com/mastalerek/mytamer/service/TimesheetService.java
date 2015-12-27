@@ -6,7 +6,9 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.mastalerek.mytamer.entity.Student;
 import com.mastalerek.mytamer.entity.Timesheet;
 import com.mastalerek.mytamer.repository.StudentRepository;
 import com.mastalerek.mytamer.repository.TimesheetRepository;
@@ -24,11 +26,15 @@ public class TimesheetService {
 		}
 	}
 
-	private void savePresence(Integer studentId) {		
+	@Transactional
+	private void savePresence(Integer studentId) {
 		Timesheet timesheet = new Timesheet();
 		timesheet.setDate(new Date(new java.util.Date().getTime()));
-		timesheet.setStudent(studentRepository.findOne(studentId));
-		timesheetRepository.save(timesheet);		
+		Student student = studentRepository.findOne(studentId);
+		if (student != null) {
+			timesheet.setStudent(student);
+			timesheetRepository.save(timesheet);
+		}
 	}
-	
+
 }
