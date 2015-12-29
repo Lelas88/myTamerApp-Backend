@@ -19,6 +19,7 @@ import com.mastalerek.mytamer.webmodel.StudentWebModel;
 @Path(StudentWebApi.BASE_PATH)
 public interface StudentWebApi {
 
+	public static final String WITH_NO_GROUP = "/withNoGroup";
 	public static final String DIETS = "/diet/{studentId}";
 	public static final String CONTRAINDICATIONS = "/contraindications/{studentId}";
 	public static final String STUDENT_ID = "/{studentId}";
@@ -41,6 +42,11 @@ public interface StudentWebApi {
 	@Path(BY_USER)
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<StudentWebModel> getUserStudents(@NotNull @PathParam("userId") Integer userId);
+
+	@GET
+	@Path(WITH_NO_GROUP)
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<StudentWebModel> getStudentsWithNoGroupAssigned(@NotNull @QueryParam("userId") Integer userId);
 
 	@PUT
 	@Path(CREATE)

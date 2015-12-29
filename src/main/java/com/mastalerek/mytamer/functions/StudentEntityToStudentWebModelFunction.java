@@ -28,8 +28,10 @@ public class StudentEntityToStudentWebModelFunction implements Function<Student,
 		output.setId(input.getId());
 		output.setFirstName(input.getFirstName());
 		output.setLastName(input.getLastName());
-		output.setGroupId(input.getGroup().getId());
-		output.setGroupName(input.getGroup().getName());
+		if (input.getGroup() != null) {
+			output.setGroupId(input.getGroup().getId());
+			output.setGroupName(input.getGroup().getName());
+		}
 		output.setRankId(input.getRank().getId());
 		output.setBirthdate(input.getBirthdate().toString());
 		output.setWeight(measurementService.getLastStudentMeasurementByStudentIdAndType(input.getId(),

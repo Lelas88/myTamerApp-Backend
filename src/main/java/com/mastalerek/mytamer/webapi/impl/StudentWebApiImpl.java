@@ -58,4 +58,9 @@ public class StudentWebApiImpl implements StudentWebApi {
 		return studentService.getStudentDiets(studentId);
 	}
 
+	@Override
+	public List<StudentWebModel> getStudentsWithNoGroupAssigned(Integer userId) {
+		return studentService.getStudentsWithNoGroupAssigned(userId);
+	}
+
 }

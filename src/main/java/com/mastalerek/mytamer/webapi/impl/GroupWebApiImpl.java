@@ -3,6 +3,7 @@ package com.mastalerek.mytamer.webapi.impl;
 import java.util.List;
 
 import javax.inject.Inject;
+import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.Response;
 
 import org.springframework.stereotype.Component;
@@ -35,8 +36,8 @@ public class GroupWebApiImpl implements GroupWebApi {
 	@Override
 	public Response createGroup(GroupWebModel group) {
 		try {
-			groupService.createGroup(group);
-			return Response.ok().build();
+			Integer groupId = groupService.createGroup(group);
+			return Response.ok().entity(Entity.text(String.valueOf(groupId))).build();
 		} catch (Exception e) {
 			return Response.notModified().build();
 		}
@@ -46,6 +47,21 @@ public class GroupWebApiImpl implements GroupWebApi {
 	public Response deleteGroup(Integer groupId) {
 		try {
 			groupService.deleteGroup(groupId);
+			return Response.ok().build();
+		} catch (Exception e) {
+			return Response.notModified().build();
+		}
+	}
+
+	@Override
+	public GroupWebModel getGroupDetails(Integer groupId) {
+		return groupService.getGroupDetails(groupId);
+	}
+
+	@Override
+	public Response linkStudents(Integer groupId, List<Integer> studentIds) {
+		try {
+			groupService.linkGroupAndStudents(groupId, studentIds);
 			return Response.ok().build();
 		} catch (Exception e) {
 			return Response.notModified().build();

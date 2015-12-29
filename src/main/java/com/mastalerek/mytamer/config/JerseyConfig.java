@@ -26,6 +26,7 @@ public class JerseyConfig extends ResourceConfig {
 	static final String APPLICATION_PATH = "/mytamer";
 
 	public JerseyConfig() {
+		register(CORSResponseFilter.class);
 		register(UserWebApiImpl.class);
 		register(GroupWebApiImpl.class);
 		register(RankWebApiImpl.class);

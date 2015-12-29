@@ -35,6 +35,7 @@ public class User implements Serializable {
 	private List<Exercise> exercises;
 	private List<ExerciseSet> exerciseSets;
 	private List<TrainingPlan> trainingPlans;
+	private List<Student> students;
 	private Student student;
 
 	@Id
@@ -148,6 +149,15 @@ public class User implements Serializable {
 
 	public void setTrainingPlans(List<TrainingPlan> trainingPlans) {
 		this.trainingPlans = trainingPlans;
+	}
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "trainer", cascade = CascadeType.ALL)
+	public List<Student> getStudents() {
+		return students;
+	}
+
+	public void setStudents(List<Student> students) {
+		this.students = students;
 	}
 
 	@OneToOne(fetch = FetchType.LAZY)

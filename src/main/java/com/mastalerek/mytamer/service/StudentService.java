@@ -13,7 +13,6 @@ import org.springframework.stereotype.Component;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Lists;
 import com.mastalerek.mytamer.builder.RankBuilder;
-import com.mastalerek.mytamer.entity.Group;
 import com.mastalerek.mytamer.entity.Student;
 import com.mastalerek.mytamer.entity.TrainingPlan;
 import com.mastalerek.mytamer.entity.TrainingPlanDiet;
@@ -68,12 +67,8 @@ public class StudentService {
 	}
 
 	public List<StudentWebModel> getStudentsByUserId(Integer userId) {
-		List<Group> groups = groupRepository.findByUserId(userId);
-		List<StudentWebModel> output = Lists.newArrayList();
-		for (Group group : groups) {
-			output.addAll(Lists.transform(group.getStudents(), studentEntityToStudentWebModelFunction));
-		}
-		return ImmutableSet.copyOf(output).asList();
+		List<Student> students = studentRepository.findByTrainerId(userId);
+		return Lists.transform(students, studentEntityToStudentWebModelFunction);
 	}
 
 	public StudentWebModel getStudent(Integer studentId) {
@@ -87,5 +82,18 @@ public class StudentService {
 			diets.addAll(trainingPlan.getTrainingPlanDiets());
 		}
 		return Lists.transform(ImmutableSet.copyOf(diets).asList(), dietToDietBasicWebModelFunction);
+	}
+
+	public List<StudentWebModel> getStudentsWithNoGroupAssigned(Integer userId) {
+		List<Student> students = studentRepository.findByTrainerIdAndGroup(userId, null);
+		return Lists.transform(students, studentEntityToStudentWebModelFunction);
+	}
+
+	public void unassignGroup(Integer groupId) {
+		List<Student> students = studentRepository.findByGroupId(groupId);
+		for (Student student : students) {
+			student.setGroup(null);
+			studentRepository.save(student);
+		}
 	}
 }

@@ -35,6 +35,7 @@ public class Student {
 	private List<Progress> studentProgresses;
 	private List<Contraindication> studentContraindications;
 	private User user;
+	private User trainer;
 	private List<Timesheet> timesheets;
 
 	@Id
@@ -49,7 +50,7 @@ public class Student {
 	}
 
 	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "group_id", nullable = false)
+	@JoinColumn(name = "group_id", nullable = true)
 	public Group getGroup() {
 		return group;
 	}
@@ -178,6 +179,16 @@ public class Student {
 
 	public void setUser(User user) {
 		this.user = user;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "trainer_id", nullable = false)
+	public User getTrainer() {
+		return trainer;
+	}
+
+	public void setTrainer(User trainer) {
+		this.trainer = trainer;
 	}
 
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "student")
