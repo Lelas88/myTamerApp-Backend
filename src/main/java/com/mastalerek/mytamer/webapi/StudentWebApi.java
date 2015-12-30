@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.validation.constraints.NotNull;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
@@ -63,5 +64,9 @@ public interface StudentWebApi {
 	@Path(DIETS)
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<DietBasicWebModel> getStudentDiets(@NotNull @PathParam("studentId") Integer studentId);
+	
+	@DELETE
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response deleteStudent(@NotNull @QueryParam("studentId") Integer studentId);
 
 }

@@ -68,4 +68,14 @@ public class GroupWebApiImpl implements GroupWebApi {
 		}
 	}
 
+	@Override
+	public Response unassignStudent(Integer groupId, Integer studentId) {
+		try {
+			groupService.unassignStudent(groupId, studentId);
+			return Response.ok().build();
+		} catch (Exception e) {
+			return Response.notModified().build();
+		}
+	}
+
 }

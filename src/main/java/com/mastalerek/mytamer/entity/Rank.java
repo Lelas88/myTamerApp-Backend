@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.sun.istack.internal.NotNull;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "ranks")

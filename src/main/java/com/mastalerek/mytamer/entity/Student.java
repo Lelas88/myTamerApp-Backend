@@ -15,7 +15,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import com.sun.istack.internal.NotNull;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "students")

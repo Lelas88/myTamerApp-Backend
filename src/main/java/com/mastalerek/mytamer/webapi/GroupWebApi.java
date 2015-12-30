@@ -29,7 +29,7 @@ public interface GroupWebApi {
 	@Path(GET_ONE)
 	@Produces(MediaType.APPLICATION_JSON)
 	public GroupWebModel getGroupDetails(@NotNull @QueryParam("groupId") Integer groupId);
-	
+
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<GroupWebModel> getGroupsByUserId(@NotNull @QueryParam("userId") Integer userId);
@@ -49,9 +49,15 @@ public interface GroupWebApi {
 	@Path(DELETE)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response deleteGroup(@NotNull @QueryParam("groupId") Integer groupId);
-	
+
 	@PUT
 	@Path("/linkStudents")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response linkStudents(@NotNull @QueryParam("groupId") Integer groupId, @NotNull List<Integer> studentIds);
+
+	@PUT
+	@Path("/unassignStudent")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response unassignStudent(@NotNull @QueryParam("groupId") Integer groupId,
+			@NotNull @QueryParam("studentId") Integer studentId);
 }

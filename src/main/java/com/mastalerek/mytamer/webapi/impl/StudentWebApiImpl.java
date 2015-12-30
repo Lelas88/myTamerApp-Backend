@@ -63,4 +63,15 @@ public class StudentWebApiImpl implements StudentWebApi {
 		return studentService.getStudentsWithNoGroupAssigned(userId);
 	}
 
+	@Override
+	public Response deleteStudent(Integer studentId) {
+		try {
+			studentService.deleteStudent(studentId);
+			return Response.ok().build();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return Response.notModified(e.toString()).build();
+		}
+	}
+
 }

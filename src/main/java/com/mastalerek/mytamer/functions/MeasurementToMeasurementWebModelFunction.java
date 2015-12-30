@@ -2,10 +2,10 @@ package com.mastalerek.mytamer.functions;
 
 import java.util.List;
 
-import org.assertj.core.util.Lists;
 import org.springframework.stereotype.Service;
 
 import com.google.common.base.Function;
+import com.google.common.collect.Lists;
 import com.mastalerek.mytamer.entity.Measurement;
 import com.mastalerek.mytamer.webmodel.MeasurementWebModel;
 

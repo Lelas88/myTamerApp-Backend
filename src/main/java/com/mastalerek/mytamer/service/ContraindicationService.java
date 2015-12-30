@@ -4,9 +4,9 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import org.assertj.core.util.Lists;
 import org.springframework.stereotype.Component;
 
+import com.google.common.collect.Lists;
 import com.mastalerek.mytamer.entity.Contraindication;
 import com.mastalerek.mytamer.repository.ContraindicationRepository;
 

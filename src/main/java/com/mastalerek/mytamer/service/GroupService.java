@@ -73,4 +73,10 @@ public class GroupService {
 		}
 	}
 
+	public void unassignStudent(Integer groupId, Integer studentId) {
+		Student student = studentRepository.findOne(studentId);
+		student.setGroup(null);
+		studentRepository.save(student);
+	}
+
 }
