@@ -14,6 +14,7 @@ public class StudentWebModel {
 	private Double height;
 	private Double bmi;
 	private String photoName;
+	private Integer trainerId;
 
 	public Integer getId() {
 		return id;
@@ -110,4 +111,13 @@ public class StudentWebModel {
 	public void setPhotoName(String photoName) {
 		this.photoName = photoName;
 	}
+
+	public Integer getTrainerId() {
+		return trainerId;
+	}
+
+	public void setTrainerId(Integer trainerId) {
+		this.trainerId = trainerId;
+	}
+
 }

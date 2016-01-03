@@ -5,7 +5,7 @@ import java.util.List;
 import javax.validation.constraints.NotNull;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
-import javax.ws.rs.PUT;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -13,11 +13,13 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import com.mastalerek.mytamer.webmodel.StudentCredentials;
 import com.mastalerek.mytamer.webmodel.UserWebModel;
 
 @Path(UserWebApi.BASE_PATH)
 public interface UserWebApi {
 
+	public static final String REGISTER_STUDENT = "/registerStudent";
 	public static final String GET_ID = "/getId";
 	public static final String REGISTER = "/register";
 	public static final String VERIFY = "/verify";
@@ -50,8 +52,13 @@ public interface UserWebApi {
 	public boolean loginUser(@NotNull @QueryParam("username") String username,
 			@NotNull @QueryParam("password") String password);
 	
-	@PUT
+	@POST
 	@Path(REGISTER)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response createUser(@NotNull UserWebModel user);
+	
+	@POST
+	@Path(REGISTER_STUDENT)
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response registerStudent(@NotNull StudentCredentials credentials);
 }

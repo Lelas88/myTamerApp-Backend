@@ -14,6 +14,9 @@ public class BmiService {
 		if(weight <= 0 || height <= 0) {
 			return INITIAL_VALUE;
 		}
+		if(height > 3) {
+			height = height/100;
+		}
 		return round(weight/(height * height), 2);
 	}
 	

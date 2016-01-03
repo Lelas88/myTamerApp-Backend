@@ -9,11 +9,10 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
-
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -160,8 +159,8 @@ public class User implements Serializable {
 		this.students = students;
 	}
 
-	@OneToOne(fetch = FetchType.LAZY)
-	@PrimaryKeyJoinColumn
+	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "student_id", nullable = false)
 	public Student getStudent() {
 		return student;
 	}
@@ -169,5 +168,6 @@ public class User implements Serializable {
 	public void setStudent(Student student) {
 		this.student = student;
 	}
+	
 
 }

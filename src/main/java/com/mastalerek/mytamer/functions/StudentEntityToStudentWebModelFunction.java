@@ -41,6 +41,7 @@ public class StudentEntityToStudentWebModelFunction implements Function<Student,
 		output.setBmi(bmiService.calculateBmi(output.getWeight(), output.getHeight()));
 		output.setPhotoName(input.getPhoto());
 		output.setAge(studentService.calculateStudentAge(input.getBirthdate()));
+		output.setTrainerId(input.getTrainer().getId());
 		return output;
 	}
 

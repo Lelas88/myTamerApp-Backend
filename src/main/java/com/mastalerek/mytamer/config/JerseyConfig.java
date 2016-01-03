@@ -3,6 +3,8 @@ package com.mastalerek.mytamer.config;
 import javax.ws.rs.ApplicationPath;
 
 import org.glassfish.jersey.server.ResourceConfig;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.stereotype.Component;
 
 import com.mastalerek.mytamer.webapi.impl.DietWebApiImpl;
@@ -41,5 +43,7 @@ public class JerseyConfig extends ResourceConfig {
 		register(MealWebApiImpl.class);
 		register(MealSetWebApiImpl.class);
 		register(DietWebApiImpl.class);
+		register(JavaMailSenderImpl.class);
+		register(SimpleMailMessage.class);
 	}
 }

@@ -1,6 +1,6 @@
 package com.mastalerek.mytamer.entity;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -14,7 +14,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -90,7 +91,8 @@ public class Student {
 	}
 
 	@NotNull
-	@Column(name = "birthdate", nullable = false, columnDefinition = "DATETIME")
+	@Temporal(TemporalType.DATE)
+	@Column(name = "birthdate", nullable = false)
 	public Date getBirthdate() {
 		return birthdate;
 	}
@@ -99,7 +101,6 @@ public class Student {
 		this.birthdate = birthdate;
 	}
 
-	@NotNull
 	@Column(name = "photo", nullable = true)
 	public String getPhoto() {
 		return photo;
@@ -172,7 +173,7 @@ public class Student {
 		this.studentContraindications = studentContraindications;
 	}
 
-	@OneToOne(fetch = FetchType.LAZY, mappedBy = "student")
+	@OneToOne(mappedBy = "student", cascade = CascadeType.ALL)
 	public User getUser() {
 		return user;
 	}

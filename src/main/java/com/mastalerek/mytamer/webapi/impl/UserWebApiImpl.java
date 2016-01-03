@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import com.mastalerek.mytamer.service.UserService;
 import com.mastalerek.mytamer.webapi.UserWebApi;
+import com.mastalerek.mytamer.webmodel.StudentCredentials;
 import com.mastalerek.mytamer.webmodel.UserWebModel;
 
 @Component
@@ -64,6 +65,12 @@ public class UserWebApiImpl implements UserWebApi {
 	@Override
 	public Integer getUserIdByUsername(String username) {
 		return userService.getUserIdByUsername(username);
+	}
+
+	@Override
+	public Response registerStudent(StudentCredentials credentials) {
+		userService.registerStudent(credentials);
+		return Response.ok().build();
 	}
 
 }

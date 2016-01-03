@@ -4,15 +4,18 @@ import java.text.ParseException;
 import java.util.List;
 
 import javax.inject.Inject;
+import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.Response;
 
 import org.springframework.stereotype.Component;
 
 import com.mastalerek.mytamer.service.ContraindicationService;
 import com.mastalerek.mytamer.service.StudentService;
+import com.mastalerek.mytamer.service.UserService;
 import com.mastalerek.mytamer.webapi.StudentWebApi;
 import com.mastalerek.mytamer.webmodel.DietBasicWebModel;
 import com.mastalerek.mytamer.webmodel.StudentWebModel;
+import com.mastalerek.mytamer.webmodel.UserWebModel;
 
 @Component
 public class StudentWebApiImpl implements StudentWebApi {
@@ -21,6 +24,8 @@ public class StudentWebApiImpl implements StudentWebApi {
 	private StudentService studentService;
 	@Inject
 	private ContraindicationService contraindicationService;
+	@Inject
+	private UserService userService;
 
 	@Override
 	public List<StudentWebModel> getStudentsByGroupId(Integer groupId) {
@@ -30,8 +35,8 @@ public class StudentWebApiImpl implements StudentWebApi {
 	@Override
 	public Response createStudent(StudentWebModel student) {
 		try {
-			studentService.createStudent(student);
-			return Response.ok().build();
+			Integer studentId = studentService.createStudent(student);
+			return Response.ok().entity(Entity.text(String.valueOf(studentId))).build();
 		} catch (ParseException e) {
 			e.printStackTrace();
 			return Response.notModified(e.toString()).build();
@@ -67,6 +72,27 @@ public class StudentWebApiImpl implements StudentWebApi {
 	public Response deleteStudent(Integer studentId) {
 		try {
 			studentService.deleteStudent(studentId);
+			return Response.ok().build();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return Response.notModified(e.toString()).build();
+		}
+	}
+
+	@Override
+	public UserWebModel verifyEmail(String email) {
+		return userService.verifyEmail(email);
+	}
+
+	@Override
+	public UserWebModel verifyLogin(String login) {
+		return userService.verifyLogin(login);
+	}
+
+	@Override
+	public Response updateStudent(StudentWebModel studentWebModel) {
+		try {
+			studentService.updateStudent(studentWebModel);
 			return Response.ok().build();
 		} catch (Exception e) {
 			e.printStackTrace();

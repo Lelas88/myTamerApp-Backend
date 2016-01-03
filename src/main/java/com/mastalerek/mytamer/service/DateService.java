@@ -15,9 +15,14 @@ public class DateService {
 		Date date = new Date(Calendar.getInstance().getTime().getTime());
 		return date;
 	}
-	
+
 	public Date parseStringToSqlDate(String stringDate) throws ParseException {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		return new Date(dateFormat.parse(stringDate).getTime());
+	}
+
+	public java.util.Date convertStringToUtilDate(String stringDate) throws ParseException {
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		return dateFormat.parse(stringDate);
 	}
 }

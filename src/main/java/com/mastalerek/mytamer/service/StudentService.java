@@ -1,25 +1,26 @@
 package com.mastalerek.mytamer.service;
 
-import java.sql.Date;
 import java.text.ParseException;
-import java.time.LocalDate;
-import java.time.Period;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Lists;
-import com.mastalerek.mytamer.builder.RankBuilder;
 import com.mastalerek.mytamer.entity.Student;
 import com.mastalerek.mytamer.entity.TrainingPlan;
 import com.mastalerek.mytamer.entity.TrainingPlanDiet;
+import com.mastalerek.mytamer.entity.User;
 import com.mastalerek.mytamer.functions.DietToDietBasicWebModelFunction;
 import com.mastalerek.mytamer.functions.StudentEntityToStudentWebModelFunction;
-import com.mastalerek.mytamer.repository.GroupRepository;
+import com.mastalerek.mytamer.repository.RankRepository;
 import com.mastalerek.mytamer.repository.StudentRepository;
+import com.mastalerek.mytamer.repository.UserRepository;
 import com.mastalerek.mytamer.webmodel.DietBasicWebModel;
 import com.mastalerek.mytamer.webmodel.StudentWebModel;
 
@@ -30,15 +31,19 @@ public class StudentService {
 	@Inject
 	private StudentRepository studentRepository;
 	@Inject
-	private GroupRepository groupRepository;
+	private MeasurementService measurementService;
 	@Inject
 	private DateService dateService;
+	@Inject
+	private UserRepository userRepository;
 	@Inject
 	private TrainingPlanService trainingPlanService;
 	@Inject
 	private StudentEntityToStudentWebModelFunction studentEntityToStudentWebModelFunction;
 	@Inject
 	private DietToDietBasicWebModelFunction dietToDietBasicWebModelFunction;
+	@Inject
+	private RankRepository rankRepository;
 
 	public List<StudentWebModel> getStudentsByGroupId(Integer groupId) {
 		List<Student> studentsList = studentRepository.findByGroupId(groupId);
@@ -51,19 +56,31 @@ public class StudentService {
 	}
 
 	public Integer calculateStudentAge(Date birthdate) {
-		LocalDate today = LocalDate.now();
-		LocalDate birthday = birthdate.toLocalDate();
-		return Period.between(birthday, today).getYears();
+		Calendar dob = Calendar.getInstance();  
+		dob.setTime(birthdate);  
+		Calendar today = Calendar.getInstance();  
+		int age = today.get(Calendar.YEAR) - dob.get(Calendar.YEAR);  
+		if (today.get(Calendar.MONTH) < dob.get(Calendar.MONTH)) {
+		  age--;  
+		} else if (today.get(Calendar.MONTH) == dob.get(Calendar.MONTH)
+		    && today.get(Calendar.DAY_OF_MONTH) < dob.get(Calendar.DAY_OF_MONTH)) {
+		  age--;  
+		}
+		return age;
 	}
 
-	public void createStudent(StudentWebModel studentModel) throws ParseException {
+	public Integer createStudent(StudentWebModel studentModel) throws ParseException {
+		User trainer = userRepository.findOne(studentModel.getTrainerId());
 		Student student = new Student();
-		student.setBirthdate(dateService.parseStringToSqlDate(studentModel.getBirthdate()));
+		student.setBirthdate(dateService.convertStringToUtilDate(studentModel.getBirthdate()));
 		student.setFirstName(studentModel.getFirstName());
 		student.setLastName(studentModel.getLastName());
-		student.setRank(new RankBuilder().withId(INITIAL_RANK).build());
-		student.setGroup(groupRepository.findOne(studentModel.getGroupId()));
-		studentRepository.save(student);
+		student.setRank(rankRepository.findOne(INITIAL_RANK));
+		student.setGroup(null);
+		student.setTrainer(trainer);
+		Student savedStudent = studentRepository.save(student);
+		measurementService.saveStudentMeasurements(savedStudent, studentModel);
+		return savedStudent.getId();
 	}
 
 	public List<StudentWebModel> getStudentsByUserId(Integer userId) {
@@ -97,7 +114,18 @@ public class StudentService {
 		}
 	}
 
+	@Transactional
 	public void deleteStudent(Integer studentId) {
 		studentRepository.delete(studentId);
+	}
+
+	public void updateStudent(StudentWebModel studentWebModel) throws ParseException {
+		Student student = studentRepository.findOne(studentWebModel.getId());
+		if(student != null) {
+			student.setBirthdate(dateService.convertStringToUtilDate(studentWebModel.getBirthdate()));
+			student.setFirstName(studentWebModel.getFirstName());
+			student.setLastName(studentWebModel.getLastName());
+			studentRepository.save(student);
+		}
 	}
 }

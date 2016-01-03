@@ -5,11 +5,15 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.google.common.collect.Lists;
+import com.mastalerek.mytamer.entity.Student;
 import com.mastalerek.mytamer.entity.User;
 import com.mastalerek.mytamer.functions.UserEntityToUserWebModelFunction;
+import com.mastalerek.mytamer.repository.StudentRepository;
 import com.mastalerek.mytamer.repository.UserRepository;
+import com.mastalerek.mytamer.webmodel.StudentCredentials;
 import com.mastalerek.mytamer.webmodel.UserWebModel;
 
 @Component
@@ -21,6 +25,12 @@ public class UserService {
 	private PasswordEncoderGenerator passwordEncoder;
 	@Inject
 	private UserEntityToUserWebModelFunction userEntityToUserWebModelFunction;
+	@Inject
+	private AuthorisationService authorisationService;
+	@Inject
+	private StudentRepository studentRepository;
+	@Inject
+	private MailService mailService;
 
 	public UserWebModel getUserByUsername(String username) {
 		User user = userRepository.findByUsername(username);
@@ -56,5 +66,30 @@ public class UserService {
 	public Integer getUserIdByUsername(String username) {
 		User user = userRepository.findByUsername(username);
 		return user.getId();
+	}
+
+	public UserWebModel verifyLogin(String login) {
+		User user = userRepository.findByUsername(login);
+		return user != null ? userEntityToUserWebModelFunction.apply(user) : null;
+	}
+
+	public UserWebModel verifyEmail(String email) {
+		User user = userRepository.findByEmail(email);
+		return user != null ? userEntityToUserWebModelFunction.apply(user) : null;
+	}
+
+	@Transactional
+	public void registerStudent(StudentCredentials credentials) {
+		credentials.setPassword(authorisationService.generatePassword());
+		User user = new User();
+		user.setUsername(credentials.getLogin());
+		user.setEmail(credentials.getEmail());
+		user.setPassword(credentials.getPassword());
+		Student student = studentRepository.findOne(credentials.getStudentId());
+		user.setStudent(student);
+		mailService.sendEmailForNewStudent(credentials);
+		User savedUser = userRepository.save(user);
+		student.setUser(savedUser);
+		studentRepository.save(student);
 	}
 }

@@ -6,9 +6,11 @@ import javax.inject.Inject;
 
 import org.springframework.stereotype.Component;
 
+import com.mastalerek.mytamer.builder.StudentMeasurementBuilder;
 import com.mastalerek.mytamer.entity.Measurement;
 import com.mastalerek.mytamer.entity.Student;
 import com.mastalerek.mytamer.entity.StudentMeasurement;
+import com.mastalerek.mytamer.enums.MeasurementType;
 import com.mastalerek.mytamer.functions.MeasurementToMeasurementWebModelFunction;
 import com.mastalerek.mytamer.repository.MeasurementRepository;
 import com.mastalerek.mytamer.repository.StudentMeasurementRepository;
@@ -17,6 +19,7 @@ import com.mastalerek.mytamer.webmodel.AllMeasurementsWebModel;
 import com.mastalerek.mytamer.webmodel.MeasurementEntryWebModel;
 import com.mastalerek.mytamer.webmodel.MeasurementWebModel;
 import com.mastalerek.mytamer.webmodel.StudentMeasurementWebModel;
+import com.mastalerek.mytamer.webmodel.StudentWebModel;
 
 import jersey.repackaged.com.google.common.collect.Lists;
 
@@ -45,7 +48,7 @@ public class MeasurementService {
 	public Double getLastStudentMeasurementByStudentIdAndType(Integer studentId, Integer measurementType) {
 		StudentMeasurement studentMeasurement = studentMeasurementRepository
 				.findTop1ByStudentIdAndMeasurementIdOrderByDateDesc(studentId, measurementType);
-		if(studentMeasurement != null) {
+		if (studentMeasurement != null) {
 			return studentMeasurement.getValue();
 		} else {
 			return INITIAL_VALUE;
@@ -90,4 +93,18 @@ public class MeasurementService {
 		studentMeasurementRepository.save(studentMeasurement);
 	}
 
+	public void saveStudentMeasurements(Student student, StudentWebModel studentWebModel) {
+		if (studentWebModel.getWeight() != null) {
+			Measurement weight = measurementRepository.findOne(MeasurementType.WEIGHT.getValue());
+			StudentMeasurement studentWeight = new StudentMeasurementBuilder().withDate(dateService.getCurrentDate())
+					.withMeasurement(weight).withStudent(student).withValue(studentWebModel.getWeight()).build();
+			studentMeasurementRepository.save(studentWeight);
+		}
+		if (studentWebModel.getHeight() != null) {
+			Measurement height = measurementRepository.findOne(MeasurementType.HEIGHT.getValue());
+			StudentMeasurement studentHeight = new StudentMeasurementBuilder().withDate(dateService.getCurrentDate())
+					.withMeasurement(height).withStudent(student).withValue(studentWebModel.getHeight()).build();
+			studentMeasurementRepository.save(studentHeight);
+		}
+	}
 }
