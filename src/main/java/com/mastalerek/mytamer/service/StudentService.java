@@ -56,15 +56,15 @@ public class StudentService {
 	}
 
 	public Integer calculateStudentAge(Date birthdate) {
-		Calendar dob = Calendar.getInstance();  
-		dob.setTime(birthdate);  
-		Calendar today = Calendar.getInstance();  
-		int age = today.get(Calendar.YEAR) - dob.get(Calendar.YEAR);  
+		Calendar dob = Calendar.getInstance();
+		dob.setTime(birthdate);
+		Calendar today = Calendar.getInstance();
+		int age = today.get(Calendar.YEAR) - dob.get(Calendar.YEAR);
 		if (today.get(Calendar.MONTH) < dob.get(Calendar.MONTH)) {
-		  age--;  
+			age--;
 		} else if (today.get(Calendar.MONTH) == dob.get(Calendar.MONTH)
-		    && today.get(Calendar.DAY_OF_MONTH) < dob.get(Calendar.DAY_OF_MONTH)) {
-		  age--;  
+				&& today.get(Calendar.DAY_OF_MONTH) < dob.get(Calendar.DAY_OF_MONTH)) {
+			age--;
 		}
 		return age;
 	}
@@ -121,11 +121,35 @@ public class StudentService {
 
 	public void updateStudent(StudentWebModel studentWebModel) throws ParseException {
 		Student student = studentRepository.findOne(studentWebModel.getId());
-		if(student != null) {
+		if (student != null) {
 			student.setBirthdate(dateService.convertStringToUtilDate(studentWebModel.getBirthdate()));
 			student.setFirstName(studentWebModel.getFirstName());
 			student.setLastName(studentWebModel.getLastName());
 			studentRepository.save(student);
 		}
+	}
+
+	public List<StudentWebModel> getAllStudents() {
+		return Lists.transform((List<Student>) studentRepository.findAll(), studentEntityToStudentWebModelFunction);
+	}
+
+	public List<StudentWebModel> getStudentsNotAssignedToExercise(Integer exerciseId) {
+		List<Student> students = studentRepository.findNotAssignedToExercise(exerciseId);
+		return Lists.transform(students, studentEntityToStudentWebModelFunction);
+	}
+
+	public List<StudentWebModel> getStudentsAssignedToExercise(Integer exerciseId) {
+		List<Student> students = studentRepository.findAssignedToExercise(exerciseId);
+		return Lists.transform(students, studentEntityToStudentWebModelFunction);
+	}
+
+	public List<StudentWebModel> getNotAssignedStudentsToTrainingPlan(Integer trainingPlanId, Integer userId) {
+		List<Student> students = studentRepository.findNotAssignedToTrainingPlan(trainingPlanId, userId);
+		return Lists.transform(students, studentEntityToStudentWebModelFunction);
+	}
+
+	public List<StudentWebModel> getAssignedStudentsToTrainingPlan(Integer trainingPlanId, Integer userId) {
+		List<Student> students = studentRepository.findAssignedToTrainingPlan(trainingPlanId, userId);
+		return Lists.transform(students, studentEntityToStudentWebModelFunction);
 	}
 }

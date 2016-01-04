@@ -34,6 +34,7 @@ public class ExerciseSetToExerciseSetWebModelFunction implements Function<Exerci
 		output.setId(input.getId());
 		output.setName(input.getName());
 		output.setExerciseLength(input.getTime());
+		output.setUserId(input.getUser().getId());
 		setExercises(input, output);
 		setTrainingPlans(input, output);
 		return output;

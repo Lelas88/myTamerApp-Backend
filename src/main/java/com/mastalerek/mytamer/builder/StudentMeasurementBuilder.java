@@ -12,7 +12,7 @@ import com.mastalerek.mytamer.entity.Diet;
 import com.mastalerek.mytamer.entity.Discipline;
 import com.mastalerek.mytamer.entity.Exercise;
 import com.mastalerek.mytamer.entity.ExerciseSet;
-import com.mastalerek.mytamer.entity.ExerciseSetExercises;
+import com.mastalerek.mytamer.entity.ExerciseSetExercise;
 import com.mastalerek.mytamer.entity.ExerciseUnit;
 import com.mastalerek.mytamer.entity.Goal;
 import com.mastalerek.mytamer.entity.Group;
@@ -789,6 +789,35 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 			return new ExerciseExerciseBuilder(obj);
 		}
 
+		@SuppressWarnings("unchecked")
+		public GeneratorT withValue(Double aValue) {
+			instance.setValue(aValue);
+
+			return (GeneratorT) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public GeneratorT withDate(java.util.Date aValue) {
+			instance.setDate(aValue);
+
+			return (GeneratorT) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public GeneratorT withUnit(ExerciseUnit aValue) {
+			instance.setUnit(aValue);
+
+			return (GeneratorT) this;
+		}
+
+		public UnitExerciseUnitBuilder withUnit() {
+			ExerciseUnit obj = new ExerciseUnit();
+
+			withUnit(obj);
+
+			return new UnitExerciseUnitBuilder(obj);
+		}
+
 		public class StudentStudentBuilder extends StudentBuilderBase<StudentStudentBuilder> {
 			public StudentStudentBuilder(Student aInstance) {
 				super(aInstance);
@@ -807,6 +836,17 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 
 			@SuppressWarnings("unchecked")
 			public GeneratorT endExercise() {
+				return (GeneratorT) StudentScoreBuilderBase.this;
+			}
+		}
+
+		public class UnitExerciseUnitBuilder extends ExerciseUnitBuilderBase<UnitExerciseUnitBuilder> {
+			public UnitExerciseUnitBuilder(ExerciseUnit aInstance) {
+				super(aInstance);
+			}
+
+			@SuppressWarnings("unchecked")
+			public GeneratorT endUnit() {
 				return (GeneratorT) StudentScoreBuilderBase.this;
 			}
 		}
@@ -861,10 +901,47 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 		}
 
 		@SuppressWarnings("unchecked")
-		public GeneratorT withAccomplished(Date aValue) {
+		public GeneratorT withAccomplished(java.util.Date aValue) {
 			instance.setAccomplished(aValue);
 
 			return (GeneratorT) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public GeneratorT withExercise(Exercise aValue) {
+			instance.setExercise(aValue);
+
+			return (GeneratorT) this;
+		}
+
+		public ExerciseExerciseBuilder withExercise() {
+			Exercise obj = new Exercise();
+
+			withExercise(obj);
+
+			return new ExerciseExerciseBuilder(obj);
+		}
+
+		@SuppressWarnings("unchecked")
+		public GeneratorT withValue(Double aValue) {
+			instance.setValue(aValue);
+
+			return (GeneratorT) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public GeneratorT withUnit(ExerciseUnit aValue) {
+			instance.setUnit(aValue);
+
+			return (GeneratorT) this;
+		}
+
+		public UnitExerciseUnitBuilder withUnit() {
+			ExerciseUnit obj = new ExerciseUnit();
+
+			withUnit(obj);
+
+			return new UnitExerciseUnitBuilder(obj);
 		}
 
 		public class StudentStudentBuilder extends StudentBuilderBase<StudentStudentBuilder> {
@@ -885,6 +962,28 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 
 			@SuppressWarnings("unchecked")
 			public GeneratorT endGoal() {
+				return (GeneratorT) StudentGoalBuilderBase.this;
+			}
+		}
+
+		public class ExerciseExerciseBuilder extends ExerciseBuilderBase<ExerciseExerciseBuilder> {
+			public ExerciseExerciseBuilder(Exercise aInstance) {
+				super(aInstance);
+			}
+
+			@SuppressWarnings("unchecked")
+			public GeneratorT endExercise() {
+				return (GeneratorT) StudentGoalBuilderBase.this;
+			}
+		}
+
+		public class UnitExerciseUnitBuilder extends ExerciseUnitBuilderBase<UnitExerciseUnitBuilder> {
+			public UnitExerciseUnitBuilder(ExerciseUnit aInstance) {
+				super(aInstance);
+			}
+
+			@SuppressWarnings("unchecked")
+			public GeneratorT endUnit() {
 				return (GeneratorT) StudentGoalBuilderBase.this;
 			}
 		}
@@ -945,13 +1044,6 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 			return (GeneratorT) this;
 		}
 
-		@SuppressWarnings("unchecked")
-		public GeneratorT withSecondState(Double aValue) {
-			instance.setSecondState(aValue);
-
-			return (GeneratorT) this;
-		}
-
 		public class StudentStudentBuilder extends StudentBuilderBase<StudentStudentBuilder> {
 			public StudentStudentBuilder(Student aInstance) {
 				super(aInstance);
@@ -972,6 +1064,39 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 			public GeneratorT endExercise() {
 				return (GeneratorT) StudentGoalInitialStateBuilderBase.this;
 			}
+		}
+	}
+
+	public static class ExerciseUnitBuilderBase<GeneratorT extends ExerciseUnitBuilderBase<GeneratorT>> {
+		private ExerciseUnit instance;
+
+		protected ExerciseUnitBuilderBase(ExerciseUnit aInstance) {
+			instance = aInstance;
+		}
+
+		protected ExerciseUnit getInstance() {
+			return instance;
+		}
+
+		@SuppressWarnings("unchecked")
+		public GeneratorT withId(Integer aValue) {
+			instance.setId(aValue);
+
+			return (GeneratorT) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public GeneratorT withKey(String aValue) {
+			instance.setKey(aValue);
+
+			return (GeneratorT) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public GeneratorT withUnit(String aValue) {
+			instance.setUnit(aValue);
+
+			return (GeneratorT) this;
 		}
 	}
 
@@ -1061,7 +1186,7 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 		}
 
 		@SuppressWarnings("unchecked")
-		public GeneratorT withDate(Date aValue) {
+		public GeneratorT withDate(java.util.Date aValue) {
 			instance.setDate(aValue);
 
 			return (GeneratorT) this;
@@ -1700,25 +1825,25 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 		}
 
 		@SuppressWarnings("unchecked")
-		public GeneratorT withExercises(List<ExerciseSetExercises> aValue) {
+		public GeneratorT withExercises(List<ExerciseSetExercise> aValue) {
 			instance.setExercises(aValue);
 
 			return (GeneratorT) this;
 		}
 
 		@SuppressWarnings("unchecked")
-		public GeneratorT withAddedExercis(ExerciseSetExercises aValue) {
+		public GeneratorT withAddedExercis(ExerciseSetExercise aValue) {
 			if (instance.getExercises() == null) {
-				instance.setExercises(new ArrayList<ExerciseSetExercises>());
+				instance.setExercises(new ArrayList<ExerciseSetExercise>());
 			}
 
-			((ArrayList<ExerciseSetExercises>) instance.getExercises()).add(aValue);
+			((ArrayList<ExerciseSetExercise>) instance.getExercises()).add(aValue);
 
 			return (GeneratorT) this;
 		}
 
 		public AddedExercisExerciseSetExercisesBuilder withAddedExercis() {
-			ExerciseSetExercises obj = new ExerciseSetExercises();
+			ExerciseSetExercise obj = new ExerciseSetExercise();
 
 			withAddedExercis(obj);
 
@@ -1749,7 +1874,7 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 
 		public class AddedExercisExerciseSetExercisesBuilder
 				extends ExerciseSetExercisesBuilderBase<AddedExercisExerciseSetExercisesBuilder> {
-			public AddedExercisExerciseSetExercisesBuilder(ExerciseSetExercises aInstance) {
+			public AddedExercisExerciseSetExercisesBuilder(ExerciseSetExercise aInstance) {
 				super(aInstance);
 			}
 
@@ -1772,13 +1897,13 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 	}
 
 	public static class ExerciseSetExercisesBuilderBase<GeneratorT extends ExerciseSetExercisesBuilderBase<GeneratorT>> {
-		private ExerciseSetExercises instance;
+		private ExerciseSetExercise instance;
 
-		protected ExerciseSetExercisesBuilderBase(ExerciseSetExercises aInstance) {
+		protected ExerciseSetExercisesBuilderBase(ExerciseSetExercise aInstance) {
 			instance = aInstance;
 		}
 
-		protected ExerciseSetExercises getInstance() {
+		protected ExerciseSetExercise getInstance() {
 			return instance;
 		}
 
@@ -2349,22 +2474,22 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 		}
 
 		@SuppressWarnings("unchecked")
-		public GeneratorT withGoal(Goal aValue) {
+		public GeneratorT withGoal(StudentGoal aValue) {
 			instance.setGoal(aValue);
 
 			return (GeneratorT) this;
 		}
 
-		public GoalGoalBuilder withGoal() {
-			Goal obj = new Goal();
+		public GoalStudentGoalBuilder withGoal() {
+			StudentGoal obj = new StudentGoal();
 
 			withGoal(obj);
 
-			return new GoalGoalBuilder(obj);
+			return new GoalStudentGoalBuilder(obj);
 		}
 
 		@SuppressWarnings("unchecked")
-		public GeneratorT withDate(Date aValue) {
+		public GeneratorT withDate(java.util.Date aValue) {
 			instance.setDate(aValue);
 
 			return (GeneratorT) this;
@@ -2399,8 +2524,8 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 			}
 		}
 
-		public class GoalGoalBuilder extends GoalBuilderBase<GoalGoalBuilder> {
-			public GoalGoalBuilder(Goal aInstance) {
+		public class GoalStudentGoalBuilder extends StudentGoalBuilderBase<GoalStudentGoalBuilder> {
+			public GoalStudentGoalBuilder(StudentGoal aInstance) {
 				super(aInstance);
 			}
 
@@ -2628,39 +2753,6 @@ class StudentMeasurementBuilderBase<GeneratorT extends StudentMeasurementBuilder
 		@SuppressWarnings("unchecked")
 		public GeneratorT withIconName(String aValue) {
 			instance.setIconName(aValue);
-
-			return (GeneratorT) this;
-		}
-	}
-
-	public static class ExerciseUnitBuilderBase<GeneratorT extends ExerciseUnitBuilderBase<GeneratorT>> {
-		private ExerciseUnit instance;
-
-		protected ExerciseUnitBuilderBase(ExerciseUnit aInstance) {
-			instance = aInstance;
-		}
-
-		protected ExerciseUnit getInstance() {
-			return instance;
-		}
-
-		@SuppressWarnings("unchecked")
-		public GeneratorT withId(Integer aValue) {
-			instance.setId(aValue);
-
-			return (GeneratorT) this;
-		}
-
-		@SuppressWarnings("unchecked")
-		public GeneratorT withKey(String aValue) {
-			instance.setKey(aValue);
-
-			return (GeneratorT) this;
-		}
-
-		@SuppressWarnings("unchecked")
-		public GeneratorT withUnit(String aValue) {
-			instance.setUnit(aValue);
 
 			return (GeneratorT) this;
 		}

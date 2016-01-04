@@ -28,7 +28,7 @@ public class StudentExercise {
 	}
 
 	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "student_id", nullable = false)
+	@JoinColumn(name = "student_id", referencedColumnName="id", nullable = false)
 	public Student getStudent() {
 		return student;
 	}
@@ -38,7 +38,7 @@ public class StudentExercise {
 	}
 
 	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "exercise_id", nullable = false)
+	@JoinColumn(name = "exercise_id", referencedColumnName="id", nullable = false)
 	public Exercise getExercise() {
 		return exercise;
 	}

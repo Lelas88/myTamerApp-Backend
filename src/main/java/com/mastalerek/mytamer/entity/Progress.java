@@ -1,6 +1,7 @@
 package com.mastalerek.mytamer.entity;
 
-import java.sql.Date;
+
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "progresses")
@@ -16,7 +19,7 @@ public class Progress {
 	private Integer id;
 	private Student student;
 	private Exercise exercise;
-	private Goal goal;
+	private StudentGoal goal;
 	private Date date;
 	private Double score;
 
@@ -53,15 +56,16 @@ public class Progress {
 
 	@ManyToOne
 	@JoinColumn(name = "goal_id", nullable = false)
-	public Goal getGoal() {
+	public StudentGoal getGoal() {
 		return goal;
 	}
 
-	public void setGoal(Goal goal) {
+	public void setGoal(StudentGoal goal) {
 		this.goal = goal;
 	}
 
-	@Column(name = "date", nullable = false, columnDefinition = "DATETIME")
+	@Temporal(TemporalType.DATE)
+	@Column(name = "date", nullable = false)
 	public Date getDate() {
 		return date;
 	}

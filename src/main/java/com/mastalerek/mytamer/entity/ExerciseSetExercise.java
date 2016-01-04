@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "exercise_set_exercises")
-public class ExerciseSetExercises {
+public class ExerciseSetExercise {
 	private Integer id;
 	private Exercise exercise;
 	private ExerciseSet exerciseSet;

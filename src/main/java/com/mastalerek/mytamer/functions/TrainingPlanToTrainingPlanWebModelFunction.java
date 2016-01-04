@@ -35,6 +35,7 @@ public class TrainingPlanToTrainingPlanWebModelFunction implements Function<Trai
 		output.setExerciseSets(Lists.transform(input.getExerciseSets(), exerciseSetToExerciseSetBasicWebModelFunction));
 		List<StudentTrainingPlan> studentTrainingPlans = studentTrainingPlanRepository.findByTrainingPlanId(input.getId());
 		output.setStudents(Lists.transform(studentTrainingPlans, studentTrainingPlanToStudentNameWebModelFunction));
+		output.setUserId(input.getUser().getId());
 		return output;
 	}
 

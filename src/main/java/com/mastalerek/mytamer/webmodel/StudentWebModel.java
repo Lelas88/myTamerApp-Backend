@@ -15,6 +15,7 @@ public class StudentWebModel {
 	private Double bmi;
 	private String photoName;
 	private Integer trainerId;
+	private Integer rankProgress;
 
 	public Integer getId() {
 		return id;
@@ -118,6 +119,14 @@ public class StudentWebModel {
 
 	public void setTrainerId(Integer trainerId) {
 		this.trainerId = trainerId;
+	}
+
+	public Integer getRankProgress() {
+		return rankProgress;
+	}
+
+	public void setRankProgress(Integer rankProgress) {
+		this.rankProgress = rankProgress;
 	}
 
 }

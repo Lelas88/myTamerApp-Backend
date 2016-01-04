@@ -119,7 +119,7 @@ public class Student {
 		this.studentMeasurements = studentMeasurements;
 	}
 
-	@OneToMany(fetch = FetchType.EAGER, mappedBy = "student", cascade = CascadeType.ALL)
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "student")
 	public List<StudentExercise> getStudentExercises() {
 		return studentExercises;
 	}

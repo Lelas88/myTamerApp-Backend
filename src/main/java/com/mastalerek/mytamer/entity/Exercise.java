@@ -25,6 +25,7 @@ public class Exercise {
 	private String description;
 	private String iconName;
 	private List<StudentExercise> studentExercises;
+	private List<StudentScore> studentScores;
 	private User user;
 
 	@Id
@@ -96,7 +97,7 @@ public class Exercise {
 		this.iconName = iconName;
 	}
 
-	@OneToMany(fetch = FetchType.EAGER, mappedBy = "exercise", cascade = CascadeType.ALL)
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "exercise")
 	public List<StudentExercise> getStudentExercises() {
 		return studentExercises;
 	}
@@ -114,4 +115,14 @@ public class Exercise {
 	public void setUser(User user) {
 		this.user = user;
 	}
+
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "exercise", cascade = CascadeType.ALL)
+	public List<StudentScore> getStudentScores() {
+		return studentScores;
+	}
+
+	public void setStudentScores(List<StudentScore> studentScores) {
+		this.studentScores = studentScores;
+	}
+	
 }

@@ -12,4 +12,6 @@ public interface StudentTrainingPlanRepository extends CrudRepository<StudentTra
 
 	List<StudentTrainingPlan> findByTrainingPlanId(Integer id);
 
+	StudentTrainingPlan findByStudentIdAndTrainingPlanId(Integer studentId, Integer trainingPlanId);
+
 }

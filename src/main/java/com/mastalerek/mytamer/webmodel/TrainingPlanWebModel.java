@@ -9,6 +9,7 @@ public class TrainingPlanWebModel {
 	private List<ExerciseSetBasicWebModel> exerciseSets;
 	private List<DietBasicWebModel> diets;
 	private List<StudentNameWebModel> students;
+	private Integer userId;
 
 	public Integer getId() {
 		return id;
@@ -56,6 +57,14 @@ public class TrainingPlanWebModel {
 
 	public void setStudents(List<StudentNameWebModel> students) {
 		this.students = students;
+	}
+
+	public Integer getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 
 }

@@ -19,7 +19,7 @@ public class StudentTrainingPlansToTrainingPlanBasicWebModelFunction implements 
 	@Override
 	public TrainingPlanBasicWebModel apply(StudentTrainingPlan input) {
 		TrainingPlanBasicWebModel output = new TrainingPlanBasicWebModel();
-		TrainingPlan trainingPlan = trainingPlanRepository.findOne(input.getTrainingPlanId());
+		TrainingPlan trainingPlan = trainingPlanRepository.findOne(input.getTrainingPlan().getId());
 		output.setId(trainingPlan.getId());
 		output.setName(trainingPlan.getName());
 		return output;

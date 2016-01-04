@@ -2,16 +2,19 @@ package com.mastalerek.mytamer.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "student_training_plans")
 public class StudentTrainingPlan {
 	private Integer id;
-	private Integer studentId;
-	private Integer trainingPlanId;
+	private Student student;
+	private TrainingPlan trainingPlan;
 
 	@Id
 	@GeneratedValue
@@ -24,22 +27,24 @@ public class StudentTrainingPlan {
 		this.id = id;
 	}
 
-	@Column(name = "student_id", nullable = false)
-	public Integer getStudentId() {
-		return studentId;
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "student_id", nullable = false)
+	public Student getStudent() {
+		return student;
 	}
 
-	public void setStudentId(Integer studentId) {
-		this.studentId = studentId;
+	public void setStudent(Student student) {
+		this.student = student;
 	}
 
-	@Column(name = "training_plan_id", nullable = false)
-	public Integer getTrainingPlanId() {
-		return trainingPlanId;
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "training_plan_id", nullable = false)
+	public TrainingPlan getTrainingPlan() {
+		return trainingPlan;
 	}
 
-	public void setTrainingPlanId(Integer trainingPlanId) {
-		this.trainingPlanId = trainingPlanId;
+	public void setTrainingPlan(TrainingPlan trainingPlan) {
+		this.trainingPlan = trainingPlan;
 	}
 
 }

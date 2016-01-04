@@ -6,6 +6,7 @@ public class ExerciseSetWebModel {
 	private Integer id;
 	private String name;
 	private Integer exerciseLength;
+	private Integer userId;
 	private List<ObjectNameAndIdWebModel> trainingPlans;
 	private List<ObjectNameAndIdWebModel> exercises;
 
@@ -19,6 +20,14 @@ public class ExerciseSetWebModel {
 
 	public String getName() {
 		return name;
+	}
+
+	public Integer getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 
 	public void setName(String name) {

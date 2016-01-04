@@ -15,7 +15,7 @@ public class StudentGoalInitialState {
 	private Student student;
 	private Exercise exercise;
 	private Double firstState;
-	private Double secondState;
+	private ExerciseUnit unit;
 
 	@Id
 	@GeneratedValue
@@ -57,13 +57,15 @@ public class StudentGoalInitialState {
 		this.firstState = firstState;
 	}
 
-	@Column(name = "second_state", nullable = true)
-	public Double getSecondState() {
-		return secondState;
+	@ManyToOne
+	@JoinColumn(name = "unit_id", nullable = false)
+	public ExerciseUnit getUnit() {
+		return unit;
 	}
 
-	public void setSecondState(Double secondState) {
-		this.secondState = secondState;
+	public void setUnit(ExerciseUnit unit) {
+		this.unit = unit;
 	}
+
 
 }

@@ -28,4 +28,14 @@ public class DietService {
 		List<Diet> diets = dietRepository.findByUserId(userId);
 		return Lists.transform(diets, dietEntityToDietWebModelFunction);
 	}
+
+	public List<DietWebModel> getNotAssignedDietsToTrainingPlan(Integer trainingPlanId, Integer userId) {
+		List<Diet> diets = dietRepository.findNotAssignedToTrainingPlan(trainingPlanId, userId);
+		return Lists.transform(diets, dietEntityToDietWebModelFunction);
+	}
+
+	public List<DietWebModel> getAssignedDietsToTrainingPlan(Integer trainingPlanId, Integer userId) {
+		List<Diet> diets = dietRepository.findAssignedToTrainingPlan(trainingPlanId, userId);
+		return Lists.transform(diets, dietEntityToDietWebModelFunction);
+	}
 }

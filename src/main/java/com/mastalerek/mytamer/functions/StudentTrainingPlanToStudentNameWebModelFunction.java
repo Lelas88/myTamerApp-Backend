@@ -19,7 +19,7 @@ public class StudentTrainingPlanToStudentNameWebModelFunction implements Functio
 	@Override
 	public StudentNameWebModel apply(StudentTrainingPlan input) {
 		StudentNameWebModel output = new StudentNameWebModel();
-		Student student = studentRepository.findOne(input.getStudentId());
+		Student student = studentRepository.findOne(input.getStudent().getId());
 		output.setId(student.getId());
 		output.setFirstName(student.getFirstName());
 		output.setLastName(student.getLastName());

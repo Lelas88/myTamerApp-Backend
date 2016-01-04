@@ -17,7 +17,7 @@ import javax.persistence.Table;
 public class ExerciseSet {
 	private Integer id;
 	private String name;
-	private List<ExerciseSetExercises> exercises;
+	private List<ExerciseSetExercise> exercises;
 	private Integer time;
 	private User user;
 
@@ -42,11 +42,11 @@ public class ExerciseSet {
 	}
 
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "exerciseSet")
-	public List<ExerciseSetExercises> getExercises() {
+	public List<ExerciseSetExercise> getExercises() {
 		return exercises;
 	}
 
-	public void setExercises(List<ExerciseSetExercises> exercises) {
+	public void setExercises(List<ExerciseSetExercise> exercises) {
 		this.exercises = exercises;
 	}
 
