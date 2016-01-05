@@ -34,9 +34,15 @@ public class DietEntityToDietWebModelFunction implements Function<Diet, DietWebM
 		output.setId(input.getId());
 		output.setName(input.getName());
 		output.setDescription(input.getDescription());
+		output.setUserId(input.getUser().getId());
+		output.setActive(isDietActive(input.getActive()));
 		setMealSets(input, output);
 		setTrainingPlans(input, output);
 		return output;
+	}
+
+	private Boolean isDietActive(Integer active) {
+		return active == 0 ? false : true;
 	}
 
 	private void setTrainingPlans(Diet input, DietWebModel output) {

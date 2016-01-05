@@ -25,7 +25,7 @@ public interface StudentRepository extends CrudRepository<Student, Integer> {
 	@Query("select s from Student s where s.trainer.id = :userId and s.id not in (select se.student.id from StudentTrainingPlan se where se.trainingPlan.id = :trainingPlanId)")
 	List<Student> findNotAssignedToTrainingPlan(@Param("trainingPlanId") Integer trainingPlanId, @Param("userId") Integer userId);
 
-	@Query("select s from Student s where s.trainer.id = :userId and s.id in (select se.student.id from StudentTrainingPlan se where se.trainingPlan.id = :trainingPlanId)")
-	List<Student> findAssignedToTrainingPlan(@Param("trainingPlanId") Integer trainingPlanId, @Param("userId") Integer userId);
+	@Query("select s from Student s where s.id in (select se.student.id from StudentTrainingPlan se where se.trainingPlan.id = :trainingPlanId)")
+	List<Student> findAssignedToTrainingPlan(@Param("trainingPlanId") Integer trainingPlanId);
 
 }

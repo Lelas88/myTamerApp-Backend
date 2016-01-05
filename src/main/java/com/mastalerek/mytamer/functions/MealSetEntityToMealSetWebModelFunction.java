@@ -26,6 +26,7 @@ public class MealSetEntityToMealSetWebModelFunction implements Function<MealSet,
 		MealSetWebModel output = new MealSetWebModel();
 		output.setId(input.getId());
 		output.setName(input.getName());
+		output.setUserId(input.getUser().getId());
 		setMeals(input, output);
 		return output;
 	}

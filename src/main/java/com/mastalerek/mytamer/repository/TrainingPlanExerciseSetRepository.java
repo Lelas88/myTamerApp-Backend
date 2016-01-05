@@ -8,4 +8,6 @@ import com.mastalerek.mytamer.entity.TrainingPlanExerciseSet;
 
 public interface TrainingPlanExerciseSetRepository extends CrudRepository<TrainingPlanExerciseSet, Integer>{
 	List<TrainingPlanExerciseSet> findByExerciseSetId(Integer exerciseSetId);
+
+	TrainingPlanExerciseSet findByTrainingPlanIdAndExerciseSetId(Integer trainingPlanId, Integer exerciseSetId);
 }

@@ -15,6 +15,6 @@ public interface ExerciseSetRepository extends CrudRepository<ExerciseSet, Integ
 	@Query("select es from ExerciseSet es where es.user.id = :userId and es.id not in (select tp.exerciseSet.id from TrainingPlanExerciseSet tp where tp.trainingPlan.id = :trainingPlanId)")
 	List<ExerciseSet> findNotAssignedToTrainingPlan(@Param("trainingPlanId") Integer trainingPlanId, @Param("userId") Integer userId);
 	
-	@Query("select es from ExerciseSet es where es.user.id = :userId and es.id in (select tp.exerciseSet.id from TrainingPlanExerciseSet tp where tp.trainingPlan.id = :trainingPlanId)")
-	List<ExerciseSet> findAssignedToTrainingPlan(@Param("trainingPlanId") Integer trainingPlanId, @Param("userId") Integer userId);
+	@Query("select es from ExerciseSet es where es.id in (select tp.exerciseSet.id from TrainingPlanExerciseSet tp where tp.trainingPlan.id = :trainingPlanId)")
+	List<ExerciseSet> findAssignedToTrainingPlan(@Param("trainingPlanId") Integer trainingPlanId);
 }

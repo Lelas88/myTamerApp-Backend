@@ -109,8 +109,8 @@ public class ExerciseSetService {
 		return output;
 	}
 
-	public List<ExerciseSetWebModel> getAssignedExerciseSetsToTrainingPlan(Integer trainingPlanId, Integer userId) {
-		List<ExerciseSet> exerciseSets = exerciseSetRepository.findAssignedToTrainingPlan(trainingPlanId, userId);
+	public List<ExerciseSetWebModel> getAssignedExerciseSetsToTrainingPlan(Integer trainingPlanId) {
+		List<ExerciseSet> exerciseSets = exerciseSetRepository.findAssignedToTrainingPlan(trainingPlanId);
 		List<ExerciseSetWebModel> output = Lists.newArrayList();
 		for (ExerciseSet exerciseSet : exerciseSets) {
 			output.add(exerciseSetToExerciseSetWebModelFunction.apply(exerciseSet));

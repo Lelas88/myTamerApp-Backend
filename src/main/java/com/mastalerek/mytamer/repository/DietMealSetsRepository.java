@@ -10,4 +10,6 @@ public interface DietMealSetsRepository extends CrudRepository<DietMealSets, Int
 
 	List<DietMealSets> findByDietId(Integer id);
 
+	DietMealSets findByDietIdAndMealSetId(Integer dietId, Integer mealSetId);
+
 }

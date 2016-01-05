@@ -7,6 +7,7 @@ public class DietWebModel {
 	private String name;
 	private String description;
 	private Boolean active;
+	private Integer userId;
 	private List<ObjectNameAndIdWebModel> mealSets;
 	private List<ObjectNameAndIdWebModel> trainingPlans;
 
@@ -16,6 +17,14 @@ public class DietWebModel {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	public Integer getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 
 	public String getName() {

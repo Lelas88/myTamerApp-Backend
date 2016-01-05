@@ -103,35 +103,45 @@ public interface TrainingPlanWebApi {
 	@Path("/notAssignedStudents")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<StudentWebModel> getNotAssignedStudentsToTrainingPlan(
-			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId, @NotNull @QueryParam("userId") Integer userId);
+			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId,
+			@NotNull @QueryParam("userId") Integer userId);
 
 	@GET
 	@Path("/notAssignedExerciseSets")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<ExerciseSetWebModel> getNotAssignedExerciseSetsToTrainingPlan(
-			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId, @NotNull @QueryParam("userId") Integer userId);
+			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId,
+			@NotNull @QueryParam("userId") Integer userId);
 
 	@GET
 	@Path("/notAssignedDiets")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<DietWebModel> getNotAssignedDietsToTrainingPlan(
-			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId, @NotNull @QueryParam("userId") Integer userId);
+			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId,
+			@NotNull @QueryParam("userId") Integer userId);
 
 	@GET
 	@Path("/assignedStudents")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<StudentWebModel> getAssignedStudentsToTrainingPlan(
-			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId, @NotNull @QueryParam("userId") Integer userId);
+			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId);
 
 	@GET
 	@Path("/assignedExerciseSets")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<ExerciseSetWebModel> getAssignedExerciseSetsToTrainingPlan(
-			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId, @NotNull @QueryParam("userId") Integer userId);
+			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId);
 
 	@GET
 	@Path("/assignedDiets")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<DietWebModel> getAssignedDietsToTrainingPlan(
-			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId, @NotNull @QueryParam("userId") Integer userId);
+			@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId);
+
+	@PUT
+	@Path("/activeDiet")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response setActiveDiet(@NotNull @QueryParam("trainingPlanId") Integer trainingPlanId,
+			@NotNull @QueryParam("dietId") Integer dietId);
 }

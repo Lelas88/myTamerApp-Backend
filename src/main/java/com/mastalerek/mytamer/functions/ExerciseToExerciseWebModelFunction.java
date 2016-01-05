@@ -33,13 +33,15 @@ public class ExerciseToExerciseWebModelFunction implements Function<Exercise, Ex
 		setUnits(output, input.getUnit(), input.getSecondUnit());
 		output.setIconName(input.getIconName());
 		output.setStudentNames(Lists.transform(input.getStudentExercises(), function));
-		output.setTrainerId(input.getUser().getId());
+		if (input.getUser() != null) {
+			output.setTrainerId(input.getUser().getId());
+		}
 		return output;
 	}
 
 	private void setDiscipline(ExerciseWebModel output, Integer disciplineId) {
 		Discipline discipline = disciplineRepository.findOne(disciplineId);
-		output.setDisciplineName(discipline.getName());		
+		output.setDisciplineName(discipline.getName());
 		output.setDisciplineId(discipline.getId());
 	}
 

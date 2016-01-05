@@ -148,8 +148,38 @@ public class TrainingPlanService {
 	}
 
 	public void unassignStudentFromTrainingPlan(Integer trainingPlanId, Integer studentId) {
-		StudentTrainingPlan studentTrainingPlan = studentTrainingPlanRepository.findByStudentIdAndTrainingPlanId(studentId, trainingPlanId);
+		StudentTrainingPlan studentTrainingPlan = studentTrainingPlanRepository
+				.findByStudentIdAndTrainingPlanId(studentId, trainingPlanId);
 		studentTrainingPlanRepository.delete(studentTrainingPlan);
+	}
+
+	public void unassignExerciseSetFromTrainingPlan(Integer trainingPlanId, Integer exerciseSetId) {
+		TrainingPlanExerciseSet trainingPlanExerciseSet = trainingPlanExerciseSetRepository
+				.findByTrainingPlanIdAndExerciseSetId(trainingPlanId, exerciseSetId);
+		trainingPlanExerciseSetRepository.delete(trainingPlanExerciseSet);
+	}
+
+	public void unassignDietFromTrainingPlan(Integer trainingPlanId, Integer dietId) {
+		TrainingPlanDiet trainingPlanDiet = trainingPlanDietRepository.findByTrainingPlanIdAndDietId(trainingPlanId,
+				dietId);
+		trainingPlanDietRepository.delete(trainingPlanDiet);
+	}
+
+	public void setActiveDiet(Integer trainingPlanId, Integer dietId) {
+		disactivateOtherActiveDiets(trainingPlanId);
+		Diet diet = dietRepository.findOne(dietId);
+		diet.setActive(1);
+		dietRepository.save(diet);
+	}
+
+	private void disactivateOtherActiveDiets(Integer trainingPlanId) {
+		List<TrainingPlanDiet> trainingPlanDiets = trainingPlanDietRepository.findByTrainingPlanId(trainingPlanId);
+		List<Diet> diets = Lists.newArrayList();
+		trainingPlanDiets.forEach(e->diets.add(e.getDiet()));
+		for (Diet diet : diets) {
+			diet.setActive(0);
+			dietRepository.save(diet);
+		}
 	}
 
 }

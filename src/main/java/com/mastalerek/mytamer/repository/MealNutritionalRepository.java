@@ -8,4 +8,6 @@ import com.mastalerek.mytamer.entity.MealNutritional;
 
 public interface MealNutritionalRepository extends CrudRepository<MealNutritional, Integer>{
 	List<MealNutritional> findByMealId(Integer mealId);
+
+	MealNutritional findByMealIdAndNutritionalId(Integer mealId, Integer id);
 }

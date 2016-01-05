@@ -90,13 +90,13 @@ public class TrainingPlanWebApiImpl implements TrainingPlanWebApi{
 
 	@Override
 	public Response unassignExerciseSetFromTrainingPlan(Integer trainingPlanId, Integer exerciseSetId) {
-		trainingPlanService.unassignStudentFromTrainingPlan(trainingPlanId, exerciseSetId);
+		trainingPlanService.unassignExerciseSetFromTrainingPlan(trainingPlanId, exerciseSetId);
 		return Response.ok().build();
 	}
 
 	@Override
 	public Response unassignDietFromTrainingPlan(Integer trainingPlanId, Integer dietId) {
-		trainingPlanService.unassignStudentFromTrainingPlan(trainingPlanId, dietId);
+		trainingPlanService.unassignDietFromTrainingPlan(trainingPlanId, dietId);
 		return Response.ok().build();
 	}
 
@@ -116,17 +116,23 @@ public class TrainingPlanWebApiImpl implements TrainingPlanWebApi{
 	}
 
 	@Override
-	public List<StudentWebModel> getAssignedStudentsToTrainingPlan(Integer trainingPlanId, Integer userId) {
-		return studentService.getAssignedStudentsToTrainingPlan(trainingPlanId, userId);
+	public List<StudentWebModel> getAssignedStudentsToTrainingPlan(Integer trainingPlanId) {
+		return studentService.getAssignedStudentsToTrainingPlan(trainingPlanId);
 	}
 
 	@Override
-	public List<ExerciseSetWebModel> getAssignedExerciseSetsToTrainingPlan(Integer trainingPlanId, Integer userId) {
-		return exerciseSetService.getAssignedExerciseSetsToTrainingPlan(trainingPlanId, userId);
+	public List<ExerciseSetWebModel> getAssignedExerciseSetsToTrainingPlan(Integer trainingPlanId) {
+		return exerciseSetService.getAssignedExerciseSetsToTrainingPlan(trainingPlanId);
 	}
 
 	@Override
-	public List<DietWebModel> getAssignedDietsToTrainingPlan(Integer trainingPlanId, Integer userId) {
-		return dietService.getAssignedDietsToTrainingPlan(trainingPlanId, userId);
+	public List<DietWebModel> getAssignedDietsToTrainingPlan(Integer trainingPlanId) {
+		return dietService.getAssignedDietsToTrainingPlan(trainingPlanId);
+	}
+
+	@Override
+	public Response setActiveDiet(Integer trainingPlanId, Integer dietId) {
+		trainingPlanService.setActiveDiet(trainingPlanId, dietId);
+		return Response.ok().build();
 	}
 }

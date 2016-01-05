@@ -153,4 +153,13 @@ public class ExerciseService {
 		return Lists.transform(exercises, exerciseToExerciseWebModelFunction);
 	}
 
+	public void saveExercises(Integer userId, List<Integer> exerciseIds) {
+		for (Integer exerciseId : exerciseIds) {
+			Exercise exerciseToCopy = exerciseRepository.findOne(exerciseId);
+			exerciseToCopy.setId(null);
+			exerciseToCopy.setUser(userRepository.findOne(userId));
+			exerciseRepository.save(exerciseToCopy);
+		}
+	}
+
 }

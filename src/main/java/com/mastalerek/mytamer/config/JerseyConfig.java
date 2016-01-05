@@ -7,6 +7,7 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.stereotype.Component;
 
+import com.mastalerek.mytamer.webapi.impl.BeaconWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.DietWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.DisciplineWebApiImpl;
 import com.mastalerek.mytamer.webapi.impl.ExerciseSetWebApiImpl;
@@ -44,6 +45,7 @@ public class JerseyConfig extends ResourceConfig {
 		register(MealWebApiImpl.class);
 		register(MealSetWebApiImpl.class);
 		register(DietWebApiImpl.class);
+		register(BeaconWebApiImpl.class);
 		register(ResultWebApiImpl.class);
 		register(JavaMailSenderImpl.class);
 		register(SimpleMailMessage.class);

@@ -10,7 +10,8 @@ public class MealWebModel {
 	private String preparing;
 	private String iconName;
 	private List<NutritionalWebModel> nutritionals;
-
+	private Integer userId;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -65,6 +66,14 @@ public class MealWebModel {
 
 	public void setNutritionals(List<NutritionalWebModel> nutritionals) {
 		this.nutritionals = nutritionals;
+	}
+
+	public Integer getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 
 }

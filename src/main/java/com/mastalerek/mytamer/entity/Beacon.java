@@ -12,8 +12,10 @@ import javax.persistence.Table;
 @Table(name = "beacons")
 public class Beacon {
 	private Integer id;
-	private Exercise exerciseId;
+	private Exercise exercise;
 	private String uuid;
+	private Integer minor;
+	private Integer major;
 
 	@Id
 	@GeneratedValue
@@ -28,12 +30,12 @@ public class Beacon {
 
 	@ManyToOne
 	@JoinColumn(name = "exercise_id", nullable = false)
-	public Exercise getExerciseId() {
-		return exerciseId;
+	public Exercise getExercise() {
+		return exercise;
 	}
 
-	public void setExerciseId(Exercise exerciseId) {
-		this.exerciseId = exerciseId;
+	public void setExercise(Exercise exercise) {
+		this.exercise = exercise;
 	}
 
 	@Column(name = "uuid", nullable = false)
@@ -43,6 +45,24 @@ public class Beacon {
 
 	public void setUuid(String uuid) {
 		this.uuid = uuid;
+	}
+
+	@Column(name = "minor", nullable = false)
+	public Integer getMinor() {
+		return minor;
+	}
+
+	public void setMinor(Integer minor) {
+		this.minor = minor;
+	}
+
+	@Column(name = "major", nullable = false)
+	public Integer getMajor() {
+		return major;
+	}
+
+	public void setMajor(Integer major) {
+		this.major = major;
 	}
 
 }

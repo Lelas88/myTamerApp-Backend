@@ -33,6 +33,7 @@ public class MealToMealWebModelFunction implements Function<Meal, MealWebModel> 
 		output.setIngridients(input.getIngridients());
 		output.setPreparing(input.getPreparing());
 		output.setIconName(input.getIconName());
+		output.setUserId(input.getUser().getId());
 		setNutritionals(input, output);
 		return output;
 	}

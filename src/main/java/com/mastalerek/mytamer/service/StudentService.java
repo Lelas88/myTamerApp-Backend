@@ -148,8 +148,8 @@ public class StudentService {
 		return Lists.transform(students, studentEntityToStudentWebModelFunction);
 	}
 
-	public List<StudentWebModel> getAssignedStudentsToTrainingPlan(Integer trainingPlanId, Integer userId) {
-		List<Student> students = studentRepository.findAssignedToTrainingPlan(trainingPlanId, userId);
+	public List<StudentWebModel> getAssignedStudentsToTrainingPlan(Integer trainingPlanId) {
+		List<Student> students = studentRepository.findAssignedToTrainingPlan(trainingPlanId);
 		return Lists.transform(students, studentEntityToStudentWebModelFunction);
 	}
 }
