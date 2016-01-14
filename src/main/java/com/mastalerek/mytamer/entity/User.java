@@ -36,6 +36,7 @@ public class User implements Serializable {
 	private List<TrainingPlan> trainingPlans;
 	private List<Student> students;
 	private Student student;
+	private String role;
 
 	@Id
 	@GeneratedValue
@@ -168,6 +169,15 @@ public class User implements Serializable {
 	public void setStudent(Student student) {
 		this.student = student;
 	}
-	
+
+	@NotNull
+	@Column(name = "role", nullable = false)
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
 
 }

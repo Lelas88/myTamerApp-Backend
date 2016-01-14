@@ -60,6 +60,7 @@ public class UserService {
 		user.setEmail(userModel.getEmail());
 		user.setUsername(userModel.getUsername());
 		user.setPassword(passwordEncoder.encodePassword(userModel.getPassword()));
+		user.setRole(userModel.getRole());
 		userRepository.save(user);
 	}
 
@@ -85,11 +86,21 @@ public class UserService {
 		user.setUsername(credentials.getLogin());
 		user.setEmail(credentials.getEmail());
 		user.setPassword(credentials.getPassword());
+		user.setRole("STUDENT");
 		Student student = studentRepository.findOne(credentials.getStudentId());
 		user.setStudent(student);
 		mailService.sendEmailForNewStudent(credentials);
 		User savedUser = userRepository.save(user);
 		student.setUser(savedUser);
 		studentRepository.save(student);
+	}
+
+	public void registerCoach(UserWebModel coach) {
+		User user = new User();
+		user.setEmail(coach.getEmail());
+		user.setUsername(coach.getUsername());
+		user.setPassword(authorisationService.generatePassword());
+		user.setRole("COACH");
+		userRepository.save(user);
 	}
 }

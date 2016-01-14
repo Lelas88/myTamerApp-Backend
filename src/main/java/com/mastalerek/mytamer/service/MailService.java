@@ -35,10 +35,23 @@ public class MailService {
 		JavaMailSenderImpl mailSenderImpl = configureMailClient();
 		SimpleMailMessage message = new SimpleMailMessage();
 		message.setTo(credentials.getEmail());
-		message.setSubject("myTamer registration");
+		message.setSubject("myTamer reminder");
+//		message.setText(
+//				"Dear student, your coach has created a new account for you in myTamer application. Your login and password are shown below:"
+//						+ "Login: " + credentials.getLogin() + " Password: " + credentials.getPassword());
+//		message.setText(
+//		"<p>Dear student,</p><br /><p>your coach has created a new account for you in myTamer application.</p>"
+//		+ "<p>Your login and password are shown below:</p><p>"
+//				+ "Login: " + credentials.getLogin() + "</p><p>Password: " + credentials.getPassword() + "</p><br /><p>Your Tamer!</p>");
 		message.setText(
-				"Dear student, your coach has created a new account for you in myTamer application. Your login and password are shown below:"
-						+ "Login: " + credentials.getLogin() + " Password: " + credentials.getPassword());
+		"Dear coach, You have created a new account."
+		+ "Your login and password are:"
+				+ "Login: " + credentials.getLogin() + " Password: " + credentials.getPassword() + ". Your Tamer!");
+//		message.setText(
+		message.setText(
+		"Dear user, You requested to remind you about your login credentials."
+		+ "Your login and password are:"
+				+ "Login: " + credentials.getLogin() + " Password: " + credentials.getPassword() + ". Your Tamer!");
 		try {
 			mailSenderImpl.send(message);
 		} catch (MailException e) {

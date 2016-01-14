@@ -73,4 +73,10 @@ public class UserWebApiImpl implements UserWebApi {
 		return Response.ok().build();
 	}
 
+	@Override
+	public Response registerCoach(UserWebModel coach) {
+		userService.registerCoach(coach);
+		return Response.ok().build();
+	}
+
 }

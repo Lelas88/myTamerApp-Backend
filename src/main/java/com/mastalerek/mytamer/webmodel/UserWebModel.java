@@ -5,6 +5,7 @@ public class UserWebModel {
 	private String username;
 	private String email;
 	private String password;
+	private String role;
 
 	public Integer getId() {
 		return id;
@@ -36,6 +37,14 @@ public class UserWebModel {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
 	}
 
 }

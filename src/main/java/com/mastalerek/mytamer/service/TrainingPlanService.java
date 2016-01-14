@@ -166,13 +166,13 @@ public class TrainingPlanService {
 	}
 
 	public void setActiveDiet(Integer trainingPlanId, Integer dietId) {
-		disactivateOtherActiveDiets(trainingPlanId);
+		deactivateOtherActiveDiets(trainingPlanId);
 		Diet diet = dietRepository.findOne(dietId);
 		diet.setActive(1);
 		dietRepository.save(diet);
 	}
 
-	private void disactivateOtherActiveDiets(Integer trainingPlanId) {
+	private void deactivateOtherActiveDiets(Integer trainingPlanId) {
 		List<TrainingPlanDiet> trainingPlanDiets = trainingPlanDietRepository.findByTrainingPlanId(trainingPlanId);
 		List<Diet> diets = Lists.newArrayList();
 		trainingPlanDiets.forEach(e->diets.add(e.getDiet()));

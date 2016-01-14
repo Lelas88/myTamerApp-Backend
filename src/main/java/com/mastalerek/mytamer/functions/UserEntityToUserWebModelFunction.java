@@ -18,6 +18,7 @@ public class UserEntityToUserWebModelFunction implements Function<User, UserWebM
 		output.setEmail(input.getEmail());
 		output.setPassword(input.getPassword());
 		output.setUsername(input.getUsername());
+		output.setRole(input.getRole());
 		return output;
 	}
 }

@@ -17,6 +17,15 @@ jar {
     version =  '0.1.0'
 }
 
+sourceSets {
+    integTest {
+        java.srcDir file('src/integration/java')
+        resources.srcDir file('src/integration/resources')
+        compileClasspath += sourceSets.test.compileClasspath
+        runtimeClasspath += sourceSets.test.runtimeClasspath
+    }
+}
+
 repositories {
     mavenCentral()
 }
@@ -66,4 +75,9 @@ dependencies {
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
+}
+
+task integTest(type: Test) {
+    testClassesDir = sourceSets.integTest.output.classesDir
+    classpath += sourceSets.integTest.runtimeClasspath
 }

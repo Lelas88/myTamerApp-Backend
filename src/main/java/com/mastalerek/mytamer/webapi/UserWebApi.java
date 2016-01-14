@@ -61,4 +61,9 @@ public interface UserWebApi {
 	@Path(REGISTER_STUDENT)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response registerStudent(@NotNull StudentCredentials credentials);
+	
+	@POST
+	@Path(REGISTER_STUDENT)
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response registerCoach(@NotNull UserWebModel coach);
 }
